@@ -1,140 +1,113 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcenaria Brutalista</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Cristal Glass | Engenharia em Vidros</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
-      }
-      /* Custom Scrollbar for brutalist feel */
-      ::-webkit-scrollbar {
-        width: 12px;
-        background: #000;
-      }
-      .dark ::-webkit-scrollbar {
-        background: #000;
-      }
-      :not(.dark) ::-webkit-scrollbar {
-        background: #f3f4f6;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-        background: #0000FF;
-        border: 2px solid white;
-      }
-      :not(.dark) ::-webkit-scrollbar-thumb {
-        border: 2px solid black;
-      }
-
-      /* ANIMATIONS */
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
+        :root { 
+            --emerald-main: #059669; 
+            --emerald-hover: #047857;
+            --slate-track: #f1f5f9;
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
+
+        /* Barra de Rolagem Personalizada (Webkit: Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
         }
-      }
 
-      @keyframes slideInRight {
-        from {
-          opacity: 0;
-          transform: translateX(-20px);
+        ::-webkit-scrollbar-track {
+            background: var(--slate-track);
         }
-        to {
-          opacity: 1;
-          transform: translateX(0);
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--emerald-main);
+            border-radius: 10px;
+            border: 2px solid var(--slate-track);
         }
-      }
 
-      .animate-fade-in-up {
-        animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--emerald-hover);
+        }
 
-      .hover-glitch:hover {
-        transform: translate(-4px, -4px);
-        box-shadow: 6px 6px 0px 0px #0000FF;
-      }
-      
-      .stagger-1 { animation-delay: 100ms; }
-      .stagger-2 { animation-delay: 200ms; }
-      .stagger-3 { animation-delay: 300ms; }
-      .stagger-4 { animation-delay: 400ms; }
+        /* Suporte para Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--emerald-main) var(--slate-track);
+        }
 
-      /* GLOBAL BRUTALIST UTILITIES */
-      .brutal-btn {
-        transition: all 0.2s ease-in-out;
-      }
-      .brutal-btn:active {
-        transform: translateY(2px);
-        box-shadow: none !important;
-      }
-      
-      .brutal-input {
-        transition: border-color 0.2s, background-color 0.2s;
-      }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #ffffff;
+            color: #0f172a;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
+        /* Animações otimizadas para GPU */
+        .reveal { 
+            opacity: 0; 
+            transform: translateY(15px); 
+            transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform, opacity;
+        }
+        
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        .img-placeholder {
+            background: linear-gradient(110deg, #f8fafc 8%, #f1f5f9 18%, #f8fafc 33%);
+            background-size: 200% 100%;
+            animation: 1.5s shine linear infinite;
+        }
+        
+        @keyframes shine { to { background-position-x: -200%; } }
+
+        #app-loader {
+            position: fixed; inset: 0; background: #fff; z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            transition: opacity 0.4s ease-out;
+        }
+
+        .spinner { 
+            width: 32px; height: 32px; 
+            border: 3px solid #f3f3f3; 
+            border-top: 3px solid var(--emerald-main); 
+            border-radius: 50%; 
+            animation: spin 0.8s linear infinite; 
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Previne o pulo de layout no mobile */
+        .mobile-menu-open { overflow: hidden !important; }
     </style>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#0000FF",
-              "alert": "#FF0000",
-              "background-dark": "#000000",
-              "background-light": "#F3F4F6", 
-              "panel-dark": "#1A1A1A",
-              "panel-light": "#FFFFFF",
-            },
-            fontFamily: {
-              "display": ["Space Grotesk", "sans-serif"]
-            },
-            borderRadius: {
-              "DEFAULT": "0",
-              "lg": "0",
-              "xl": "0",
-              "full": "0",
-            },
-            borderWidth: {
-              '3': '3px',
-              '4': '4px',
-            }
-          },
-        },
-      }
-    </script>
-  <script type="importmap">
+
+    <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react/": "https://esm.sh/react@18.2.0/",
-    "react-dom": "https://esm.sh/react-dom@18.2.0",
-    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom",
-    "recharts": "https://esm.sh/recharts@2.12.3?external=react,react-dom",
-    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.7"
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.35.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white overflow-hidden transition-colors duration-300">
+<body>
+    <div id="app-loader"><div class="spinner"></div></div>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+    <script type="module" src="index.tsx"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </body>
 </html>

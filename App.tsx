@@ -1,101 +1,111 @@
 
-import React, { useState } from 'react';
-import { HashRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import { AppProvider, useApp } from './context/AppContext';
-import { Sidebar } from './components/Sidebar';
-import { Dashboard } from './pages/Dashboard';
-import { Orders } from './pages/Orders';
-import { Products } from './pages/Products';
-import { Materials } from './pages/Materials';
-import { Stock } from './pages/Stock';
-import { Calculator } from './pages/Calculator';
-import { Login } from './pages/Login';
-import { Settings } from './pages/Settings';
-import { Help } from './pages/Help';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import Services from './components/Services.tsx';
+import Process from './components/Process.tsx';
+import Gallery from './components/Gallery.tsx';
+import Trust from './components/Trust.tsx';
+import Testimonials from './components/Testimonials.tsx';
+import FAQ from './components/FAQ.tsx';
+import Footer from './components/Footer.tsx';
+import WhatsAppButton from './components/WhatsAppButton.tsx';
+import ServicesPage from './pages/ServicesPage.tsx';
+import ContactPage from './pages/ContactPage.tsx';
+import AboutPage from './pages/AboutPage.tsx';
 
-const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { isAuthenticated } = useApp();
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
-  return <>{children}</>;
-};
+function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+  const [isNavigating, setIsNavigating] = useState(false);
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const location = useLocation();
-  const { settings, isAuthenticated } = useApp();
-  
-  const isLoginPage = location.pathname === '/' || location.pathname === '/login';
+  const initLucide = useCallback(() => {
+    if ((window as any).lucide) {
+      (window as any).lucide.createIcons();
+    }
+  }, []);
 
-  // Force full width on Login page
-  if (isLoginPage || !isAuthenticated) {
-    return <>{children}</>;
-  }
+  const initObserver = useCallback(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Melhora performance: para de observar após animar
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
 
-  // Determine Layout Width Class
-  let containerClass = 'w-full';
-  switch (settings.appearance.layoutMode) {
-      case 'CINEMA':
-          containerClass = 'max-w-[1600px] mx-auto border-x-4 border-black dark:border-white shadow-2xl';
-          break;
-      case 'FOCO':
-          containerClass = 'max-w-[1024px] mx-auto border-x-4 border-black dark:border-white shadow-2xl';
-          break;
-      case 'FLUIDO':
+  // Sync das Rotas
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash.replace('#', '') || 'home';
+      if (hash !== currentPage) {
+        setIsNavigating(true);
+        // Transição de estado mais rápida
+        requestAnimationFrame(() => {
+          setCurrentPage(hash);
+          window.scrollTo(0, 0);
+          setTimeout(() => setIsNavigating(false), 300);
+        });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHash);
+    handleHash();
+    return () => window.removeEventListener('hashchange', handleHash);
+  }, [currentPage]);
+
+  // Re-init recursos visuais
+  useEffect(() => {
+    if (!isNavigating) {
+      initLucide();
+      const cleanup = initObserver();
+      return cleanup;
+    }
+  }, [currentPage, isNavigating, initLucide, initObserver]);
+
+  const navigate = (page: string) => {
+    window.location.hash = page;
+  };
+
+  const pageContent = useMemo(() => {
+    switch(currentPage) {
+      case 'servicos': return <ServicesPage />;
+      case 'contato': return <ContactPage />;
+      case 'sobre': return <AboutPage />;
       default:
-          containerClass = 'w-full';
-          break;
-  }
+        return (
+          <>
+            <Hero />
+            <Services onNavigate={navigate} />
+            <Process />
+            <Gallery />
+            <FAQ />
+            <Trust />
+            <Testimonials />
+          </>
+        );
+    }
+  }, [currentPage]);
 
   return (
-    <div className="flex h-screen w-full bg-background-light dark:bg-black overflow-hidden relative transition-colors duration-300">
-      <Sidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
-      
-      <div className="flex-1 flex flex-col h-full min-w-0 bg-background-light dark:bg-black relative transition-colors duration-300 overflow-hidden">
-        {/* Mobile Header */}
-        <header className="lg:hidden flex-shrink-0 flex items-center justify-between p-4 border-b-4 border-primary bg-white dark:bg-[#1A1A1A] z-30">
-           <h1 className="text-black dark:text-white text-xl font-bold uppercase tracking-wider">Marcenaria</h1>
-           <button 
-             onClick={() => setSidebarOpen(true)}
-             className="text-black dark:text-white p-1 hover:bg-primary/20 rounded"
-           >
-             <span className="material-symbols-outlined text-3xl">menu</span>
-           </button>
-        </header>
+    <div className="min-h-screen bg-white antialiased overflow-x-hidden selection:bg-emerald-600 selection:text-white">
+      {/* Barra de Progresso Superior */}
+      <div className={`fixed top-0 left-0 w-full h-[3px] bg-emerald-600 z-[200] transition-transform duration-500 origin-left ${isNavigating ? 'scale-x-100' : 'scale-x-0'}`} />
 
-        {/* Main Content Area - Scrollable */}
-        <main className={`flex-1 overflow-y-auto overflow-x-hidden p-4 md:p-6 lg:p-8 animate-fade-in-up custom-scrollbar ${containerClass}`}>
-          {children}
-        </main>
-      </div>
+      <Navbar onNavigate={navigate} currentPage={currentPage} />
+      
+      <main className={`relative z-10 transition-all duration-300 ease-out ${isNavigating ? 'opacity-30 blur-sm' : 'opacity-100 blur-0'}`}>
+        {pageContent}
+      </main>
+      
+      <Footer onNavigate={navigate} />
+      <WhatsAppButton />
     </div>
   );
-};
-
-const App: React.FC = () => {
-  return (
-    <AppProvider>
-      <HashRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Navigate to="/dashboard" replace />} />
-            <Route path="/login" element={<Login />} />
-            
-            {/* Protected Routes */}
-            <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-            <Route path="/pedidos" element={<ProtectedRoute><Orders /></ProtectedRoute>} />
-            <Route path="/produtos" element={<ProtectedRoute><Products /></ProtectedRoute>} />
-            <Route path="/materias" element={<ProtectedRoute><Materials /></ProtectedRoute>} />
-            <Route path="/estoques" element={<ProtectedRoute><Stock /></ProtectedRoute>} />
-            <Route path="/calculadora" element={<ProtectedRoute><Calculator /></ProtectedRoute>} />
-            <Route path="/configuracoes" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
-            <Route path="/ajuda" element={<ProtectedRoute><Help /></ProtectedRoute>} />
-          </Routes>
-        </Layout>
-      </HashRouter>
-    </AppProvider>
-  );
-};
+}
 
 export default App;
