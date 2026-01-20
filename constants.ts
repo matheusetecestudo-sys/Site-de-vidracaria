@@ -19,7 +19,7 @@ export const getServiceWhatsAppLink = (serviceName: string) => {
 
 export const CTA_TEXT = "Peça seu orçamento no WhatsApp";
 
-// Imagens específicas solicitadas
+// Imagens específicas solicitadas com nomes de arquivos exatos
 export const USER_BOX_IMAGE = "/images/Box do banheiro.jpg";
 export const USER_DOOR_IMAGE = "/images/Caixa para abrir.jpg";
 
@@ -31,81 +31,98 @@ export interface Service {
   tag?: string;
 }
 
-// 4 Serviços mais comuns (Destaque Principal)
+// 4 Serviços Principais (Destaque)
 export const FEATURED_SERVICES: Service[] = [
   {
     id: 'box-de-vidro',
     title: "Box de vidro",
-    description: "Instalação rápida de box para banheiro. Vidro temperado 8mm com segurança total.",
+    description: "Instalação rápida de box para banheiro com vidro temperado 8mm.",
     imageUrl: USER_BOX_IMAGE,
     tag: "Mais Pedido"
   },
   {
     id: 'janelas-de-vidro',
     title: "Janelas de vidro",
-    description: "Janelas de correr e basculantes sob medida para maior ventilação e claridade.",
+    description: "Janelas de correr e basculantes sob medida para sua residência.",
     imageUrl: "/images/Janelas de vidro.jpg",
     tag: "Pronta Entrega"
   },
   {
     id: 'portas-de-vidro',
     title: "Portas de vidro",
-    description: "Portas de abrir e de correr para salas e áreas externas com ferragens reforçadas.",
+    description: "Portas de abrir e de correr com ferragens de alta qualidade.",
     imageUrl: USER_DOOR_IMAGE,
     tag: "Alta Resistência"
   },
   {
     id: 'troca-de-vidro-quebrado',
     title: "Troca de vidro quebrado",
-    description: "Atendimento urgente para substituição de vidros em janelas, portas e sacadas.",
+    description: "Atendimento urgente para manutenção e substituição de vidros.",
     imageUrl: "/images/Manutenção e troca de vidro quebrado.jpg",
     tag: "Urgente"
   }
 ];
 
-// Lista Completa de todos os serviços (10 itens)
+// Catálogo Completo (10 Serviços) - Imagens seguindo o nome do serviço
 export const ALL_SERVICES: Service[] = [
-  ...FEATURED_SERVICES.slice(0, 3), // Box, Janelas, Portas
+  {
+    id: 'box-de-vidro',
+    title: "Box de vidro",
+    description: "Vidros temperados para banheiros com diversas opções de acabamento.",
+    imageUrl: USER_BOX_IMAGE
+  },
+  {
+    id: 'janelas-de-vidro',
+    title: "Janelas de vidro",
+    description: "Instalação de janelas em vidro temperado ou comum.",
+    imageUrl: "/images/Janelas de vidro.jpg"
+  },
+  {
+    id: 'portas-de-vidro',
+    title: "Portas de vidro",
+    description: "Soluções elegantes para entradas e divisórias de ambientes.",
+    imageUrl: USER_DOOR_IMAGE
+  },
   {
     id: 'espelhos-sob-medida',
     title: "Espelhos sob medida",
-    description: "Espelhos de cristal com acabamento bisotê ou lapidado para banheiros e salas.",
+    description: "Espelhos lapidados e bisotados para salas, banheiros e quartos.",
     imageUrl: "/images/Espelhos sob medida.jpg"
   },
   {
     id: 'envidracamento-sacadas',
     title: "Envidraçamento de sacadas",
-    description: "Sistema retrátil panorâmico para proteção contra chuva, vento e barulho.",
+    description: "Fechamento de varandas com sistema de abertura total.",
     imageUrl: "/images/Envidraçamento de sacadas.jpg"
   },
   {
     id: 'vidros-temperados',
     title: "Vidros temperados",
-    description: "Vidros de alta resistência para divisórias, tampos de mesa e prateleiras.",
+    description: "Vidros de alta resistência para prateleiras e tampos de mesa.",
     imageUrl: "/images/Vidros temperados.jpg"
   },
   {
     id: 'vidros-laminados',
     title: "Vidros laminados",
-    description: "Vidros de segurança compostos por duas lâminas, ideais para coberturas.",
+    description: "Vidros de segurança para coberturas e áreas de risco.",
     imageUrl: "/images/Vidros laminados.jpg"
   },
   {
     id: 'fachadas-de-vidro',
     title: "Fachadas de vidro",
-    description: "Projetos comerciais de alto padrão com sistema glazing ou pele de vidro.",
+    description: "Projetos de fachadas comerciais e residenciais (Pele de vidro).",
     imageUrl: "/images/Fachadas de vidro.jpg"
   },
   {
     id: 'guarda-corpo-vidro',
     title: "Guarda-corpo de vidro",
-    description: "Segurança para escadas e varandas com fixação técnica e design moderno.",
+    description: "Segurança e design para escadas, mezaninos e sacadas.",
     imageUrl: "/images/Guarda-corpo de vidro.jpg"
   },
   {
     id: 'manutencao-vidro',
     title: "Manutenção e troca de vidro quebrado",
-    description: "Substituição rápida de vidros avariados com garantia de vedação.",
+    description: "Troca rápida e segura de vidros avariados.",
     imageUrl: "/images/Manutenção e troca de vidro quebrado.jpg"
   }
 ];
@@ -113,7 +130,7 @@ export const ALL_SERVICES: Service[] = [
 export const TESTIMONIALS = [
   {
     name: "João Silva",
-    text: "Orçamento rápido pelo WhatsApp e instalação no prazo. O box ficou perfeito.",
+    text: "Orçamento rápido pelo WhatsApp e instalação no prazo. O box ficou ótimo.",
     role: "Cliente",
     avatar: "/images/avatar-1.jpg",
     stars: 5,
@@ -121,7 +138,7 @@ export const TESTIMONIALS = [
   },
   {
     name: "Maria Oliveira",
-    text: "Equipe profissional e limpa. Recomendo para troca de vidros urgentes.",
+    text: "Precisei trocar o vidro da janela urgente e eles resolveram no mesmo dia.",
     role: "Cliente",
     avatar: "/images/avatar-2.jpg",
     stars: 5,
@@ -132,14 +149,14 @@ export const TESTIMONIALS = [
 export const FAQ_ITEMS = [
   {
     question: "Como funciona o orçamento?",
-    answer: "Você envia medidas e fotos pelo WhatsApp e retornamos com o valor na hora."
+    answer: "Basta clicar no botão de WhatsApp, enviar as medidas aproximadas e fotos do local. Respondemos com o orçamento na hora."
   },
   {
-    question: "Qual o prazo de entrega?",
-    answer: "Instalamos box e espelhos em até 5 dias úteis após a confirmação."
+    question: "Qual o prazo médio de instalação?",
+    answer: "Para itens comuns como box e espelhos, o prazo é de 3 a 5 dias úteis."
   },
   {
-    question: "Vocês atendem emergência?",
-    answer: "Sim, para troca de vidros quebrados temos prioridade total no atendimento."
+    question: "Atendem casos urgentes de vidro quebrado?",
+    answer: "Sim! Temos uma equipe dedicada para substituição imediata de vidros que ofereçam risco à segurança."
   }
 ];
