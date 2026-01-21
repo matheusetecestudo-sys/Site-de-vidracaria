@@ -25,17 +25,13 @@ const Process: React.FC = () => {
 
   return (
     <section className="py-32 bg-slate-950 relative overflow-hidden">
-      {/* Detalhes de iluminação tipo "Vidro" */}
-      <div className="absolute top-0 right-0 w-[40%] h-full bg-blue-600/5 skew-x-[-20deg] pointer-events-none" />
-      <div className="absolute bottom-0 left-[10%] w-64 h-64 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="container-precision relative z-10">
         <header className="mb-24 reveal active">
           <div className="flex items-center gap-3 mb-6">
             <span className="w-10 h-[1px] bg-blue-500"></span>
-            <span className="text-[10px] font-black text-blue-500 uppercase tracking-widest text-center">Metodologia Cristal Glass</span>
+            <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Metodologia Cristal Glass</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[0.95] mb-8">
+          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1] mb-8">
             Do Projeto à <br />
             <span className="text-slate-500 italic">Entrega Final.</span>
           </h2>
@@ -44,17 +40,17 @@ const Process: React.FC = () => {
           </p>
         </header>
 
-        <div className="grid md:grid-cols-3 gap-16 lg:gap-24">
+        <div className="grid md:grid-cols-3 gap-12 lg:gap-24 items-baseline">
           {steps.map((step, index) => (
-            <div key={index} className="reveal active group">
+            <div key={index} className="reveal active group flex flex-col">
               <div className="flex items-center gap-6 mb-10">
-                <span className="text-6xl font-black text-white/5 group-hover:text-blue-600/20 transition-colors duration-700 leading-none tracking-tighter italic">
+                <span className="text-5xl font-black text-white/10 group-hover:text-blue-600/20 transition-all duration-500 italic leading-none">
                   {step.num}
                 </span>
-                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-blue-600/30 transition-all duration-700"></div>
+                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-blue-600/30 transition-all duration-500"></div>
               </div>
-              <h3 className="text-xl font-black text-white mb-6 uppercase tracking-widest">{step.title}</h3>
-              <p className="text-slate-500 leading-relaxed text-lg font-medium opacity-80 group-hover:opacity-100 transition-opacity">
+              <h3 className="text-lg font-bold text-white mb-6 uppercase tracking-widest leading-tight">{step.title}</h3>
+              <p className="text-slate-500 leading-relaxed text-base font-medium">
                 {step.desc}
               </p>
             </div>
@@ -64,17 +60,16 @@ const Process: React.FC = () => {
         <div className="mt-24 reveal active border-t border-white/5 pt-20">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="text-center md:text-left">
-              <p className="text-white text-2xl font-black mb-2 tracking-tight">Pronto para começar?</p>
+              <p className="text-white text-2xl font-black mb-2 tracking-tight leading-none">Pronto para começar?</p>
               <p className="text-slate-500 font-medium">Fale agora com nosso time técnico.</p>
             </div>
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-8 px-12 py-6 bg-[#22c55e] text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-[#16a34a] hover:-translate-y-1 transition-all duration-500 shadow-2xl shadow-green-500/20"
+              className="h-14 flex items-center justify-center px-10 bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/20"
             >
-              {CTA_TEXT}
-              <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              Peça seu orçamento no WhatsApp
             </a>
           </div>
         </div>
