@@ -25,7 +25,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-black text-white tracking-tighter uppercase leading-none">CRISTAL GLASS</span>
-                <span className="text-blue-500 font-bold text-[9px] tracking-[0.4em] uppercase mt-1">Vidraçaria Premium</span>
+                <span className="text-brand-accent font-bold text-[9px] tracking-[0.4em] uppercase mt-1">Vidraçaria Premium</span>
               </div>
             </button>
 
@@ -49,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     <a
                       href={getServiceWhatsAppLink(s.title)}
                       target="_blank"
-                      className="text-[11px] font-medium hover:text-blue-500 transition-colors"
+                      className="text-[11px] font-medium hover:text-brand-accent transition-colors"
                     >
                       {s.title}
                     </a>
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                     <a
                       href={getServiceWhatsAppLink(s.title)}
                       target="_blank"
-                      className="text-[11px] font-medium hover:text-blue-500 transition-colors"
+                      className="text-[11px] font-medium hover:text-brand-accent transition-colors"
                     >
                       {s.title}
                     </a>
@@ -85,14 +85,14 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-14 flex items-center justify-center w-full bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/10"
+                className="h-14 flex items-center justify-center w-full bg-brand-whatsapp text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-brand-whatsapp/10"
               >
                 Peça seu orçamento no WhatsApp
               </a>
 
               <div className="mt-10 pt-8 border-t border-white/5">
                 <p className="text-[9px] font-bold text-slate-600 uppercase tracking-widest leading-none mb-3">Linha Direta</p>
-                <p className="text-blue-500 font-black text-lg">{CLIENT_CONFIG.phoneDisplay}</p>
+                <p className="text-brand-accent font-black text-lg">{CLIENT_CONFIG.phoneDisplay}</p>
               </div>
             </div>
           </div>

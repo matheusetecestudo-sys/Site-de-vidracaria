@@ -9,9 +9,9 @@ const Gallery: React.FC = () => {
       <div className="container-precision">
         <div className="text-center mb-20 reveal active">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="w-10 h-[1px] bg-blue-600"></span>
-            <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest text-center">Catálogo Completo</span>
-            <span className="w-10 h-[1px] bg-blue-600"></span>
+            <span className="w-10 h-[1px] bg-brand-accent"></span>
+            <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Catálogo Completo</span>
+            <span className="w-10 h-[1px] bg-brand-accent"></span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 tracking-tight leading-[1]">
             Portfólio de <br />
@@ -39,7 +39,7 @@ const Gallery: React.FC = () => {
 
               <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                 <p className="text-white font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mb-4 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500">{service.title}</p>
-                <div className="inline-flex max-w-fit bg-emerald-500 text-white text-[9px] font-bold px-4 py-2.5 rounded-xl transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl">
+                <div className="inline-flex max-w-fit bg-brand-whatsapp text-white text-[9px] font-bold px-4 py-2.5 rounded-xl transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl">
                   Orçar WhatsApp
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Gallery: React.FC = () => {
             href={getServiceWhatsAppLink("Outros Serviços")}
             target="_blank"
             rel="noopener noreferrer"
-            className="reveal active flex flex-col items-center justify-center aspect-square rounded-[2rem] bg-slate-900 p-8 text-center group hover:bg-blue-600 transition-all duration-500 shadow-2xl relative overflow-hidden btn-interact"
+            className="reveal active flex flex-col items-center justify-center aspect-square rounded-[2rem] bg-slate-900 p-8 text-center group hover:bg-brand-primary transition-all duration-500 shadow-2xl relative overflow-hidden btn-interact"
           >
             <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-500">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 4v16m8-8H4" /></svg>

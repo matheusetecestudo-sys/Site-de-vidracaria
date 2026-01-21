@@ -22,14 +22,14 @@ const AboutPage: React.FC = () => {
 
       <main className="pt-32">
         <header className="py-24 md:py-32 bg-slate-950 text-white overflow-hidden relative">
-          <div className="absolute top-0 right-0 w-[50%] h-full bg-blue-600/5 skew-x-[-15deg] pointer-events-none" />
+          <div className="absolute top-0 right-0 w-[50%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
           <div className="container-precision relative z-10">
             <div className="grid lg:grid-cols-12 gap-16 items-center">
               <div className="lg:col-span-8 reveal active">
                 <div className="flex items-center gap-4 mb-8">
-                  <span className="w-10 h-[2px] bg-blue-500"></span>
-                  <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Nossa História</span>
+                  <span className="w-10 h-[2px] bg-brand-accent"></span>
+                  <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Nossa História</span>
                 </div>
                 <h1 className="text-5xl md:text-[80px] font-black leading-[0.9] mb-10 tracking-tight">
                   Autoridade em <br />
@@ -48,7 +48,7 @@ const AboutPage: React.FC = () => {
             <div className="lg:col-span-5 reveal active">
               <div className="relative rounded-[3rem] overflow-hidden aspect-square shadow-2xl">
                 <img src="/images/espelhos-premium.jpg" alt="Equipe Técnica" className="w-full h-full object-cover scale-105" />
-                <div className="absolute inset-0 bg-blue-600/10" />
+                <div className="absolute inset-0 bg-brand-accent/10" />
               </div>
             </div>
             <div className="lg:col-span-7 reveal active">
@@ -69,7 +69,7 @@ const AboutPage: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 reveal active pt-20 border-t border-slate-100">
             {values.map((v, i) => (
               <div key={i} className="flex flex-col">
-                <div className="text-blue-600 font-black text-3xl mb-4 italic">0{i + 1}</div>
+                <div className="text-brand-accent font-black text-3xl mb-4 italic">0{i + 1}</div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4 leading-tight">{v.t}</h3>
                 <p className="text-slate-500 font-medium leading-relaxed">{v.d}</p>
               </div>
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
             <a
               href={WHATSAPP_LINK}
               target="_blank"
-              className="h-[64px] flex items-center justify-center px-12 bg-emerald-500 text-white rounded-2xl font-bold text-sm btn-interact shadow-xl shadow-emerald-500/20 mx-auto sm:w-auto inline-flex"
+              className="h-[64px] flex items-center justify-center px-12 bg-brand-whatsapp text-white rounded-2xl font-bold text-sm btn-interact shadow-xl shadow-brand-whatsapp/20 mx-auto sm:w-auto inline-flex"
             >
               Peça seu orçamento no WhatsApp
             </a>

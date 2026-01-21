@@ -18,8 +18,8 @@ const ServicesPage: React.FC = () => {
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
               <div className="flex items-center gap-3 mb-6">
-                <span className="w-10 h-[1px] bg-blue-600"></span>
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Portfólio Completo</span>
+                <span className="w-10 h-[1px] bg-brand-accent"></span>
+                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Portfólio Completo</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
                 Soluções para <br />
@@ -59,7 +59,7 @@ const ServicesPage: React.FC = () => {
                     href={getServiceWhatsAppLink(service.title)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="h-14 flex items-center justify-center w-full bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/10"
+                    className="h-14 flex items-center justify-center w-full bg-brand-whatsapp text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-brand-whatsapp/10"
                   >
                     Peça seu orçamento no WhatsApp
                   </a>
@@ -70,13 +70,13 @@ const ServicesPage: React.FC = () => {
 
           <div className="mt-32 reveal active">
             <div className="bg-slate-950 rounded-[3.5rem] p-12 md:p-24 overflow-hidden relative shadow-2xl">
-              <div className="absolute top-0 right-0 w-[40%] h-full bg-blue-600/5 skew-x-[-15deg] pointer-events-none" />
+              <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
               <div className="relative z-10 grid lg:grid-cols-12 gap-16 items-center">
                 <div className="lg:col-span-8">
                   <div className="flex items-center gap-4 mb-8">
-                    <span className="w-10 h-[2px] bg-blue-500"></span>
-                    <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Divisão Corporativa</span>
+                    <span className="w-10 h-[2px] bg-brand-accent"></span>
+                    <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Divisão Corporativa</span>
                   </div>
                   <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-[1] tracking-tight">
                     Projetos em <br /> <span className="text-slate-500 italic">Alta Escala.</span>

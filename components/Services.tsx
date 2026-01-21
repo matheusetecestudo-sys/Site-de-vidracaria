@@ -9,8 +9,8 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
         <div className="grid lg:grid-cols-12 gap-12 mb-20 reveal active items-end">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-6">
-              <span className="w-10 h-[1px] bg-blue-600"></span>
-              <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Nossas Especialidades</span>
+              <span className="w-10 h-[1px] bg-brand-accent"></span>
+              <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Nossas Especialidades</span>
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
               Soluções Técnicas <br />
@@ -23,7 +23,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
           <div className="lg:col-span-4 flex justify-end">
             <button
               onClick={() => onNavigate?.('servicos')}
-              className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-blue-600 hover:border-blue-600 transition-all duration-300"
+              className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
             >
               Ver catálogo completo
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -51,7 +51,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
 
               <div className="p-10 md:p-12 flex flex-col flex-grow">
                 <div className="flex items-center gap-4 mb-6">
-                  <span className="text-2xl font-black text-slate-200 group-hover:text-blue-200 transition-colors italic leading-none">0{index + 1}</span>
+                  <span className="text-2xl font-black text-brand-primary/10 group-hover:text-brand-accent/20 transition-colors italic leading-none">0{index + 1}</span>
                   <h3 className="text-2xl md:text-3xl font-black text-slate-900 leading-none">{service.title}</h3>
                 </div>
 
@@ -63,7 +63,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                   href={getServiceWhatsAppLink(service.title)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto h-14 flex items-center justify-center px-10 bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/10"
+                  className="w-full sm:w-auto h-14 flex items-center justify-center px-10 bg-brand-whatsapp text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-brand-whatsapp/10"
                 >
                   Peça seu orçamento no WhatsApp
                 </a>

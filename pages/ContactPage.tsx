@@ -18,8 +18,8 @@ const ContactPage: React.FC = () => {
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
               <div className="flex items-center gap-3 mb-6">
-                <span className="w-10 h-[1px] bg-blue-600"></span>
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Atendimento Direto</span>
+                <span className="w-10 h-[1px] bg-brand-accent"></span>
+                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Atendimento Direto</span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
                 Vamos Progetar <br />
@@ -37,7 +37,7 @@ const ContactPage: React.FC = () => {
 
             <div className="lg:col-span-7 reveal active">
               <div className="bg-slate-950 rounded-[3.5rem] p-12 md:p-16 text-white relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent/10 rounded-full blur-[100px] pointer-events-none" />
 
                 <h2 className="text-3xl font-black mb-10 tracking-tight leading-none italic">Atendimento Imediato.</h2>
 
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                     href={WHATSAPP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center justify-between p-8 bg-white/5 rounded-[2rem] border border-white/5 hover:bg-emerald-500 transition-all duration-500"
+                    className="group flex items-center justify-between p-8 bg-white/5 rounded-[2rem] border border-white/5 hover:bg-brand-whatsapp transition-all duration-500"
                   >
                     <div className="flex items-center gap-6">
                       <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-slate-950 shadow-xl group-hover:scale-110 transition-transform">
@@ -70,7 +70,7 @@ const ContactPage: React.FC = () => {
                 <div className="pt-10 border-t border-white/5 flex flex-wrap gap-10">
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest leading-none mb-2">Telefone Comercial</span>
-                    <span className="text-lg font-black text-blue-500">{CLIENT_CONFIG.phoneDisplay}</span>
+                    <span className="text-lg font-black text-brand-accent">{CLIENT_CONFIG.phoneDisplay}</span>
                   </div>
                   <div className="flex flex-col">
                     <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest leading-none mb-2">Horário Operacional</span>
@@ -95,7 +95,7 @@ const ContactPage: React.FC = () => {
                     "Cor do vidro e das ferragens"
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-4 group">
-                      <div className="w-6 h-6 rounded-full bg-blue-600/10 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                      <div className="w-6 h-6 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all">
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" /></svg>
                       </div>
                       <span className="text-slate-600 font-medium leading-tight">{item}</span>
@@ -103,8 +103,8 @@ const ContactPage: React.FC = () => {
                   ))}
                 </ul>
 
-                <div className="mt-12 p-8 bg-blue-600/5 rounded-[2rem] border border-blue-600/10">
-                  <p className="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-3">Dúvida Técnica?</p>
+                <div className="mt-12 p-8 bg-brand-accent/5 rounded-[2rem] border border-brand-accent/10">
+                  <p className="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-3">Dúvida Técnica?</p>
                   <p className="text-sm font-medium text-slate-600 leading-relaxed">Nossos orçamentistas são técnicos experientes. Não cobramos pela consultoria inicial.</p>
                 </div>
               </div>

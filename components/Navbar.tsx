@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
         <div className="flex justify-between items-center h-12">
 
           <button onClick={() => handleNav('home')} className="flex items-center gap-4 group">
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 ${scrolled ? 'bg-blue-600' : 'bg-slate-900 group-hover:bg-blue-600'}`}>
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 ${scrolled ? 'bg-brand-primary' : 'bg-slate-900 group-hover:bg-brand-primary'}`}>
               C
             </div>
             <div className="flex flex-col items-start leading-tight">
@@ -52,12 +52,12 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-all relative py-2 ${currentPage === item.id ? 'text-blue-600' : 'text-slate-500 hover:text-blue-600'
+                className={`text-[11px] font-bold uppercase tracking-[0.2em] transition-all relative py-2 ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-500 hover:text-brand-accent'
                   }`}
               >
                 {item.label}
                 {currentPage === item.id && (
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-blue-600 rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-brand-accent rounded-full" />
                 )}
               </button>
             ))}
@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:flex items-center justify-center px-6 h-12 bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/20"
+              className="hidden lg:flex items-center justify-center px-6 h-12 bg-brand-whatsapp text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-brand-whatsapp/20"
             >
               Peça seu orçamento no WhatsApp
             </a>
@@ -78,9 +78,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               className="md:hidden w-11 h-11 flex items-center justify-center bg-white rounded-xl border border-slate-100 shadow-sm"
             >
               <div className="w-5 flex flex-col gap-1.5">
-                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`} />
-                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+                <span className={`h-[2px] bg-brand-accent rounded-full transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+                <span className={`h-[2px] bg-brand-accent rounded-full transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`} />
+                <span className={`h-[2px] bg-brand-accent rounded-full transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
               </div>
             </button>
           </div>
@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
                 key={item.id}
                 onClick={() => handleNav(item.id)}
                 className={`text-4xl font-black tracking-tighter transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                  } ${currentPage === item.id ? 'text-blue-600' : 'text-slate-900'}`}
+                  } ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-900'}`}
                 style={{ transitionDelay: `${idx * 100}ms` }}
               >
                 {item.label}
@@ -107,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           <div className={`w-24 h-[1px] bg-slate-100 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
           <a
             href={WHATSAPP_LINK}
-            className={`px-10 h-14 flex items-center bg-emerald-500 text-white rounded-2xl font-bold text-sm btn-interact shadow-xl shadow-emerald-500/20 transition-all duration-700 delay-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+            className={`px-10 h-14 flex items-center bg-brand-whatsapp text-white rounded-2xl font-bold text-sm btn-interact shadow-xl shadow-brand-whatsapp/20 transition-all duration-700 delay-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
               }`}
           >
             Peça seu orçamento no WhatsApp

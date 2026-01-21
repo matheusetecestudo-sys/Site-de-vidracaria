@@ -28,8 +28,8 @@ const Process: React.FC = () => {
       <div className="container-precision relative z-10">
         <header className="mb-24 reveal active">
           <div className="flex items-center gap-3 mb-6">
-            <span className="w-10 h-[1px] bg-blue-500"></span>
-            <span className="text-[10px] font-bold text-blue-500 uppercase tracking-widest">Metodologia Cristal Glass</span>
+            <span className="w-10 h-[1px] bg-brand-accent"></span>
+            <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Metodologia Cristal Glass</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1] mb-8">
             Do Projeto à <br />
@@ -44,10 +44,10 @@ const Process: React.FC = () => {
           {steps.map((step, index) => (
             <div key={index} className="reveal active group flex flex-col">
               <div className="flex items-center gap-6 mb-10">
-                <span className="text-5xl font-black text-white/10 group-hover:text-blue-600/20 transition-all duration-500 italic leading-none">
+                <span className="text-5xl font-black text-white/10 group-hover:text-brand-accent/20 transition-all duration-500 italic leading-none">
                   {step.num}
                 </span>
-                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-blue-600/30 transition-all duration-500"></div>
+                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-brand-accent/30 transition-all duration-500"></div>
               </div>
               <h3 className="text-lg font-bold text-white mb-6 uppercase tracking-widest leading-tight">{step.title}</h3>
               <p className="text-slate-500 leading-relaxed text-base font-medium">
@@ -67,7 +67,7 @@ const Process: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="h-14 flex items-center justify-center px-10 bg-emerald-500 text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-emerald-500/20"
+              className="h-14 flex items-center justify-center px-10 bg-brand-whatsapp text-white rounded-xl font-bold text-xs btn-interact shadow-lg shadow-brand-whatsapp/20"
             >
               Peça seu orçamento no WhatsApp
             </a>
