@@ -7,9 +7,9 @@ const Testimonials: React.FC = () => {
     <section id="depoimentos" className="py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center mb-16 reveal">
-          <span className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Feedback de quem contratou</span>
+          <span className="text-blue-600 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Feedback de quem contratou</span>
           <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tighter leading-tight">
-            Transparência e <span className="text-emerald-600 italic">Resultados Reais.</span>
+            Transparência e <span className="text-blue-600 italic">Resultados Reais.</span>
           </h2>
           
           <div className="flex flex-col items-center gap-2 mb-8">
@@ -61,7 +61,7 @@ const Testimonials: React.FC = () => {
               
               <div className="pt-6 border-t border-slate-50 flex items-center justify-between">
                  <span className="text-[10px] font-bold text-slate-300 uppercase tracking-widest">{testimonial.date}</span>
-                 <div className="flex items-center gap-1 text-emerald-500">
+                 <div className="flex items-center gap-1 text-blue-500">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                     <span className="text-[10px] font-black uppercase tracking-widest">Medição Conferida</span>
                  </div>
@@ -72,7 +72,7 @@ const Testimonials: React.FC = () => {
 
         <div className="mt-16 text-center reveal">
            <div className="inline-flex items-center gap-4 bg-slate-900 text-white px-8 py-4 rounded-full shadow-2xl">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
               <p className="text-xs font-black uppercase tracking-widest">Mais de 2.500 instalações com 100% de aprovação</p>
            </div>
         </div>

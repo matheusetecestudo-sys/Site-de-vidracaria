@@ -33,7 +33,7 @@ function App() {
         }
       });
     }, { threshold: 0.1 });
-    
+
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
@@ -72,7 +72,7 @@ function App() {
   };
 
   const pageContent = useMemo(() => {
-    switch(currentPage) {
+    switch (currentPage) {
       case 'servicos': return <ServicesPage />;
       case 'contato': return <ContactPage />;
       case 'sobre': return <AboutPage />;
@@ -92,16 +92,16 @@ function App() {
   }, [currentPage]);
 
   return (
-    <div className="min-h-screen bg-white antialiased overflow-x-hidden selection:bg-emerald-600 selection:text-white">
+    <div className="min-h-screen bg-white antialiased overflow-x-hidden selection:bg-blue-600 selection:text-white">
       {/* Barra de Progresso Superior */}
-      <div className={`fixed top-0 left-0 w-full h-[3px] bg-emerald-600 z-[200] transition-transform duration-500 origin-left ${isNavigating ? 'scale-x-100' : 'scale-x-0'}`} />
+      <div className={`fixed top-0 left-0 w-full h-[3px] bg-blue-600 z-[200] transition-transform duration-500 origin-left ${isNavigating ? 'scale-x-100' : 'scale-x-0'}`} />
 
       <Navbar onNavigate={navigate} currentPage={currentPage} />
-      
+
       <main className={`relative z-10 transition-all duration-300 ease-out ${isNavigating ? 'opacity-30 blur-sm' : 'opacity-100 blur-0'}`}>
         {pageContent}
       </main>
-      
+
       <Footer onNavigate={navigate} />
       <WhatsAppButton />
     </div>

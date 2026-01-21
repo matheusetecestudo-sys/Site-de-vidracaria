@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
   return (
     <footer className="bg-[#020617] text-slate-400 pt-24 pb-8 relative overflow-hidden border-t border-slate-900">
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-emerald-600/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
@@ -24,12 +24,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               onClick={() => onNavigate?.('home')}
               className="flex items-center gap-3 group text-left"
             >
-              <div className="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-[0_10px_20px_rgba(5,150,105,0.2)] transition-transform group-hover:scale-110">
+              <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shadow-[0_10px_20px_rgba(5,150,105,0.2)] transition-transform group-hover:scale-110">
                 <span className="text-white font-black text-2xl italic">C</span>
               </div>
               <div>
                 <span className="text-xl font-black text-white block tracking-tighter uppercase leading-none">CRISTAL GLASS</span>
-                <span className="text-emerald-500 font-bold text-[9px] tracking-[0.4em] uppercase">Engenharia em Vidros</span>
+                <span className="text-blue-500 font-bold text-[9px] tracking-[0.4em] uppercase">Engenharia em Vidros</span>
               </div>
             </button>
             
@@ -53,7 +53,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-x-4 md:gap-x-8 gap-y-10">
             <div>
-              <h4 className="text-white font-black text-[10px] uppercase tracking-[0.4em] mb-8 border-l-2 border-emerald-500 pl-4">Soluções Principais</h4>
+              <h4 className="text-white font-black text-[10px] uppercase tracking-[0.4em] mb-8 border-l-2 border-blue-500 pl-4">Soluções Principais</h4>
               <ul className="space-y-4">
                 {col1.map((s) => (
                   <li key={s.id}>
@@ -61,9 +61,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       href={getServiceWhatsAppLink(s.title)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] md:text-[11px] font-bold text-slate-500 hover:text-emerald-400 transition-colors text-left leading-tight group flex items-center gap-2"
+                      className="text-[10px] md:text-[11px] font-bold text-slate-500 hover:text-blue-400 transition-colors text-left leading-tight group flex items-center gap-2"
                     >
-                      <span className="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-emerald-500 group-hover:scale-150 transition-all"></span>
+                      <span className="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-blue-500 group-hover:scale-150 transition-all"></span>
                       {s.title}
                     </a>
                   </li>
@@ -71,7 +71,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-black text-[10px] uppercase tracking-[0.4em] mb-8 border-l-2 border-emerald-500 pl-4">Linha Complementar</h4>
+              <h4 className="text-white font-black text-[10px] uppercase tracking-[0.4em] mb-8 border-l-2 border-blue-500 pl-4">Linha Complementar</h4>
               <ul className="space-y-4">
                 {col2.map((s) => (
                   <li key={s.id}>
@@ -79,9 +79,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                       href={getServiceWhatsAppLink(s.title)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[10px] md:text-[11px] font-bold text-slate-500 hover:text-emerald-400 transition-colors text-left leading-tight group flex items-center gap-2"
+                      className="text-[10px] md:text-[11px] font-bold text-slate-500 hover:text-blue-400 transition-colors text-left leading-tight group flex items-center gap-2"
                     >
-                      <span className="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-emerald-500 group-hover:scale-150 transition-all"></span>
+                      <span className="w-1 h-1 bg-slate-800 rounded-full group-hover:bg-blue-500 group-hover:scale-150 transition-all"></span>
                       {s.title}
                     </a>
                   </li>
@@ -93,25 +93,25 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="lg:col-span-3">
             <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-8 rounded-[2.5rem] border border-slate-800 shadow-2xl relative group overflow-hidden">
               <h4 className="text-white font-black text-lg leading-tight mb-4">
-                Precisa de <br/> <span className="text-emerald-500 italic">preço hoje?</span>
+                Precisa de <br/> <span className="text-blue-500 italic">preço hoje?</span>
               </h4>
               
               <a 
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-2xl font-black text-[10px] text-center uppercase tracking-[0.2em] transition-all hover:scale-105 shadow-lg shadow-emerald-900/20 active:scale-95 px-4"
+                className="flex items-center justify-center gap-3 w-full py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-black text-[10px] text-center uppercase tracking-[0.2em] transition-all hover:scale-105 shadow-lg shadow-blue-900/20 active:scale-95 px-4"
               >
                 Peça seu orçamento no WhatsApp
               </a>
               
               <div className="mt-8 space-y-3">
                  <div className="flex items-center gap-3">
-                    <div className="w-1 h-1 rounded-full bg-emerald-500"></div>
+                    <div className="w-1 h-1 rounded-full bg-blue-500"></div>
                     <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest leading-none">Certificação NBR ABNT</p>
                  </div>
                  <div className="flex items-center gap-3">
-                    <div className="w-1 h-1 rounded-full bg-emerald-500"></div>
+                    <div className="w-1 h-1 rounded-full bg-blue-500"></div>
                     <p className="text-[9px] font-black text-slate-500 uppercase tracking-widest leading-none">Garantia Técnica 12 Meses</p>
                  </div>
               </div>

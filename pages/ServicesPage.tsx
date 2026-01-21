@@ -12,7 +12,7 @@ const ServicesPage: React.FC = () => {
         
         <div className="text-center mb-16 reveal active">
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-6 tracking-tighter">
-            Todos os Nossos <span className="text-emerald-600">Serviços</span>
+            Todos os Nossos <span className="text-blue-600">Serviços</span>
           </h1>
           <p className="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
             Atendimento residencial e comercial. Orçamentos rápidos via WhatsApp.
@@ -46,7 +46,7 @@ const ServicesPage: React.FC = () => {
                 href={getServiceWhatsAppLink(service.title)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 bg-emerald-600 text-white rounded-xl font-black text-[11px] text-center uppercase tracking-widest shadow-md hover:bg-emerald-700 transition-all active:scale-95"
+                className="w-full py-4 bg-blue-600 text-white rounded-xl font-black text-[11px] text-center uppercase tracking-widest shadow-md hover:bg-blue-700 transition-all active:scale-95"
               >
                 {CTA_TEXT}
               </a>
@@ -57,7 +57,7 @@ const ServicesPage: React.FC = () => {
         <div className="mt-20 p-8 md:p-16 bg-slate-900 rounded-[3rem] text-center relative overflow-hidden reveal active">
            <div className="relative z-10">
               <h2 className="text-3xl md:text-5xl font-black text-white mb-6 tracking-tighter">
-                Precisa de um projeto <span className="text-emerald-500">especial?</span>
+                Precisa de um projeto <span className="text-blue-500">especial?</span>
               </h2>
               <p className="text-slate-400 mb-10 max-w-xl mx-auto text-base font-medium">
                 Se o que você procura não está na lista, fale conosco agora. Resolvemos qualquer demanda em vidros.
@@ -67,7 +67,7 @@ const ServicesPage: React.FC = () => {
                 href={getServiceWhatsAppLink("Projeto Especial")} 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-12 py-6 bg-emerald-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-emerald-500 transition-all active:scale-95"
+                className="inline-flex items-center justify-center gap-3 px-12 py-6 bg-blue-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-blue-500 transition-all active:scale-95"
               >
                 {CTA_TEXT}
               </a>
