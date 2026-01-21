@@ -69,7 +69,7 @@ export const ALL_SERVICES: Service[] = [
     id: 'vidro-comum',
     title: "Vidro comum",
     description: "Opções versáteis em diversas espessuras para aplicações variadas em vidraçaria.",
-    imageUrl: "/images/janelas.jpg"
+    imageUrl: "/images/vidro-comum.jpg"
   },
   {
     id: 'manutencao-portas',
@@ -99,7 +99,7 @@ export const ALL_SERVICES: Service[] = [
     id: 'tampos-mesa',
     title: "Tampos de mesa de vidro",
     description: "Vidros sob medida com lapidação de alta precisão para móveis e mesas de jantar.",
-    imageUrl: "/images/espelhos.jpg"
+    imageUrl: "/images/tampos-mesa.jpg"
   },
   {
     id: 'prateleiras-vidro',
@@ -111,7 +111,7 @@ export const ALL_SERVICES: Service[] = [
     id: 'vidros-especiais',
     title: "Vidros fumê, bronze e refletivo",
     description: "Vidros decorativos e funcionais que garantem privacidade e controle de luminosidade.",
-    imageUrl: "/images/fachada.jpg"
+    imageUrl: "/images/vidros-bronze.jpg"
   },
   {
     id: 'fachadas-vidro',
