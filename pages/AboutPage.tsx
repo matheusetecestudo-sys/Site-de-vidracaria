@@ -7,9 +7,9 @@ const AboutPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="reveal active">
-            <span className="text-blue-600 font-black text-sm uppercase tracking-widest mb-4 block">Sobre Nós</span>
+            <span className="text-emerald-600 font-black text-sm uppercase tracking-widest mb-4 block">Sobre Nós</span>
             <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 tracking-tighter">
-              Engenharia e <br/><span className="text-blue-600">Precisão em Vidros.</span>
+              Engenharia e <br/><span className="text-emerald-600">Precisão em Vidros.</span>
             </h1>
             <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
               <p>
@@ -21,7 +21,7 @@ const AboutPage: React.FC = () => {
               <div className="mt-10">
                 <a 
                   href={WHATSAPP_LINK}
-                  className="inline-flex items-center justify-center px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-blue-700 transition-all"
+                  className="inline-flex items-center justify-center px-10 py-5 bg-emerald-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl hover:bg-emerald-700 transition-all"
                 >
                   {CTA_TEXT}
                 </a>

@@ -7,7 +7,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
       <div className="max-w-7xl mx-auto px-6">
         
         <div className="text-center mb-12 reveal active">
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">Serviços <span className="text-blue-600">Principais</span></h2>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">Serviços <span className="text-emerald-600">Principais</span></h2>
           <p className="text-slate-500 mt-4 font-medium">Os serviços mais pedidos pelos nossos clientes.</p>
         </div>
         
@@ -22,7 +22,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                   />
                   {service.tag && (
-                    <div className="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest shadow-lg">
+                    <div className="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-black px-4 py-2 rounded-full uppercase tracking-widest shadow-lg">
                       {service.tag}
                     </div>
                   )}
@@ -34,7 +34,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                     href={getServiceWhatsAppLink(service.title)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 w-full py-4 bg-blue-600 text-white rounded-xl font-black text-xs uppercase tracking-widest shadow-lg hover:bg-blue-700 transition-all active:scale-95"
+                    className="inline-flex items-center justify-center gap-2 w-full py-4 bg-emerald-600 text-white rounded-xl font-black text-xs uppercase tracking-widest shadow-lg hover:bg-emerald-700 transition-all active:scale-95"
                   >
                     {CTA_TEXT}
                   </a>
@@ -47,7 +47,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
         <div className="text-center reveal active">
            <button 
              onClick={() => onNavigate?.('servicos')}
-             className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors border-b-2 border-blue-600 pb-1"
+             className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-widest text-emerald-600 hover:text-emerald-700 transition-colors border-b-2 border-emerald-600 pb-1"
            >
              Ver lista completa de serviços
              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" /></svg>
