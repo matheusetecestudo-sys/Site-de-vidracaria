@@ -39,13 +39,13 @@ export const ALL_SERVICES: Service[] = [
     id: 'janelas-de-vidro',
     title: "Janelas de vidro",
     description: "Instalação de janelas em vidro temperado ou comum.",
-    imageUrl: "/images/Janelas de vidro.png"
+    imageUrl: "/images/janelas.jpg"
   },
   {
     id: 'portas-de-vidro',
     title: "Portas de vidro",
     description: "Soluções elegantes para entradas e divisórias de ambientes.",
-    imageUrl: "/images/Portas de vidro.png"
+    imageUrl: "/images/divisorias.jpg"
   },
   {
     id: 'espelhos-sob-medida',
@@ -81,13 +81,13 @@ export const ALL_SERVICES: Service[] = [
     id: 'guarda-corpo-vidro',
     title: "Guarda-corpo de vidro",
     description: "Segurança e design para escadas e sacadas.",
-    imageUrl: "/images/Guarda-corpo de vidro.png"
+    imageUrl: "/images/guarda-corpo.jpg"
   },
   {
     id: 'manutencao-vidro',
     title: "Manutenção e troca de vidro quebrado",
     description: "Troca rápida e segura de vidros avariados.",
-    imageUrl: "/images/Manutenção e troca de vidro quebrado.png"
+    imageUrl: "/images/manutencao.jpg"
   },
   {
     id: 'tampos-de-mesa',
@@ -99,13 +99,13 @@ export const ALL_SERVICES: Service[] = [
     id: 'prateleiras-de-vidro',
     title: "Prateleiras de vidro",
     description: "Soluções práticas e elegantes para organização.",
-    imageUrl: "/images/Prateleiras de vidro.png"
+    imageUrl: "/images/prateleiras.jpg"
   },
   {
     id: 'divisorias-de-vidro',
     title: "Divisórias de vidro",
     description: "Divisão de ambientes corporativos e residenciais.",
-    imageUrl: "/images/Divisórias de vidro.png"
+    imageUrl: "/images/divisorias.jpg"
   },
   {
     id: 'coberturas-de-vidro',
