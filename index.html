@@ -8,16 +8,20 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
         :root {
-            --emerald-main: #059669;
-            --emerald-hover: #047857;
-            --slate-track: #f1f5f9;
+            --brand-primary: #0f172a;
+            /* Slate 900 */
+            --brand-accent: #2563eb;
+            /* Blue 600 */
+            --brand-whatsapp: #22c55e;
+            /* Green 500 */
+            --glass-bg: rgba(255, 255, 255, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.2);
         }
 
         html {
@@ -26,51 +30,44 @@
 
         /* Seleção Personalizada */
         ::selection {
-            background-color: var(--emerald-main);
+            background-color: var(--brand-accent);
             color: white;
         }
 
         /* Barra de Rolagem Personalizada */
         ::-webkit-scrollbar {
             width: 8px;
-            height: 8px;
         }
 
         ::-webkit-scrollbar-track {
-            background: var(--slate-track);
+            background: #f8fafc;
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--emerald-main);
+            background: #cbd5e1;
             border-radius: 10px;
-            border: 2px solid var(--slate-track);
+            border: 2px solid #f8fafc;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--emerald-hover);
-        }
-
-        /* Suporte para Firefox */
-        * {
-            scrollbar-width: thin;
-            scrollbar-color: var(--emerald-main) var(--slate-track);
+            background: #94a3b8;
         }
 
         body {
-            font-family: 'Outfit', sans-serif;
+            font-family: 'Inter', sans-serif;
             background-color: #ffffff;
-            color: #0f172a;
+            color: #1e293b;
             margin: 0;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
         }
 
-        /* Animações otimizadas para GPU */
+        /* Animações reveal suaves */
         .reveal {
             opacity: 0;
-            transform: translateY(15px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(20px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: transform, opacity;
         }
 
@@ -79,15 +76,24 @@
             transform: translateY(0);
         }
 
+        /* Efeito de Vidro (Glassmorphism) */
         .glass-effect {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
         }
 
         .img-placeholder {
-            background: linear-gradient(110deg, #f8fafc 8%, #f1f5f9 18%, #f8fafc 33%);
+            background: linear-gradient(110deg, #f1f5f9 8%, #e2e8f0 18%, #f1f5f9 33%);
             background-size: 200% 100%;
             animation: 1.5s shine linear infinite;
         }
@@ -110,10 +116,10 @@
         }
 
         .spinner {
-            width: 32px;
-            height: 32px;
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid var(--emerald-main);
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f1f5f9;
+            border-top: 3px solid var(--brand-accent);
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
         }

@@ -27,32 +27,37 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
   const navItems = [
     { label: 'Início', id: 'home' },
     { label: 'Serviços', id: 'servicos' },
-    { label: 'A Marca', id: 'sobre' },
-    { label: 'Atendimento', id: 'contato' }
+    { label: 'Sobre', id: 'sobre' },
+    { label: 'Contato', id: 'contato' }
   ];
 
   return (
     <>
-      <header className={`fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-[100] transition-all duration-500 ${scrolled ? 'glass-effect py-3 px-6 rounded-2xl shadow-xl' : 'py-5 px-4 bg-transparent'
+      <header className={`fixed top-4 md:top-6 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-[100] transition-all duration-500 ${scrolled ? 'glass-effect py-3 px-6 md:px-10 rounded-2xl shadow-2xl shadow-blue-900/5' : 'py-6 px-4 bg-transparent'
         }`}>
         <div className="flex justify-between items-center">
 
-          <button onClick={() => handleNav('home')} className="flex items-center gap-2 group">
-            <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white font-black text-sm transition-all ${scrolled ? 'bg-emerald-600' : 'bg-slate-900 group-hover:bg-emerald-600'}`}>C</div>
-            <span className="text-base font-black tracking-tighter text-slate-900 uppercase">Cristal Glass</span>
+          <button onClick={() => handleNav('home')} className="flex items-center gap-3 group">
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 ${scrolled ? 'bg-blue-600 shadow-lg shadow-blue-600/20' : 'bg-slate-900'}`}>
+              C
+            </div>
+            <div className="flex flex-col items-start leading-none">
+              <span className="text-sm font-black tracking-tighter text-slate-900 uppercase">Cristal Glass</span>
+              <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest mt-0.5">Vidraçaria Premium</span>
+            </div>
           </button>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[9px] font-black uppercase tracking-widest transition-all relative py-1 ${currentPage === item.id ? 'text-emerald-600' : 'text-slate-500 hover:text-emerald-600'
+                className={`text-[10px] font-black uppercase tracking-[0.2em] transition-all relative py-1 ${currentPage === item.id ? 'text-blue-600' : 'text-slate-500 hover:text-blue-600'
                   }`}
               >
                 {item.label}
                 {currentPage === item.id && (
-                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-emerald-600 rounded-full" />
+                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-blue-600 rounded-full" />
                 )}
               </button>
             ))}
@@ -63,46 +68,49 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className={`hidden md:flex items-center gap-3 px-5 py-2.5 rounded-xl font-black text-[9px] uppercase tracking-widest transition-all ${scrolled ? 'bg-emerald-600 text-white hover:bg-emerald-700' : 'bg-slate-900 text-white hover:bg-emerald-600'
-                }`}
+              className={`hidden lg:flex items-center gap-4 px-6 py-3 bg-[#22c55e] text-white rounded-xl font-black text-[10px] uppercase tracking-widest transition-all hover:bg-[#16a34a] hover:-translate-y-0.5 shadow-lg shadow-green-500/20`}
             >
               Orçamento WhatsApp
             </a>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden w-10 h-10 flex items-center justify-center bg-white rounded-xl border border-slate-100 shadow-sm"
+              className="md:hidden w-11 h-11 flex items-center justify-center bg-white rounded-xl border border-slate-100 shadow-sm"
             >
-              <div className="w-5 flex flex-col gap-1">
-                <span className={`h-[2px] bg-emerald-600 transition-all ${isMenuOpen ? 'rotate-45 translate-y-[6px]' : ''}`} />
-                <span className={`h-[2px] bg-emerald-600 transition-all ${isMenuOpen ? 'opacity-0' : ''}`} />
-                <span className={`h-[2px] bg-emerald-600 transition-all ${isMenuOpen ? '-rotate-45 -translate-y-[6px]' : ''}`} />
+              <div className="w-5 flex flex-col gap-1.5">
+                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-500 ${isMenuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-500 ${isMenuOpen ? 'opacity-0' : ''}`} />
+                <span className={`h-[2px] bg-blue-600 rounded-full transition-all duration-500 ${isMenuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
               </div>
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white z-[90] md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}>
-        <div className="h-full flex flex-col justify-center items-center gap-8 px-10">
-          {navItems.map((item, idx) => (
-            <button
-              key={item.id}
-              onClick={() => handleNav(item.id)}
-              className={`text-4xl font-black tracking-tighter transition-all duration-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-                } ${currentPage === item.id ? 'text-emerald-600' : 'text-slate-900'}`}
-              style={{ transitionDelay: `${idx * 100}ms` }}
-            >
-              {item.label}
-            </button>
-          ))}
+        <div className="h-full flex flex-col justify-center items-center gap-10 px-10">
+          <div className="flex flex-col items-center gap-6">
+            {navItems.map((item, idx) => (
+              <button
+                key={item.id}
+                onClick={() => handleNav(item.id)}
+                className={`text-4xl font-black tracking-tighter transition-all duration-700 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+                  } ${currentPage === item.id ? 'text-blue-600' : 'text-slate-900'}`}
+                style={{ transitionDelay: `${idx * 100}ms` }}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+          <div className={`w-full max-w-xs h-[1px] bg-slate-100 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
           <a
             href={WHATSAPP_LINK}
-            className="mt-4 px-10 py-5 bg-emerald-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-xl shadow-emerald-600/20"
+            className={`px-10 py-6 bg-[#22c55e] text-white rounded-2xl font-black text-sm uppercase tracking-widest shadow-2xl shadow-green-500/30 transition-all duration-700 delay-500 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+              }`}
           >
-            Falar no WhatsApp
+            Orçamento no WhatsApp
           </a>
         </div>
       </div>
