@@ -8,7 +8,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-20 pb-12">
+      <main className="pt-20 pb-32">
         <header className="py-12 bg-slate-50 border-b border-slate-100 mb-12">
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
@@ -73,16 +73,13 @@ const ServicesPage: React.FC = () => {
                     <span className="w-10 h-[2px] bg-brand-accent"></span>
                     <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Divisão Corporativa</span>
                   </div>
-                  <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-[1] tracking-tight">
+                  <h2 className="text-3xl md:text-6xl font-black text-white mb-8 leading-[1] tracking-tight">
                     Projetos em <br /> <span className="text-slate-500 italic">Alta Escala.</span>
                   </h2>
                   <p className="text-slate-400 font-medium text-lg md:text-xl mb-12 leading-relaxed max-w-xl">
                     Atendemos construtoras, escritórios e condomínios com logística própria e preços competitivos de fábrica.
                   </p>
-                  <a
-                    href={getServiceWhatsAppLink("Projetos Corporativos")}
-                    target="_blank"
-                    className="h-14 flex items-center justify-center px-12 bg-white text-slate-900 rounded-xl font-bold text-sm btn-interact shadow-xl inline-flex sm:w-auto whitespace-nowrap"
+                    className="h-14 flex items-center justify-center px-8 sm:px-12 bg-white text-slate-900 rounded-xl font-bold text-[11px] sm:text-sm btn-interact shadow-xl inline-flex sm:w-auto whitespace-nowrap"
                   >
                     Falar com o departamento comercial
                   </a>

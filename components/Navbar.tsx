@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-xl py-4 shadow-lg' : 'py-8 bg-transparent'
+      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-xl py-4 shadow-lg' : 'py-4 md:py-8 bg-transparent'
         }`}>
         <div className="container-precision flex justify-between items-center h-12">
 

@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-24 pb-16">
+      <main className="pt-24 pb-32">
         <header className="py-16 bg-slate-50 border-b border-slate-100 mb-16">
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
                 <span className="w-10 h-[1px] bg-brand-accent"></span>
                 <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Atendimento Direto</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
+              <h1 className="text-4xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
                 Vamos projetar <br />
                 <span className="text-slate-400 font-medium">Sua ideia.</span>
               </h1>
@@ -31,10 +31,10 @@ const ContactPage: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-16 md:gap-20 items-start">
 
             <div className="lg:col-span-7 reveal active">
-              <div className="bg-slate-950 rounded-3xl p-8 md:p-16 text-white relative overflow-hidden shadow-2xl">
+              <div className="bg-slate-950 rounded-3xl p-6 md:p-16 text-white relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent/10 rounded-full blur-[100px] pointer-events-none" />
 
-                <h2 className="text-2xl md:text-3xl font-black mb-10 tracking-tight leading-none italic">Atendimento Imediato.</h2>
+                <h2 className="text-xl md:text-3xl font-black mb-10 tracking-tight leading-none italic">Atendimento Imediato.</h2>
 
                 <div className="space-y-12 mb-12">
                   <a

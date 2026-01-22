@@ -27,7 +27,7 @@ const AboutPage: React.FC = () => {
                 <span className="text-[10px] md:text-xs font-black text-brand-accent uppercase tracking-[0.4em]">Autoridade técnica</span>
                 <span className="w-12 h-[2px] bg-brand-accent"></span>
               </div>
-              <h1 className="text-5xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter">
+              <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter">
                 Engenharia <br />
                 <span className="text-slate-500 italic">sem segredos.</span>
               </h1>
@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
         <section className="py-16 md:py-24 container-precision">
           <div className="max-w-4xl mx-auto reveal active">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight leading-tight mb-10">
+              <h2 className="text-3xl md:text-7xl font-black text-slate-900 tracking-tight leading-tight mb-10">
                 Precisão técnica que <br /> <span className="text-slate-400 font-medium">gera confiança real.</span>
               </h2>
               <div className="space-y-10 text-xl md:text-2xl text-slate-500 font-medium leading-relaxed">
@@ -87,6 +87,7 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </section>
+        <div className="h-24 md:hidden"></div>
       </main>
     </div>
   );
