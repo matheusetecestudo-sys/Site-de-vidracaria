@@ -10,11 +10,11 @@ const Hero: React.FC = () => {
       <div className="container-precision relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
 
-          <div className="lg:col-span-12 reveal active text-left lg:text-center flex flex-col items-start lg:items-center">
-            <div className="flex items-center gap-4 mb-10 overflow-hidden">
+          <div className="lg:col-span-12 reveal active text-center flex flex-col items-center">
+            <div className="flex items-center justify-center gap-4 mb-10 overflow-hidden">
               <span className="w-12 h-[2px] bg-brand-accent rounded-full"></span>
               <span className="text-[9px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.5em] whitespace-nowrap">Vidraçaria Técnica Especializada</span>
-              <span className="w-12 h-[2px] bg-brand-accent rounded-full hidden lg:block"></span>
+              <span className="w-12 h-[2px] bg-brand-accent rounded-full"></span>
             </div>
 
             <h1 className="text-4xl md:text-7xl lg:text-[92px] font-black text-slate-900 leading-[0.95] md:leading-[0.85] mb-12 tracking-tight">
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-8 md:gap-10 w-full">
+            <div className="flex flex-col items-center justify-center gap-8 md:gap-10 w-full">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                <div className="leading-tight text-left">
+                <div className="leading-tight text-center">
                   <p className="text-base md:text-xl font-black text-slate-900 leading-none">4.500+</p>
                   <p className="text-[9px] md:text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none mt-1">Clientes Satisfeitos</p>
                 </div>
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
                 { v: "SP/REG", l: "Atendimento Full" },
                 { v: "100%", l: "Precisão Técnica" }
               ].map((item, i) => (
-                <div key={i} className="space-y-3 lg:text-center">
+                <div key={i} className="space-y-3 text-center">
                   <p className="text-2xl md:text-3xl font-black text-slate-900 leading-none tracking-tighter">{item.v}</p>
                   <p className="text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none">{item.l}</p>
                 </div>
