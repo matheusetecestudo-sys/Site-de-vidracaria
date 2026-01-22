@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
               <span className="text-[9px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.5em] whitespace-nowrap">Vidraçaria Técnica Especializada</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-[92px] font-black text-slate-900 leading-[0.95] md:leading-[0.85] mb-12 tracking-tight">
+            <h1 className="text-4xl md:text-7xl lg:text-[92px] font-black text-slate-900 leading-[0.95] md:leading-[0.85] mb-12 tracking-tight">
               A Engenharia do <br className="hidden md:block" />
               <span className="text-slate-400 font-medium">Vidro Moderno.</span>
             </h1>
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto h-20 flex items-center justify-center px-12 bg-brand-whatsapp text-white rounded-[2rem] font-black text-xl btn-interact shadow-2xl shadow-brand-whatsapp/30 whitespace-nowrap"
+                className="w-full sm:w-auto h-20 flex items-center justify-center px-8 sm:px-12 bg-brand-whatsapp text-white rounded-[2rem] font-black text-xl btn-interact shadow-2xl shadow-brand-whatsapp/30 whitespace-nowrap"
               >
                 Solicitar orçamento
               </a>

@@ -3,7 +3,7 @@ import { FEATURED_SERVICES, getServiceWhatsAppLink } from '../constants';
 
 const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigate }) => {
   return (
-    <section id="servicos" className="py-16 md:py-20 bg-white relative overflow-hidden">
+    <section id="servicos" className="py-16 pb-24 md:py-20 bg-white relative overflow-hidden">
       <div className="container-precision">
 
         <div className="grid lg:grid-cols-12 gap-12 mb-12 reveal active items-end">
