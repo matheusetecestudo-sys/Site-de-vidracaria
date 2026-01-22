@@ -3,10 +3,10 @@ import { FEATURED_SERVICES, getServiceWhatsAppLink } from '../constants';
 
 const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigate }) => {
   return (
-    <section id="servicos" className="py-24 bg-white relative overflow-hidden">
+    <section id="servicos" className="py-16 md:py-20 bg-white relative overflow-hidden">
       <div className="container-precision">
 
-        <div className="grid lg:grid-cols-12 gap-12 mb-20 reveal active items-end">
+        <div className="grid lg:grid-cols-12 gap-12 mb-12 reveal active items-end">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-6">
               <span className="w-10 h-[1px] bg-brand-accent"></span>
@@ -35,7 +35,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
           {FEATURED_SERVICES.map((service, index) => (
             <div
               key={service.id}
-              className="reveal active group flex flex-col bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100/50"
+              className="reveal active group flex flex-col bg-slate-50 rounded-3xl overflow-hidden border border-slate-100/50"
             >
               <div className="aspect-[16/9] overflow-hidden relative">
                 <img
@@ -49,9 +49,9 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                 </div>
               </div>
 
-              <div className="p-10 md:p-12 flex flex-col flex-grow">
+              <div className="p-8 md:p-12 flex flex-col flex-grow">
                 <div className="flex items-center gap-4 mb-6">
-                  <span className="text-2xl font-black text-brand-primary/10 group-hover:text-brand-accent/20 transition-colors italic leading-none">0{index + 1}</span>
+                  <span className="text-2xl font-black text-slate-500 group-hover:text-brand-accent transition-colors italic leading-none">0{index + 1}</span>
                   <h3 className="text-2xl md:text-3xl font-black text-slate-900 leading-none">{service.title}</h3>
                 </div>
 
@@ -72,7 +72,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
           ))}
         </div>
 
-        <div className="mt-20 flex justify-center reveal active">
+        <div className="mt-12 flex justify-center reveal active">
           <div className="inline-flex items-center gap-6 px-10 h-16 bg-slate-900 text-white rounded-2xl shadow-2xl">
             <div className="flex -space-x-3">
               {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-800" />)}

@@ -97,7 +97,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
       <div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="h-full flex flex-col pt-32 pb-12 px-10">
-          <p className="text-[10px] font-black tracking-[0.4em] text-slate-300 uppercase mb-8">Navegação</p>
+          <p className="text-[10px] font-black tracking-[0.4em] text-slate-500 uppercase mb-8">Navegação</p>
 
           <div className="flex flex-col gap-4">
             {navItems.map((item, idx) => (

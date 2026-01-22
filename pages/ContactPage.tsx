@@ -8,8 +8,8 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-32 pb-24">
-        <header className="py-24 bg-slate-50 border-b border-slate-100 mb-24">
+      <main className="pt-24 pb-16">
+        <header className="py-16 bg-slate-50 border-b border-slate-100 mb-16">
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
               <div className="flex items-center gap-3 mb-6">
@@ -31,17 +31,17 @@ const ContactPage: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-16 md:gap-20 items-start">
 
             <div className="lg:col-span-7 reveal active">
-              <div className="bg-slate-950 rounded-[3.5rem] p-12 md:p-16 text-white relative overflow-hidden shadow-2xl">
+              <div className="bg-slate-950 rounded-3xl p-8 md:p-16 text-white relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent/10 rounded-full blur-[100px] pointer-events-none" />
 
-                <h2 className="text-3xl font-black mb-10 tracking-tight leading-none italic">Atendimento Imediato.</h2>
+                <h2 className="text-2xl md:text-3xl font-black mb-10 tracking-tight leading-none italic">Atendimento Imediato.</h2>
 
                 <div className="space-y-12 mb-12">
                   <a
                     href={WHATSAPP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center justify-between p-8 bg-white/5 rounded-[2rem] border border-white/5 hover:bg-brand-whatsapp transition-all duration-500"
+                    className="group flex items-center justify-between p-6 bg-white/5 rounded-3xl border border-white/5 hover:bg-brand-whatsapp transition-all duration-500"
                   >
                     <div className="flex items-center gap-6">
                       <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-slate-950 shadow-xl group-hover:scale-110 transition-transform">
@@ -55,7 +55,7 @@ const ContactPage: React.FC = () => {
                     <svg className="w-8 h-8 text-white/20 group-hover:text-white/50 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                   </a>
 
-                  <div className="p-8 bg-white/5 rounded-[2rem] border border-white/5">
+                  <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
                     <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest leading-none mb-6">Local de Atendimento</p>
                     <p className="text-xl font-bold mb-4">{CLIENT_CONFIG.address}</p>
                     <p className="text-slate-500 font-medium">Serviço imediato para toda Grande São Paulo e Interior.</p>
@@ -76,7 +76,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             <div className="lg:col-span-5 reveal active">
-              <div className="bg-slate-50 rounded-[3.5rem] p-12 md:p-16 border border-slate-100 shadow-sm">
+              <div className="bg-slate-50 rounded-3xl p-8 md:p-16 border border-slate-100 shadow-sm">
                 <h3 className="text-2xl font-black text-slate-900 mb-8 tracking-tight leading-none">Prepare seu Orçamento.</h3>
                 <p className="text-slate-500 font-medium leading-relaxed mb-10">
                   Dica: Para um retorno técnico mais preciso, tenha em mãos:
@@ -98,7 +98,7 @@ const ContactPage: React.FC = () => {
                   ))}
                 </ul>
 
-                <div className="mt-12 p-8 bg-brand-accent/5 rounded-[2rem] border border-brand-accent/10">
+                <div className="mt-12 p-6 bg-brand-accent/5 rounded-3xl border border-brand-accent/10">
                   <p className="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-3">Dúvida Técnica?</p>
                   <p className="text-sm font-medium text-slate-600 leading-relaxed">Nossos orçamentistas são técnicos experientes. Não cobramos pela consultoria inicial.</p>
                 </div>

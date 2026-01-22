@@ -8,8 +8,8 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-32 pb-24">
-        <header className="py-20 bg-slate-50 border-b border-slate-100 mb-20">
+      <main className="pt-20 pb-12">
+        <header className="py-12 bg-slate-50 border-b border-slate-100 mb-12">
           <div className="container-precision">
             <div className="max-w-3xl reveal active">
               <div className="flex items-center gap-3 mb-6">
@@ -32,7 +32,7 @@ const ServicesPage: React.FC = () => {
             {ALL_SERVICES.map((service, index) => (
               <div
                 key={service.id}
-                className="reveal active group flex flex-col bg-white rounded-[2.5rem] border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-500"
+                className="reveal active group flex flex-col bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-500"
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
                 <div className="aspect-[4/3] overflow-hidden relative">
@@ -63,8 +63,8 @@ const ServicesPage: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-32 reveal active">
-            <div className="bg-slate-950 rounded-[3.5rem] p-12 md:p-24 overflow-hidden relative shadow-2xl">
+          <div className="mt-20 reveal active">
+            <div className="bg-slate-950 rounded-3xl p-6 md:p-16 overflow-hidden relative shadow-2xl">
               <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
               <div className="relative z-10 grid lg:grid-cols-12 gap-16 items-center">

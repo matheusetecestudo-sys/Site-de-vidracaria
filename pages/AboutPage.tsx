@@ -15,9 +15,9 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-20 md:pt-32">
+      <main className="pt-16 md:pt-24">
         {/* Header Section - No Images */}
-        <header className="py-32 md:py-60 bg-slate-950 text-white overflow-hidden relative">
+        <header className="py-16 md:py-24 bg-slate-950 text-white overflow-hidden relative">
           <div className="absolute top-0 right-0 w-[50%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none hidden md:block" />
 
           <div className="container-precision relative z-10">
@@ -39,9 +39,9 @@ const AboutPage: React.FC = () => {
         </header>
 
         {/* Story Section - No Images */}
-        <section className="py-32 md:py-48 container-precision">
+        <section className="py-16 md:py-24 container-precision">
           <div className="max-w-4xl mx-auto reveal active">
-            <div className="text-center mb-24">
+            <div className="text-center mb-16">
               <h2 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight leading-tight mb-10">
                 Precisão técnica que <br /> <span className="text-slate-400 font-medium">gera confiança real.</span>
               </h2>
@@ -55,10 +55,10 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 pt-24 border-t border-slate-100">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 pt-16 border-t border-slate-100">
               {values.map((v, i) => (
-                <div key={i} className="flex flex-col group p-10 bg-slate-50 rounded-[3rem] transition-all hover:bg-white hover:shadow-2xl border border-transparent hover:border-slate-100 italic">
-                  <div className="text-brand-accent font-black text-5xl mb-6 opacity-20 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
+                <div key={i} className="flex flex-col group p-8 bg-slate-50 rounded-3xl transition-all hover:bg-white hover:shadow-2xl border border-transparent hover:border-slate-100 italic">
+                  <div className="text-brand-accent font-black text-4xl mb-6 opacity-50 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
                   <h3 className="text-2xl md:text-3xl font-black text-slate-900 mb-6 leading-tight">{v.t}</h3>
                   <p className="text-slate-600 font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
                 </div>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 md:py-48 bg-slate-50">
+        <section className="py-16 md:py-24 bg-slate-50">
           <div className="container-precision text-center reveal active">
             <h2 className="text-4xl md:text-8xl font-black text-slate-900 mb-12 tracking-tighter leading-tight">
               Pronto para elevar o <br className="hidden md:block" /> <span className="text-slate-400 font-medium">nível do seu projeto?</span>
@@ -80,7 +80,7 @@ const AboutPage: React.FC = () => {
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
-                className="group h-[72px] min-w-[280px] flex items-center justify-center px-12 bg-brand-whatsapp text-white rounded-[2rem] font-bold text-lg btn-interact shadow-2xl shadow-brand-whatsapp/30 whitespace-nowrap"
+                className="group h-16 min-w-[260px] flex items-center justify-center px-10 bg-brand-whatsapp text-white rounded-2xl font-bold text-base btn-interact shadow-2xl shadow-brand-whatsapp/30 whitespace-nowrap"
               >
                 Consultar um especialista agora
               </a>

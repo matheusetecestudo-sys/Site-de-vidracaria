@@ -5,9 +5,9 @@ const Gallery: React.FC = () => {
   const galleryServices = ALL_SERVICES;
 
   return (
-    <section id="solucoes" className="py-24 bg-white font-inter">
+    <section id="solucoes" className="py-12 md:py-16 bg-white font-inter">
       <div className="container-precision">
-        <div className="text-center mb-20 reveal active">
+        <div className="text-center mb-8 reveal active">
           <div className="flex items-center justify-center gap-3 mb-6">
             <span className="w-10 h-[1px] bg-brand-accent"></span>
             <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Catálogo Completo</span>
@@ -37,9 +37,9 @@ const Gallery: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
-              <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
-                <p className="text-white font-bold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mb-4 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-sm">{service.title}</p>
-                <div className="inline-flex max-w-fit bg-brand-whatsapp text-white text-[11px] font-bold px-5 py-3 rounded-xl transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl whitespace-nowrap">
+              <div className="absolute inset-0 flex flex-col justify-end items-center text-center p-6 pb-10">
+                <p className="text-white font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] leading-tight mb-4 transform translate-y-2 group-hover:translate-y-0 transition-all duration-500 shadow-sm">{service.title}</p>
+                <div className="inline-flex bg-brand-whatsapp text-white text-[10px] font-bold px-4 py-2.5 rounded-xl transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl whitespace-nowrap">
                   Orçar no WhatsApp
                 </div>
               </div>

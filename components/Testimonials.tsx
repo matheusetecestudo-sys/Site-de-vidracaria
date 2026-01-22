@@ -3,10 +3,10 @@ import { TESTIMONIALS } from '../constants';
 
 const Testimonials: React.FC = () => {
   return (
-    <section id="depoimentos" className="py-24 bg-white relative font-inter border-t border-slate-50">
+    <section id="depoimentos" className="py-16 md:py-20 bg-white relative font-inter border-t border-slate-50">
       <div className="container-precision">
 
-        <header className="mb-16 reveal active max-w-2xl">
+        <header className="mb-10 reveal active max-w-2xl">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-8 h-[1px] bg-brand-accent"></span>
             <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Opinião de quem contratou</span>

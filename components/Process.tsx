@@ -24,9 +24,9 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-slate-950 relative overflow-hidden">
+    <section className="py-20 md:py-24 bg-slate-950 relative overflow-hidden">
       <div className="container-precision relative z-10">
-        <header className="mb-24 reveal active">
+        <header className="mb-16 reveal active">
           <div className="flex items-center gap-3 mb-6">
             <span className="w-10 h-[1px] bg-brand-accent"></span>
             <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Metodologia Cristal Glass</span>
@@ -40,14 +40,14 @@ const Process: React.FC = () => {
           </p>
         </header>
 
-        <div className="grid md:grid-cols-3 gap-12 lg:gap-24 items-baseline">
+        <div className="grid md:grid-cols-3 gap-10 lg:gap-16 items-baseline">
           {steps.map((step, index) => (
             <div key={index} className="reveal active group flex flex-col">
               <div className="flex items-center gap-6 mb-10">
-                <span className="text-5xl font-black text-white/10 group-hover:text-brand-accent/20 transition-all duration-500 italic leading-none">
+                <span className="text-5xl font-black text-white/60 group-hover:text-brand-accent transition-all duration-500 italic leading-none">
                   {step.num}
                 </span>
-                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-brand-accent/30 transition-all duration-500"></div>
+                <div className="h-[1px] flex-1 bg-white/10 group-hover:bg-brand-accent/40 transition-all duration-500"></div>
               </div>
               <h3 className="text-lg font-bold text-white mb-6 uppercase tracking-widest leading-tight">{step.title}</h3>
               <p className="text-slate-500 leading-relaxed text-base font-medium">
@@ -57,7 +57,7 @@ const Process: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-24 reveal active border-t border-white/5 pt-20">
+        <div className="mt-16 reveal active border-t border-white/5 pt-16">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="text-center md:text-left">
               <p className="text-white text-2xl font-black mb-2 tracking-tight leading-none">Pronto para começar?</p>
