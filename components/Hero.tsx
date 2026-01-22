@@ -10,10 +10,11 @@ const Hero: React.FC = () => {
       <div className="container-precision relative z-10">
         <div className="grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
 
-          <div className="lg:col-span-7 reveal active text-left">
+          <div className="lg:col-span-12 reveal active text-left lg:text-center flex flex-col items-start lg:items-center">
             <div className="flex items-center gap-4 mb-10 overflow-hidden">
               <span className="w-12 h-[2px] bg-brand-accent rounded-full"></span>
               <span className="text-[9px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.5em] whitespace-nowrap">Vidraçaria Técnica Especializada</span>
+              <span className="w-12 h-[2px] bg-brand-accent rounded-full hidden lg:block"></span>
             </div>
 
             <h1 className="text-4xl md:text-7xl lg:text-[92px] font-black text-slate-900 leading-[0.95] md:leading-[0.85] mb-12 tracking-tight">
@@ -21,11 +22,11 @@ const Hero: React.FC = () => {
               <span className="text-slate-400 font-medium">Vidro Moderno.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-16">
+            <p className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-16 lg:mx-auto">
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 md:gap-10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-8 md:gap-10 w-full">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -47,45 +48,25 @@ const Hero: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                <div className="leading-tight">
+                <div className="leading-tight text-left">
                   <p className="text-base md:text-xl font-black text-slate-900 leading-none">4.500+</p>
                   <p className="text-[9px] md:text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none mt-1">Clientes Satisfeitos</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-16 md:mt-24 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 py-8 md:py-12 border-t border-slate-200/60">
+            <div className="mt-16 md:mt-24 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 py-8 md:py-12 border-t border-slate-200/60 w-full max-w-4xl lg:mx-auto">
               {[
                 { v: "20+", l: "Anos de Mercado" },
                 { v: "48h", l: "Prazo Recorde" },
                 { v: "SP/REG", l: "Atendimento Full" },
                 { v: "100%", l: "Precisão Técnica" }
               ].map((item, i) => (
-                <div key={i} className="space-y-3">
+                <div key={i} className="space-y-3 lg:text-center">
                   <p className="text-2xl md:text-3xl font-black text-slate-900 leading-none tracking-tighter">{item.v}</p>
                   <p className="text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none">{item.l}</p>
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="lg:col-span-5 relative reveal active hidden lg:block group">
-            <div className="relative z-10 rounded-[3rem] overflow-hidden aspect-[4/5] shadow-2xl border-[12px] border-white">
-              <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop"
-                alt="Vidraçaria Premium de Luxo"
-                className="w-full h-full object-cover scale-105 transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute inset-x-8 bottom-8 p-8 bg-white/90 backdrop-blur-md rounded-3xl shadow-xl flex items-center gap-6">
-                <div className="w-12 h-12 bg-brand-primary rounded-2xl flex items-center justify-center text-white shadow-lg">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-1">Certificado de Segurança</p>
-                  <p className="text-lg font-black text-slate-900 leading-none">Instalação Garantida</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
