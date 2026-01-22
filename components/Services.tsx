@@ -75,7 +75,16 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
         <div className="mt-12 flex justify-center reveal active">
           <div className="inline-flex items-center gap-6 px-10 h-16 bg-slate-900 text-white rounded-2xl shadow-2xl">
             <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-800" />)}
+              {[
+                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=128&h=128&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=128&h=128&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=128&h=128&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=128&h=128&auto=format&fit=crop"
+              ].map((url, i) => (
+                <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-800 overflow-hidden">
+                  <img src={url} alt="Técnico Certificado" className="w-full h-full object-cover opacity-80" />
+                </div>
+              ))}
             </div>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80">Equipe técnica própria certificada pela ABNT.</p>
           </div>
