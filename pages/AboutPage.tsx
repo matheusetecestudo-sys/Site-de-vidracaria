@@ -21,8 +21,8 @@ const AboutPage: React.FC = () => {
           <div className="absolute top-0 right-0 w-[50%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none hidden md:block" />
 
           <div className="container-precision relative z-10">
-            <div className="max-w-4xl mx-auto text-center reveal active">
-              <div className="flex items-center justify-center gap-4 mb-10">
+            <div className="max-w-4xl mx-auto text-left reveal active">
+              <div className="flex items-center justify-start gap-4 mb-10">
                 <span className="w-12 h-[2px] bg-brand-accent"></span>
                 <span className="text-[10px] md:text-xs font-black text-brand-accent uppercase tracking-[0.4em]">Autoridade técnica</span>
                 <span className="w-12 h-[2px] bg-brand-accent"></span>
@@ -31,7 +31,7 @@ const AboutPage: React.FC = () => {
                 Engenharia <br />
                 <span className="text-slate-500 italic">sem segredos.</span>
               </h1>
-              <p className="text-xl md:text-3xl text-slate-400 font-medium leading-relaxed opacity-90 mx-auto max-w-2xl">
+              <p className="text-xl md:text-3xl text-slate-400 font-medium leading-relaxed opacity-90 max-w-2xl">
                 Mais que uma vidraçaria, somos especialistas em transformar ambientes with transparência, segurança estrutural e design de alto padrão.
               </p>
             </div>
@@ -41,7 +41,7 @@ const AboutPage: React.FC = () => {
         {/* Story Section - No Images */}
         <section className="py-16 md:py-24 container-precision">
           <div className="max-w-4xl mx-auto reveal active">
-            <div className="text-center mb-16">
+            <div className="text-left mb-16">
               <h2 className="text-3xl md:text-7xl font-black text-slate-900 tracking-tight leading-tight mb-10">
                 Precisão técnica que <br /> <span className="text-slate-400 font-medium">gera confiança real.</span>
               </h2>

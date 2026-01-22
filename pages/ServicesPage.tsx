@@ -68,7 +68,7 @@ const ServicesPage: React.FC = () => {
               <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
               <div className="relative z-10 grid lg:grid-cols-12 gap-16 items-center">
-                <div className="lg:col-span-8 flex flex-col items-center sm:items-start text-center sm:text-left">
+                <div className="lg:col-span-8 flex flex-col items-start sm:items-start text-left sm:text-left">
                   <div className="flex items-center gap-4 mb-8">
                     <span className="w-10 h-[2px] bg-brand-accent"></span>
                     <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Divisão Corporativa</span>
