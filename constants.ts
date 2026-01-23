@@ -15,11 +15,12 @@ export const CLIENT_CONFIG = {
  * @param origin - Onde o clique ocorreu (ex: 'Hero', 'Serviços', 'Footer')
  * @param detail - Detalhe específico (ex: nome do serviço ou botão)
  */
-export const getWhatsAppLink = (origin: string, detail: string = "Geral") => {
-  const msg = `Olá! Gostaria de solicitar um orçamento.\n\n` +
-    `*Origem:* ${origin}\n` +
-    `*Interesse:* ${detail}\n\n` +
-    `Vim pelo site e aguardo o retorno.`;
+export const getWhatsAppLink = (origin: string, detail: string = "") => {
+  const isSpecificService = detail && !detail.toLowerCase().includes("botão") && !detail.toLowerCase().includes("geral") && !detail.toLowerCase().includes("menu");
+
+  const msg = isSpecificService
+    ? `Olá! Gostaria de solicitar um orçamento para *${detail}*.\n\nVim pelo site e aguardo o retorno.`
+    : `Olá! Gostaria de solicitar um orçamento.\n\nVim pelo site e aguardo o retorno.`;
 
   return `https://wa.me/${CLIENT_CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
 };

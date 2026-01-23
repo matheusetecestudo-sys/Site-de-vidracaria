@@ -32,14 +32,14 @@ const ServicesPage: React.FC = () => {
             {ALL_SERVICES.map((service, index) => (
               <div
                 key={service.id}
-                className="reveal active group flex flex-col bg-white rounded-3xl border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-500"
+                className="reveal active group flex flex-col bg-white rounded-[2.5rem] border border-slate-100 overflow-hidden hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.12)] transition-all duration-700 btn-interact"
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={service.imageUrl}
                     alt={service.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
                   />

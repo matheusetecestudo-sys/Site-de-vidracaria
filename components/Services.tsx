@@ -35,13 +35,13 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
           {FEATURED_SERVICES.map((service, index) => (
             <div
               key={service.id}
-              className="reveal active group flex flex-col bg-slate-50 rounded-3xl overflow-hidden border border-slate-100/50"
+              className="reveal active group flex flex-col bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100/50 hover:shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] transition-all duration-700 btn-interact"
             >
-              <div className="aspect-[16/9] overflow-hidden relative">
+              <div className="aspect-[16/10] overflow-hidden relative">
                 <img
                   src={service.imageUrl}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 ease-out"
                   loading="lazy"
                   decoding="async"
                 />
