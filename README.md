@@ -1,4 +1,4 @@
-# Cristal Glass - Engenharia e Design em Vidros
+# Duno - Engenharia e Design em Vidros
 
 Site premium desenvolvido com padrões de UX/UI 2026, focado em alta conversão para WhatsApp e performance técnica superior.
 

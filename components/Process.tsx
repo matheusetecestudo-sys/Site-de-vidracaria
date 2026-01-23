@@ -30,7 +30,7 @@ const Process: React.FC = () => {
         <header className="mb-16 reveal active">
           <div className="flex items-center gap-3 mb-6">
             <span className="w-10 h-[1px] bg-brand-accent"></span>
-            <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-[clamp(8px,2vw,10px)]">Metodologia Cristal Glass</span>
+            <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-[clamp(8px,2vw,10px)]">Metodologia Duno</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-[1] mb-8">
             Do Projeto à <br />

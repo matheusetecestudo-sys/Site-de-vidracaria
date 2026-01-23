@@ -20,7 +20,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               onClick={() => onNavigate?.('home')}
               className="group flex flex-col items-center md:items-start gap-1 focus:outline-none"
             >
-              <span className="text-2xl font-black text-white tracking-tighter leading-none">Cristal Glass</span>
+              <span className="text-2xl font-black text-white tracking-tighter leading-none">Duno</span>
               <span className="text-brand-accent font-bold text-[10px] tracking-[0.3em] uppercase">Engenharia do vidro</span>
             </button>
             <p className="text-base leading-relaxed max-w-xs opacity-80 mx-auto md:mx-0">
@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Bottom Bar */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-[11px] font-medium text-slate-600">
-            © {currentYear} Cristal Glass — Engenharia de vidros em {CLIENT_CONFIG.city}. Todos os direitos reservados.
+            © {currentYear} Duno — Engenharia de vidros em {CLIENT_CONFIG.city}. Todos os direitos reservados.
           </p>
           <div className="flex gap-8 opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all items-center">
             <div className="text-[10px] font-black tracking-widest">ABNT NBR</div>

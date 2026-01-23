@@ -43,10 +43,10 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             aria-label="Ir para a página inicial"
           >
             <div className={`w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 shadow-lg ${scrolled ? 'bg-brand-primary' : 'bg-slate-900 group-hover:bg-brand-primary'}`}>
-              C
+              D
             </div>
             <div className="flex flex-col items-start leading-tight">
-              <span className="text-sm md:text-base font-black tracking-tighter text-slate-900 uppercase">Cristal Glass</span>
+              <span className="text-sm md:text-base font-black tracking-tighter text-slate-900 uppercase">Duno</span>
               <span className="text-[8px] md:text-[9px] font-bold text-slate-400 uppercase tracking-widest">Vidraçaria Técnica</span>
             </div>
           </button>
@@ -88,13 +88,13 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               </div>
             </button>
           </div>
-        </div>
-      </header>
+        </div >
+      </header >
 
       {/* Mobile Menu Drawer - Full Screen UX */}
-      <div className={`fixed inset-0 bg-slate-950/20 backdrop-blur-sm z-[95] md:hidden transition-all duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsMenuOpen(false)} />
+      < div className={`fixed inset-0 bg-slate-950/20 backdrop-blur-sm z-[95] md:hidden transition-all duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsMenuOpen(false)} />
 
-      <div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      < div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="h-full flex flex-col pt-32 pb-12 px-10">
           <p className="text-[10px] font-black tracking-[0.4em] text-slate-500 uppercase mb-8">Navegação</p>
@@ -127,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };
