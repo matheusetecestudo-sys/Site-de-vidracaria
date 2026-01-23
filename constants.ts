@@ -18,7 +18,8 @@ export const CLIENT_CONFIG = {
 export const getWhatsAppLink = (origin: string, detail: string = "") => {
   const isGeneric = !detail || /botão|geral|menu|imediato|rápido|especialista/i.test(detail);
   const serviceText = isGeneric ? "" : ` para *${detail}*`;
-  const message = `Olá! Gostaria de solicitar um orçamento${serviceText}. Vim pelo site e aguardo o retorno. ✅`;
+  const time = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+  const message = `Olá! [${time}] Gostaria de solicitar um orçamento${serviceText}. ✅`;
 
   return `https://wa.me/${CLIENT_CONFIG.whatsapp}?text=${encodeURIComponent(message)}`;
 };
