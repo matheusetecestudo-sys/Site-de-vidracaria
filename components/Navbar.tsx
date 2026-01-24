@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
         <div className="container-precision flex justify-between items-center h-12">
 
           <button
-            onClick={() => handleNav('home')}
+            onClick={() => window.location.href = '/'}
             className="flex items-center gap-3 md:gap-4 group focus:outline-none"
             aria-label="Ir para a página inicial"
           >
