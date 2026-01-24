@@ -27,11 +27,11 @@ const AboutPage: React.FC = () => {
                 <span className="text-[10px] md:text-xs font-black text-brand-accent uppercase tracking-[0.4em]">Autoridade técnica</span>
                 <span className="w-12 h-[2px] bg-brand-accent"></span>
               </div>
-              <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter">
+              <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter !text-white">
                 Engenharia <br />
-                <span className="text-slate-400 italic">sem segredos.</span>
+                <span className="!text-slate-200 italic">sem segredos.</span>
               </h1>
-              <p className="text-xl md:text-3xl text-slate-200 font-medium leading-relaxed opacity-90 max-w-2xl">
+              <p className="text-xl md:text-3xl !text-slate-200 font-medium leading-relaxed opacity-90 max-w-2xl">
                 Mais que uma vidraçaria, somos especialistas em transformar ambientes with transparência, segurança estrutural e design de alto padrão.
               </p>
             </div>

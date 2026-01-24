@@ -49,16 +49,16 @@ const ContactPage: React.FC = () => {
                       </div>
                       <div className="flex flex-col">
                         <span className="text-xl font-black tracking-tight group-hover:text-white transition-colors">WhatsApp comercial</span>
-                        <span className="text-[10px] font-bold text-slate-300 uppercase tracking-widest group-hover:text-white/70 transition-colors">Resposta em até 15 minutos</span>
+                        <span className="text-[10px] font-bold !text-slate-300 uppercase tracking-widest group-hover:text-white/70 transition-colors">Resposta em até 15 minutos</span>
                       </div>
                     </div>
                     <svg className="w-8 h-8 text-white/20 group-hover:text-white/50 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                   </a>
 
                   <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
-                    <p className="text-[10px] font-bold text-slate-300 uppercase tracking-widest leading-none mb-6">Local de Atendimento</p>
-                    <p className="text-xl font-bold mb-4 text-white">{CLIENT_CONFIG.address}</p>
-                    <p className="text-slate-300 font-medium">Serviço imediato para toda Grande São Paulo e Interior.</p>
+                    <p className="text-[10px] font-bold !text-slate-300 uppercase tracking-widest leading-none mb-6">Local de Atendimento</p>
+                    <p className="text-xl font-bold mb-4 !text-white">{CLIENT_CONFIG.address}</p>
+                    <p className="!text-slate-300 font-medium">Serviço imediato para toda Grande São Paulo e Interior.</p>
                   </div>
                 </div>
 
