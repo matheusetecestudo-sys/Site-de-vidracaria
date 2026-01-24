@@ -12,6 +12,7 @@ const Gallery = lazy(() => import('./components/Gallery.tsx'));
 const Trust = lazy(() => import('./components/Trust.tsx'));
 const Testimonials = lazy(() => import('./components/Testimonials.tsx'));
 const FAQ = lazy(() => import('./components/FAQ.tsx'));
+const Differentiators = lazy(() => import('./components/Differentiators.tsx'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage.tsx'));
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'));
 const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
@@ -86,6 +87,7 @@ function App() {
             <Process />
             <Gallery />
             <FAQ />
+            <Differentiators />
             <Trust />
             <Testimonials />
           </div>
