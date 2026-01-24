@@ -13,6 +13,8 @@ const Trust = lazy(() => import('./components/Trust.tsx'));
 const Testimonials = lazy(() => import('./components/Testimonials.tsx'));
 const FAQ = lazy(() => import('./components/FAQ.tsx'));
 const Differentiators = lazy(() => import('./components/Differentiators.tsx'));
+const HowItWorks = lazy(() => import('./components/HowItWorks.tsx'));
+const Partners = lazy(() => import('./components/Partners.tsx'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage.tsx'));
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'));
 const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
@@ -83,7 +85,9 @@ function App() {
         {currentPage === 'home' && (
           <div className="flex flex-col">
             <Hero />
+            <Partners />
             <Services onNavigate={navigate} />
+            <HowItWorks />
             <Process />
             <Gallery />
             <FAQ />
