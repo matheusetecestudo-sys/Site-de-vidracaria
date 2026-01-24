@@ -12,24 +12,24 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-slate-950 text-slate-300 pt-12 pb-32 md:pb-12 border-t border-white/5 font-inter">
       <div className="container-precision">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center">
 
           {/* Coluna 1: Marca & Bio */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col items-center">
             <button
               onClick={() => onNavigate?.('home')}
-              className="group flex flex-col items-center md:items-start gap-1 focus:outline-none"
+              className="group flex flex-col items-center gap-1 focus:outline-none"
             >
               <span className="text-2xl font-black text-white tracking-tighter leading-none">Duno</span>
               <span className="text-brand-accent font-bold text-[10px] tracking-[0.3em] uppercase">Engenharia do vidro</span>
             </button>
-            <p className="text-base leading-relaxed max-w-xs !text-slate-200 mx-auto md:mx-0 font-medium">
+            <p className="text-base leading-relaxed max-w-xs !text-slate-200 mx-auto font-medium">
               Especialistas em engenharia vidreira de alto desempenho. Precisão técnica em box, espelhos e projetos sob medida em {CLIENT_CONFIG.city}.
             </p>
           </div>
 
           {/* Coluna 2: Serviços Principais */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col items-center">
             <h4 className="!text-white font-bold text-sm tracking-tight">Nossas especialidades</h4>
             <ul className="space-y-4">
               {mainServices.map((s) => (
@@ -47,24 +47,24 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Coluna 3: Institucional */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col items-center">
             <h4 className="!text-white font-bold text-sm tracking-tight">Empresa</h4>
             <ul className="space-y-4">
-              <li><button onClick={() => onNavigate?.('sobre')} className="text-base hover:text-brand-accent transition-colors text-left font-medium !text-slate-200 hover:!text-white opacity-100">Nossa história</button></li>
-              <li><button onClick={() => onNavigate?.('servicos')} className="text-base hover:text-brand-accent transition-colors text-left font-medium !text-slate-200 hover:!text-white opacity-100">Catálogo de serviços</button></li>
-              <li><button onClick={() => onNavigate?.('contato')} className="text-base hover:text-brand-accent transition-colors text-left font-medium !text-slate-200 hover:!text-white opacity-100">Fale com um técnico</button></li>
+              <li><button onClick={() => onNavigate?.('sobre')} className="text-base hover:text-brand-accent transition-colors font-medium !text-slate-200 hover:!text-white opacity-100">Nossa história</button></li>
+              <li><button onClick={() => onNavigate?.('servicos')} className="text-base hover:text-brand-accent transition-colors font-medium !text-slate-200 hover:!text-white opacity-100">Catálogo de serviços</button></li>
+              <li><button onClick={() => onNavigate?.('contato')} className="text-base hover:text-brand-accent transition-colors font-medium !text-slate-200 hover:!text-white opacity-100">Fale com um técnico</button></li>
             </ul>
           </div>
 
           {/* Coluna 4: Contato Rápido */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col items-center">
             <h4 className="!text-white font-bold text-sm tracking-tight">Atendimento comercial</h4>
-            <div className="space-y-6">
-              <div className="flex flex-col">
+            <div className="space-y-6 flex flex-col items-center">
+              <div className="flex flex-col items-center">
                 <span className="text-[10px] uppercase font-bold !text-slate-400 mb-1 tracking-widest">Telefone</span>
                 <span className="!text-white font-black text-xl">{CLIENT_CONFIG.phoneDisplay}</span>
               </div>
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center">
                 <a
                   href={getWhatsAppLink("Rodapé", "Atendimento Comercial")}
                   target="_blank"
@@ -83,11 +83,11 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="pt-12 border-t border-white/5 flex flex-col items-center gap-8 text-center">
           <p className="text-[11px] font-medium !text-slate-400">
             © {currentYear} Duno — Engenharia de vidros em {CLIENT_CONFIG.city}. Todos os direitos reservados.
           </p>
-          <div className="flex gap-8 opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all items-center">
+          <div className="flex gap-8 opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all items-center justify-center">
             <div className="text-[10px] font-black tracking-widest">ABNT NBR</div>
             <div className="text-[10px] font-black tracking-widest">SEGURANÇA CERTIFICADA</div>
           </div>

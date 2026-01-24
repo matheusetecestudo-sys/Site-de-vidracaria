@@ -99,15 +99,15 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
       < div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
-        <div className="h-full flex flex-col pt-32 pb-12 px-10">
-          <p className="text-[10px] font-black tracking-[0.4em] text-slate-500 uppercase mb-8">Navegação</p>
+        <div className="h-full flex flex-col pt-32 pb-12 px-10 items-center justify-center">
+          <p className="text-[10px] font-black tracking-[0.4em] text-slate-500 uppercase mb-8 text-center">Navegação</p>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-full">
             {navItems.map((item, idx) => (
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-4xl font-black tracking-tighter text-left py-4 transition-all duration-500 touch-manipulation focus:outline-none ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-12 opacity-0'
+                className={`text-4xl font-black tracking-tighter text-center py-4 transition-all duration-500 touch-manipulation focus:outline-none ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[50px] opacity-0'
                   } ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-900'}`}
                 style={{ transitionDelay: `${idx * 75}ms` }}
               >
@@ -116,11 +116,11 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             ))}
           </div>
 
-          <div className="mt-auto space-y-8">
-            <div className={`w-full h-[1px] bg-slate-100 transition-all duration-1000 origin-left ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
+          <div className="mt-auto space-y-8 w-full flex flex-col items-center">
+            <div className={`w-full h-[1px] bg-slate-100 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
 
-            <div className={`transition-all duration-700 delay-400 ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-4">Atendimento Técnico</p>
+            <div className={`transition-all duration-700 delay-400 w-full flex flex-col items-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-4 text-center">Atendimento Técnico</p>
               <a
                 href={getWhatsAppLink("Menu Mobile", "Atendimento Técnico")}
                 className="w-full h-16 flex items-center justify-center bg-brand-whatsapp text-white rounded-2xl font-black text-lg btn-interact shadow-2xl shadow-brand-whatsapp/20 whitespace-nowrap"

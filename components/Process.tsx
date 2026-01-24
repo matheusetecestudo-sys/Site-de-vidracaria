@@ -35,7 +35,7 @@ const Process: React.FC = () => {
           </div>
           <h2 className="text-4xl md:text-6xl font-black !text-brand-accent tracking-tight leading-[1] mb-8">
             Do Projeto à <br />
-            <span className="!text-brand-accent opacity-80 italic">Entrega Final.</span>
+            <span className="text-slate-400 font-medium italic">Entrega Final.</span>
           </h2>
           <p className="!text-slate-200 max-w-lg font-medium text-lg leading-relaxed mx-auto">
             Eficiência técnica para garantir que seu projeto seja executado sem erros e com acabamento impecável.
@@ -44,13 +44,13 @@ const Process: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-10 lg:gap-16 items-baseline">
           {steps.map((step, index) => (
-            <div key={index} className="reveal active group flex flex-col">
-              <div className="flex items-center gap-6 mb-10">
-                <span className="text-5xl font-black text-white group-hover:text-brand-accent transition-all duration-500 italic leading-none">
+            <div key={index} className="reveal active group flex flex-col items-center text-center">
+              <div className="flex flex-col items-center gap-6 mb-10 w-full">
+                <span className="text-6xl font-black !text-brand-accent group-hover:scale-110 transition-all duration-500 italic leading-none">
                   {step.num}
                 </span>
-                <div className="h-[1px] flex-1 bg-white/20 group-hover:bg-brand-accent/40 transition-all duration-500"></div>
-                <div className="text-brand-accent transform group-hover:scale-110 transition-transform">
+                <div className="w-12 h-[2px] bg-brand-accent/30 group-hover:bg-brand-accent transition-all duration-500"></div>
+                <div className="text-white transform group-hover:scale-110 transition-transform bg-white/5 p-4 rounded-2xl">
                   {step.icon}
                 </div>
               </div>
@@ -63,8 +63,8 @@ const Process: React.FC = () => {
         </div>
 
         <div className="mt-16 reveal active border-t border-white/5 pt-16">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-            <div className="text-center md:text-left">
+          <div className="flex flex-col items-center text-center gap-12">
+            <div className="text-center">
               <p className="!text-white text-2xl font-black mb-2 tracking-tight leading-none">Pronto para começar?</p>
               <p className="!text-slate-200 font-medium">Fale agora com nosso time técnico profissional.</p>
             </div>

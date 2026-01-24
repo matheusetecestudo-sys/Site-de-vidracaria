@@ -13,9 +13,9 @@ const FAQ: React.FC = () => {
             <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Tire suas dúvidas</span>
             <span className="w-10 h-[1px] bg-brand-accent"></span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight leading-[1.1]">
+          <h2 className="text-4xl md:text-5xl font-black !text-brand-accent mb-8 tracking-tight leading-[1.1]">
             Suporte e <br />
-            <span className="text-slate-400 font-medium">Esclarecimentos.</span>
+            <span className="!text-slate-400 font-medium">Esclarecimentos.</span>
           </h2>
         </div>
 
@@ -28,18 +28,18 @@ const FAQ: React.FC = () => {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 md:p-10 text-left group"
+                className="w-full flex flex-col items-center justify-center p-6 md:p-10 text-center group relative"
               >
                 <span className={`text-lg md:text-xl font-bold transition-colors duration-300 ${openIndex === index ? 'text-brand-accent' : 'text-slate-900 group-hover:text-brand-accent'}`}>
                   {item.question}
                 </span>
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-brand-primary text-white rotate-180 shadow-lg' : 'bg-slate-50 text-slate-300'}`}>
+                <div className={`mt-6 w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-brand-primary text-white rotate-180 shadow-lg' : 'bg-slate-50 text-slate-300'}`}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
                 </div>
               </button>
 
               <div className={`transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
-                <div className="p-6 md:p-10 pt-0 text-slate-500 text-lg font-medium leading-relaxed border-t border-slate-50/50">
+                <div className="p-6 md:p-10 pt-0 text-slate-500 text-lg font-medium leading-relaxed border-t border-slate-50/50 text-center">
                   {item.answer}
                 </div>
               </div>

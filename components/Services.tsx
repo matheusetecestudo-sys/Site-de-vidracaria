@@ -13,11 +13,11 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
               <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Nossas Especialidades</span>
               <span className="w-10 h-[1px] bg-brand-accent"></span>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
               Soluções Técnicas <br />
-              <span className="text-slate-400 font-medium">em Vidros Modernos.</span>
+              <span className="text-slate-400 opacity-60 font-medium">em Vidros Modernos.</span>
             </h2>
-            <p className="text-slate-500 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
+            <p className="!text-slate-400 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
               Equilíbrio perfeito entre tecnologia vidreira e sofisticação arquitetônica para seu ambiente.
             </p>
             <div className="flex justify-center">
@@ -52,13 +52,13 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                 </div>
               </div>
 
-              <div className="p-8 md:p-12 flex flex-col flex-grow">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-2xl font-black text-slate-700 group-hover:text-brand-accent transition-colors italic leading-none">0{index + 1}</span>
-                  <h3 className="text-2xl md:text-3xl font-black text-slate-900 leading-none">{service.title}</h3>
+              <div className="p-8 md:p-12 flex flex-col flex-grow items-center text-center">
+                <div className="flex flex-col items-center gap-4 mb-6">
+                  <span className="text-2xl font-black text-slate-400 group-hover:!text-brand-accent transition-colors italic leading-none">0{index + 1}</span>
+                  <h3 className="text-2xl md:text-3xl font-black !text-brand-accent leading-none">{service.title}</h3>
                 </div>
 
-                <p className="text-slate-600 text-lg font-medium leading-relaxed mb-10 flex-grow">
+                <p className="!text-slate-400 text-lg font-medium leading-relaxed mb-10 flex-grow">
                   {service.description}
                 </p>
 

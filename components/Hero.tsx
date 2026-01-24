@@ -17,12 +17,12 @@ const Hero: React.FC = () => {
               <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
             </div>
 
-            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black text-slate-900 leading-[1.1] md:leading-[0.85] mb-8 tracking-tight">
+            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-8 tracking-tight text-center">
               A Engenharia do <br className="hidden md:block" />
-              <span className="text-slate-400 font-medium whitespace-nowrap">Vidro Moderno.</span>
+              <span className="!text-brand-accent opacity-60 font-medium whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mb-16 lg:mx-auto">
+            <p className="text-lg md:text-2xl !text-slate-400 font-medium leading-relaxed max-w-2xl mb-16 mx-auto text-center">
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 

@@ -17,11 +17,11 @@ const ServicesPage: React.FC = () => {
                 <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Portfólio Completo</span>
                 <span className="w-10 h-[1px] bg-brand-accent"></span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
+              <h1 className="text-5xl md:text-7xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
                 Soluções para <br />
-                <span className="text-slate-400 font-medium">Cada Detalhe.</span>
+                <span className="!text-slate-400 font-medium">Cada Detalhe.</span>
               </h1>
-              <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-xl mx-auto">
+              <p className="text-xl !text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
                 Vidraçaria técnica com foco em segurança, durabilidade e acabamento premium para projetos residenciais e comerciais.
               </p>
             </div>
@@ -47,9 +47,9 @@ const ServicesPage: React.FC = () => {
                   <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                <div className="p-10 flex flex-col flex-grow">
-                  <h3 className="text-2xl font-black text-slate-900 mb-6 leading-tight">{service.title}</h3>
-                  <p className="text-slate-500 font-medium leading-relaxed mb-10 flex-grow text-base opacity-80">
+                <div className="p-10 flex flex-col flex-grow items-center text-center">
+                  <h3 className="text-2xl font-black !text-brand-accent mb-6 leading-tight">{service.title}</h3>
+                  <p className="!text-slate-400 font-medium leading-relaxed mb-10 flex-grow text-base opacity-80">
                     {service.description}
                   </p>
                   <a
@@ -80,7 +80,7 @@ const ServicesPage: React.FC = () => {
                     <span className="w-10 h-[2px] bg-brand-accent"></span>
                   </div>
                   <h2 className="text-3xl md:text-6xl font-black !text-brand-accent mb-8 leading-[1] tracking-tight">
-                    Projetos em <br /> <span className="!text-brand-accent opacity-80 italic">Alta Escala.</span>
+                    Projetos em <br /> <span className="text-slate-400 font-medium italic">Alta Escala.</span>
                   </h2>
                   <p className="!text-slate-200 font-medium text-lg md:text-xl mb-12 leading-relaxed max-w-xl mx-auto">
                     Atendemos construtoras, escritórios e condomínios com logística própria e preços competitivos de fábrica.

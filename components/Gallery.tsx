@@ -13,9 +13,9 @@ const Gallery: React.FC = () => {
             <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Catálogo Completo</span>
             <span className="w-10 h-[1px] bg-brand-accent"></span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 tracking-tight leading-[1]">
+          <h2 className="text-4xl md:text-6xl font-black !text-brand-accent mb-8 tracking-tight leading-[1] text-center">
             Portfólio de <br />
-            <span className="text-slate-400 font-medium">Soluções Vidreiras.</span>
+            <span className="!text-slate-400 font-medium">Soluções Vidreiras.</span>
           </h2>
         </div>
 
