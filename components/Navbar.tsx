@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             className="flex items-center gap-3 md:gap-4 group focus:outline-none"
             aria-label="Ir para a página inicial"
           >
-            <div className={`w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 shadow-lg ${scrolled ? 'bg-brand-primary' : 'bg-slate-900 group-hover:bg-brand-primary'}`}>
+            <div className={`w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-white font-black text-lg transition-all duration-500 shadow-lg ${scrolled ? 'bg-brand-accent' : 'bg-brand-accent/90 group-hover:bg-brand-accent'}`}>
               D
             </div>
             <div className="flex flex-col items-start leading-tight">
@@ -118,16 +118,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
           <div className="mt-auto space-y-8 w-full flex flex-col items-center">
             <div className={`w-full h-[1px] bg-slate-100 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
-
-            <div className={`transition-all duration-700 delay-400 w-full flex flex-col items-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-4 text-center">Atendimento Técnico</p>
-              <a
-                href={getWhatsAppLink("Menu Mobile", "Atendimento Técnico")}
-                className="w-full h-16 flex items-center justify-center bg-brand-whatsapp text-white rounded-2xl font-black text-lg btn-interact shadow-2xl shadow-brand-whatsapp/20 whitespace-nowrap"
-              >
-                Chamar no WhatsApp
-              </a>
-            </div>
           </div>
         </div>
       </div >

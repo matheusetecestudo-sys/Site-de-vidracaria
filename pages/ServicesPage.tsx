@@ -33,7 +33,7 @@ const ServicesPage: React.FC = () => {
             {ALL_SERVICES.map((service, index) => (
               <div
                 key={service.id}
-                className="reveal active group flex flex-col bg-white rounded-[2.5rem] border border-slate-200 overflow-hidden hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.12)] transition-all duration-700 btn-interact"
+                className="reveal active group flex flex-col bg-white rounded-[2.5rem] border-2 border-slate-200 overflow-hidden hover:shadow-[0_45px_90px_-15px_rgba(0,0,0,0.15)] transition-all duration-700 btn-interact shadow-md"
                 style={{ transitionDelay: `${index * 50}ms` }}
               >
                 <div className="aspect-[4/3] overflow-hidden relative">

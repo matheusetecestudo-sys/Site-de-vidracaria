@@ -10,33 +10,33 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
           <div className="lg:col-span-12">
             <div className="flex items-center justify-center gap-3 mb-6">
               <span className="w-10 h-[1px] bg-brand-accent"></span>
-              <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Nossas Especialidades</span>
+              <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Os mais requisitados</span>
               <span className="w-10 h-[1px] bg-brand-accent"></span>
             </div>
             <h2 className="text-4xl md:text-6xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
-              Soluções Técnicas <br />
-              <span className="text-slate-400 opacity-60 font-medium">em Vidros Modernos.</span>
+              Serviços <br />
+              <span className="text-slate-400 font-medium italic">Mais Procurados.</span>
             </h2>
             <p className="!text-slate-400 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
-              Equilíbrio perfeito entre tecnologia vidreira e sofisticação arquitetônica para seu ambiente.
+              Confira as soluções com maior demanda e excelência técnica garantida para seu ambiente.
             </p>
             <div className="flex justify-center">
               <button
                 onClick={() => onNavigate?.('servicos')}
                 className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
               >
-                Ver catálogo técnico
+                Ver catálogo completo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </button>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {FEATURED_SERVICES.map((service, index) => (
             <div
               key={service.id}
-              className="reveal active group flex flex-col bg-slate-50 rounded-[2.5rem] overflow-hidden border border-slate-100/50 hover:shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] transition-all duration-700 btn-interact"
+              className="reveal active group flex flex-col bg-white rounded-[2.5rem] overflow-hidden border-2 border-slate-200 hover:shadow-[0_40px_80px_-16px_rgba(0,0,0,0.15)] transition-all duration-700 btn-interact shadow-lg"
             >
               <div className="aspect-[16/10] overflow-hidden relative">
                 <img
@@ -58,7 +58,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                   <h3 className="text-2xl md:text-3xl font-black !text-brand-accent leading-none">{service.title}</h3>
                 </div>
 
-                <p className="!text-slate-400 text-lg font-medium leading-relaxed mb-10 flex-grow">
+                <p className="!text-slate-600 text-lg font-medium leading-relaxed mb-10 flex-grow">
                   {service.description}
                 </p>
 
@@ -88,11 +88,11 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                 "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=128&h=128&auto=format&fit=crop&fm=webp"
               ].map((url, i) => (
                 <div key={i} className="w-8 h-8 rounded-full border-2 border-slate-900 bg-slate-800 overflow-hidden">
-                  <img src={url} alt="Técnico Certificado" className="w-full h-full object-cover opacity-80" decoding="async" loading="lazy" />
+                  <img src={url} alt="Técnico Certificado" className="w-full h-full object-cover" decoding="async" loading="lazy" />
                 </div>
               ))}
             </div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80">Equipe técnica própria certificada pela ABNT.</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white">Equipe técnica própria certificada pela ABNT.</p>
           </div>
         </div>
 
