@@ -12,7 +12,7 @@ const Process: React.FC = () => {
     },
     {
       num: "02",
-      title: "Logística",
+      title: "Medição técnica",
       desc: "Medição técnica a laser e agendamento imediato da produção.",
       icon: <Ruler className="w-6 h-6" />
     },

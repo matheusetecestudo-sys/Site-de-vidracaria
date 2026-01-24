@@ -68,7 +68,7 @@ export const ALL_SERVICES: Service[] = [
   {
     id: 'portas-vidro',
     title: "Portas de vidro",
-    description: "Portas de abrir ou correr com ferragens modernas para residências e empresas.",
+    description: "Portas de abrir ou correr com acabamentos modernos para residências e empresas.",
     imageUrl: "/images/divisorias.jpg"
   },
   {

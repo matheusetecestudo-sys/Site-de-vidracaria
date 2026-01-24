@@ -9,7 +9,7 @@ const AboutPage: React.FC = () => {
   const values = [
     { t: "Tradição técnica", d: "Duas décadas entregando precisão milimétrica em cada projeto realizado." },
     { t: "Compromisso real", d: "Prazos cumpridos à risca com logística própria e equipe altamente qualificada." },
-    { t: "Materiais elite", d: "Trabalhamos apenas com vidros certificados e ferragens de alto padrão." },
+    { t: "Materiais elite", d: "Trabalhamos apenas com vidros certificados e acessórios de alto padrão." },
     { t: "Preço direto", d: "Economia real comprando direto de quem domina toda a engenharia do vidro." }
   ];
 

@@ -4,7 +4,7 @@ const Differentiators: React.FC = () => {
     const diffs = [
         {
             title: "Garantia Estendida",
-            description: "Segurança total com até 5 anos de garantia em ferragens e 12 meses em vedações técnica.",
+            description: "Segurança total com até 5 anos de garantia em componentes e 12 meses em vedações técnica.",
             icon: (
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-2.066 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946 2.066 3.42 3.42 0 012.743 2.742 3.42 3.42 0 002.066 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-2.066 1.946 3.42 3.42 0 01-2.743 2.743 3.42 3.42 0 00-1.946 2.066 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-2.066 3.42 3.42 0 01-2.743-2.743 3.42 3.42 0 00-2.066-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 002.066-1.946 3.42 3.42 0 012.743-2.742z" /></svg>
             )
