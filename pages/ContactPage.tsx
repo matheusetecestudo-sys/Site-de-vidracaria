@@ -11,16 +11,17 @@ const ContactPage: React.FC = () => {
       <main className="pt-24 pb-32">
         <header className="py-16 bg-slate-50 border-b border-slate-100 mb-16">
           <div className="container-precision">
-            <div className="max-w-3xl reveal active">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="max-w-3xl reveal active mx-auto text-center">
+              <div className="flex items-center justify-center gap-3 mb-6">
                 <span className="w-10 h-[1px] bg-brand-accent"></span>
                 <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Atendimento Direto</span>
+                <span className="w-10 h-[1px] bg-brand-accent"></span>
               </div>
               <h1 className="text-4xl md:text-7xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
                 Vamos projetar <br />
                 <span className="text-slate-400 font-medium">Sua ideia.</span>
               </h1>
-              <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-xl">
+              <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-xl mx-auto">
                 Escolha o canal mais rápido para falar com nossos especialistas técnicos.
               </p>
             </div>

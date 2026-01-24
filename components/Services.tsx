@@ -6,28 +6,29 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
     <section id="servicos" className="py-10 pb-16 md:py-12 bg-white relative overflow-hidden">
       <div className="container-precision">
 
-        <div className="grid lg:grid-cols-12 gap-8 mb-8 reveal active items-end">
-          <div className="lg:col-span-8">
-            <div className="flex items-center gap-3 mb-6">
+        <div className="grid lg:grid-cols-12 gap-8 mb-16 reveal active items-center text-center">
+          <div className="lg:col-span-12">
+            <div className="flex items-center justify-center gap-3 mb-6">
               <span className="w-10 h-[1px] bg-brand-accent"></span>
               <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Nossas Especialidades</span>
+              <span className="w-10 h-[1px] bg-brand-accent"></span>
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1] mb-8 tracking-tight">
               Soluções Técnicas <br />
               <span className="text-slate-400 font-medium">em Vidros Modernos.</span>
             </h2>
-            <p className="text-slate-500 font-medium text-lg md:text-xl leading-relaxed max-w-xl">
+            <p className="text-slate-500 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
               Equilíbrio perfeito entre tecnologia vidreira e sofisticação arquitetônica para seu ambiente.
             </p>
-          </div>
-          <div className="lg:col-span-4 flex justify-end">
-            <button
-              onClick={() => onNavigate?.('servicos')}
-              className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
-            >
-              Ver catálogo técnico
-              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </button>
+            <div className="flex justify-center">
+              <button
+                onClick={() => onNavigate?.('servicos')}
+                className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+              >
+                Ver catálogo técnico
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              </button>
+            </div>
           </div>
         </div>
 
