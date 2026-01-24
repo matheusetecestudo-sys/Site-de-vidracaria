@@ -54,7 +54,7 @@ const Process: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-lg font-bold text-white mb-6 uppercase tracking-widest leading-tight">{step.title}</h3>
-              <p className="text-slate-300 leading-relaxed text-base font-medium">
+              <p className="text-slate-200 leading-relaxed text-base font-medium">
                 {step.desc}
               </p>
             </div>
@@ -65,7 +65,7 @@ const Process: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="text-center md:text-left">
               <p className="text-white text-2xl font-black mb-2 tracking-tight leading-none">Pronto para começar?</p>
-              <p className="text-slate-400 font-medium">Fale agora com nosso time técnico profissional.</p>
+              <p className="text-slate-200 font-medium">Fale agora com nosso time técnico profissional.</p>
             </div>
             <a
               href={getWhatsAppLink("Início", "Seção Processo/Metodologia")}

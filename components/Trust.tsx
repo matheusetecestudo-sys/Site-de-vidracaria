@@ -22,9 +22,9 @@ const Trust: React.FC = () => {
                 <span className="text-[10px] font-bold text-brand-accent uppercase tracking-[0.3em]">Credibilidade Técnica</span>
               </div>
               <h2 className="text-4xl md:text-7xl font-black text-white mb-10 leading-[1] tracking-tight">
-                O Padrão <br /> <span className="text-slate-500 italic">de Excelência.</span>
+                O Padrão <br /> <span className="text-slate-300 italic">de Excelência.</span>
               </h2>
-              <p className="text-slate-400 font-medium text-lg md:text-xl mb-12 leading-relaxed max-w-lg">
+              <p className="text-slate-200 font-medium text-lg md:text-xl mb-12 leading-relaxed max-w-lg">
                 Projetos que exigem rigor técnico e acabamento de alto luxo. Unimos o preço direto de usina à precisão de engenharia.
               </p>
 
@@ -32,7 +32,7 @@ const Trust: React.FC = () => {
                 {stats.map((stat, i) => (
                   <div key={i} className="flex flex-col">
                     <div className="text-2xl md:text-3xl font-black text-white mb-1 tracking-tight italic">{stat.value}</div>
-                    <div className="text-[9px] font-bold text-slate-400 uppercase tracking-widest leading-tight">{stat.label}</div>
+                    <div className="text-[9px] font-bold text-slate-300 uppercase tracking-widest leading-tight">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -46,10 +46,10 @@ const Trust: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white tracking-tight leading-none mb-1">Análise Técnica</h3>
-                    <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Consultoria Gratuita</p>
+                    <p className="text-slate-200 text-[10px] font-bold uppercase tracking-widest">Consultoria Gratuita</p>
                   </div>
                 </div>
-                <p className="text-slate-300 mb-10 font-medium text-base leading-relaxed">
+                <p className="text-white mb-10 font-medium text-base leading-relaxed">
                   Enviamos um especialista para avaliar seu projeto sem compromisso. Segurança e economia desde a primeira conversa.
                 </p>
                 <a

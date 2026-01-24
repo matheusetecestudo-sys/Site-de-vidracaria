@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const mainServices = ALL_SERVICES.slice(0, 5);
 
   return (
-    <footer className="bg-slate-950 text-slate-400 pt-12 pb-32 md:pb-12 border-t border-white/5 font-inter">
+    <footer className="bg-slate-950 text-slate-300 pt-12 pb-32 md:pb-12 border-t border-white/5 font-inter">
       <div className="container-precision">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center md:text-left">
 
@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <span className="text-2xl font-black text-white tracking-tighter leading-none">Duno</span>
               <span className="text-brand-accent font-bold text-[10px] tracking-[0.3em] uppercase">Engenharia do vidro</span>
             </button>
-            <p className="text-base leading-relaxed max-w-xs opacity-80 mx-auto md:mx-0">
+            <p className="text-base leading-relaxed max-w-xs text-slate-300 mx-auto md:mx-0">
               Especialistas em engenharia vidreira de alto desempenho. Precisão técnica em box, espelhos e projetos sob medida em {CLIENT_CONFIG.city}.
             </p>
           </div>
