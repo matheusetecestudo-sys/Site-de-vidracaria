@@ -12,10 +12,10 @@ const ServicesPage: React.FC = () => {
         <header className="py-12 bg-slate-50 border-b border-slate-100 mb-12">
           <div className="container-precision">
             <div className="max-w-3xl reveal active mx-auto text-center">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <span className="w-10 h-[1px] bg-brand-accent"></span>
-                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Portfólio Completo</span>
-                <span className="w-10 h-[1px] bg-brand-accent"></span>
+              <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
+                <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Portfólio Completo</span>
+                <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
               </div>
               <h1 className="text-5xl md:text-7xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
                 Soluções para <br />
@@ -74,10 +74,10 @@ const ServicesPage: React.FC = () => {
 
               <div className="relative z-10 grid lg:grid-cols-12 gap-16 items-center">
                 <div className="lg:col-span-12 flex flex-col items-center text-center">
-                  <div className="flex items-center justify-center gap-4 mb-8">
-                    <span className="w-10 h-[2px] bg-brand-accent"></span>
-                    <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Divisão Corporativa</span>
-                    <span className="w-10 h-[2px] bg-brand-accent"></span>
+                  <div className="flex items-center justify-center gap-2 md:gap-4 mb-12">
+                    <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                    <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Pronto para começar?</span>
+                    <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
                   </div>
                   <h2 className="text-3xl md:text-6xl font-black !text-brand-accent mb-8 leading-[1] tracking-tight">
                     Projetos em <br /> <span className="text-slate-400 font-medium italic">Alta Escala.</span>
