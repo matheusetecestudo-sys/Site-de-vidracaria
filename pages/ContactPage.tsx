@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
                   <span className="text-[10px] font-bold text-brand-accent uppercase tracking-[0.3em]">Unidade São Paulo</span>
                   <span className="w-10 h-[2px] bg-brand-accent"></span>
                 </div>
-                <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.05] tracking-tight uppercase">
+                <h2 className="text-4xl md:text-7xl font-black !text-brand-secondary mb-12 leading-[1.05] tracking-tight uppercase">
                   Sede <br className="hidden md:block" />
                   <span className="text-slate-400 font-medium italic lowercase">corporativa.</span>
                 </h2>
@@ -174,7 +174,7 @@ const ContactPage: React.FC = () => {
                   <span className="w-10 h-[2px] bg-brand-accent"></span>
                 </div>
 
-                <h2 className="text-3xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.1] tracking-tighter uppercase max-w-4xl">
+                <h2 className="text-3xl md:text-7xl font-black !text-brand-secondary mb-12 leading-[1.1] tracking-tighter uppercase max-w-4xl">
                   Paz de Espírito <br className="hidden md:block" />
                   <span className="text-slate-200 font-medium italic lowercase">estrutural.</span>
                 </h2>
