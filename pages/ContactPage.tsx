@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
                 <span className="w-10 h-[2px] bg-brand-accent"></span>
               </div>
 
-              <h1 className="text-4xl md:text-7xl lg:text-[100px] font-black !text-brand-secondary leading-[1] md:leading-[0.85] mb-8 tracking-tight">
+              <h1 className="text-4xl md:text-7xl lg:text-[100px] font-black !text-brand-accent leading-[1] md:leading-[0.85] mb-8 tracking-tight">
                 Canais de <br className="hidden md:block" />
                 <span className="text-slate-400 font-medium italic whitespace-nowrap">Comunicação.</span>
               </h1>
@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
                   <span className="text-[10px] font-bold text-brand-accent uppercase tracking-[0.3em]">Unidade São Paulo</span>
                   <span className="w-10 h-[2px] bg-brand-accent"></span>
                 </div>
-                <h2 className="text-4xl md:text-7xl font-black !text-brand-secondary mb-12 leading-[1.05] tracking-tight uppercase">
+                <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.05] tracking-tight uppercase">
                   Sede <br className="hidden md:block" />
                   <span className="text-slate-400 font-medium italic lowercase">corporativa.</span>
                 </h2>
@@ -105,7 +105,7 @@ const ContactPage: React.FC = () => {
               <div className="lg:col-span-6 reveal active flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="space-y-8 w-full">
                   <div className="space-y-6">
-                    <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-secondary leading-[0.9] tracking-tighter">
+                    <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-accent leading-[0.9] tracking-tighter">
                       O que ter <br className="hidden md:block" />
                       <span className="text-slate-400 font-medium italic">em mãos?</span>
                     </h2>
@@ -174,7 +174,7 @@ const ContactPage: React.FC = () => {
                   <span className="w-10 h-[2px] bg-brand-accent"></span>
                 </div>
 
-                <h2 className="text-3xl md:text-7xl font-black !text-brand-secondary mb-12 leading-[1.1] tracking-tighter uppercase max-w-4xl">
+                <h2 className="text-3xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.1] tracking-tighter uppercase max-w-4xl">
                   Paz de Espírito <br className="hidden md:block" />
                   <span className="text-slate-200 font-medium italic lowercase">estrutural.</span>
                 </h2>
