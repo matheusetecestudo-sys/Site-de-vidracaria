@@ -78,7 +78,7 @@ const ContactPage: React.FC = () => {
                     </div>
                     <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">Horário Operacional</p>
                     <p className="text-xl md:text-2xl font-black !text-white tracking-tight">09:00 - 18:00</p>
-                    <p className="text-sm font-black text-brand-accent uppercase tracking-widest mt-2">Segunda a Sábado</p>
+                    <p className="text-sm font-black text-white uppercase tracking-widest mt-2 opacity-80">Segunda a Sábado</p>
                   </div>
 
                   <div className="flex flex-col items-center text-center group md:col-span-2 lg:col-span-1">
