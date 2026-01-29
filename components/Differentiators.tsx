@@ -36,10 +36,10 @@ const Differentiators: React.FC = () => {
         <section className="py-20 md:py-32 bg-slate-50 relative overflow-hidden">
             <div className="container-precision text-center">
                 <header className="mb-20 reveal active max-w-2xl mx-auto">
-                    <div className="flex items-center justify-center gap-3 mb-6">
-                        <span className="w-8 h-[1px] bg-brand-accent"></span>
-                        <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest text-center">Diferencial Duno</span>
-                        <span className="w-8 h-[1px] bg-brand-accent"></span>
+                    <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
+                        <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                        <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Diferencial Duno</span>
+                        <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-black !text-brand-accent mb-8 tracking-tight leading-tight">
                         Por que escolher <br />
