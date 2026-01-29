@@ -10,7 +10,7 @@ const ContactPage: React.FC = () => {
     <div className="bg-white min-h-screen font-inter">
       <main className="pt-24">
 
-        {/* --- PREMIUM HERO SECTION (Light & Clean to match Home Hero) --- */}
+        {/* --- HERO SECTION (Light & Clean) --- */}
         <section className="relative pt-20 pb-12 md:pt-32 md:pb-20 bg-slate-50 overflow-hidden">
           <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[120%] bg-white skew-x-[-12deg] z-0 pointer-events-none hidden md:block" />
 
@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
             <div className="reveal active text-center flex flex-col items-center">
               <div className="flex items-center justify-center gap-3 mb-6">
                 <span className="w-10 h-[1px] bg-brand-accent"></span>
-                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Consultoria Estratégica</span>
+                <span className="text-[10px] font-bold text-brand-accent uppercase tracking-widest">Consultoria Técnica</span>
                 <span className="w-10 h-[1px] bg-brand-accent"></span>
               </div>
 
@@ -38,7 +38,7 @@ const ContactPage: React.FC = () => {
                 className="w-full sm:w-auto h-24 flex items-center justify-center gap-6 px-16 bg-brand-accent text-white rounded-[2.5rem] font-black text-2xl btn-interact shadow-2xl shadow-brand-accent/40 whitespace-nowrap transition-all duration-500 hover:scale-[1.05]"
               >
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 outline-none" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.433h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                 </div>
@@ -95,63 +95,70 @@ const ContactPage: React.FC = () => {
           </div>
         </section>
 
-        {/* --- PREPARATION BLOCK (GREEN with WHITE as requested) --- */}
-        <section className="py-16 md:py-24 bg-white overflow-hidden">
+        {/* --- PREPARATION BLOCK (White Background with Green/Black Content) --- */}
+        <section className="py-24 bg-white overflow-hidden border-t border-slate-50">
           <div className="container-precision">
-            <div className="bg-brand-accent rounded-[3.5rem] p-10 md:p-24 overflow-hidden relative reveal active shadow-3xl shadow-brand-accent/30">
-              <div className="absolute top-0 right-0 w-[50%] h-[150%] bg-white/5 skew-x-[-15deg] pointer-events-none" />
+            <div className="grid lg:grid-cols-12 gap-16 md:gap-32 items-center">
 
-              <div className="relative z-10 grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
-                <div className="lg:col-span-6 space-y-12">
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <span className="w-12 h-[2px] bg-white"></span>
-                      <span className="text-[11px] font-black text-white uppercase tracking-[0.4em]">Logística Própria</span>
-                    </div>
-                    <h2 className="text-4xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter">
-                      O que ter <br />
-                      <span className="text-slate-900/40 font-medium italic">em mãos?</span>
-                    </h2>
+              {/* Info Column */}
+              <div className="lg:col-span-6 reveal active space-y-16">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <span className="w-12 h-[2px] bg-brand-accent"></span>
+                    <span className="text-[11px] font-black text-brand-accent uppercase tracking-[0.4em]">Logística Própria</span>
                   </div>
-
-                  <div className="space-y-10">
-                    {[
-                      { t: "Medidas Gerais", d: "Largura e altura aproximadas do local desejado." },
-                      { t: "Evidência Visual", d: "Fotos ou vídeos facilitam a análise estrutural." },
-                      { t: "Estética", d: "Cor de perfis e ferragens (Inox, Preto, Prata)." }
-                    ].map((item, i) => (
-                      <div key={i} className="flex gap-8 group">
-                        <div className="w-14 h-14 rounded-2xl bg-white flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-xl transition-all duration-500 group-hover:scale-110">
-                          0{i + 1}
-                        </div>
-                        <div className="pt-2">
-                          <h4 className="text-xl font-black text-white mb-2 uppercase tracking-tight">{item.t}</h4>
-                          <p className="text-white/80 font-medium leading-relaxed">{item.d}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black text-brand-accent leading-[0.9] tracking-tighter">
+                    O que ter <br />
+                    <span className="text-slate-400 font-medium italic">em mãos?</span>
+                  </h2>
+                  <p className="text-xl md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-xl">
+                    Para um orçamento técnico imediato, forneça as seguintes informações:
+                  </p>
                 </div>
 
-                {/* Map Section within the Green Box Container */}
-                <div className="lg:col-span-6 relative h-[500px] md:h-[650px] w-full">
-                  <div className="absolute inset-0 rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white/20 group h-full bg-slate-900">
-                    <iframe
-                      title="Geolocalização"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117025.21557007722!2d-46.72759902325372!3d-23.56681023214845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d344a1e93%3A0xc3f58e1762c4c82c!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
-                      className="absolute inset-0 w-full h-full grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out z-10"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                    ></iframe>
+                <div className="space-y-10">
+                  {[
+                    { t: "Medidas Gerais", d: "Largura e altura aproximadas do vão desejado." },
+                    { t: "Evidência Visual", d: "Fotos do local facilitam a análise estrutural rápida." },
+                    { t: "Estética", d: "Cor de perfis e ferragens (Inox, Preto, Prata)." }
+                  ].map((item, i) => (
+                    <div key={i} className="flex gap-8 group">
+                      <div className="w-14 h-14 rounded-2xl bg-white border-2 border-slate-100 flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-lg transition-all duration-500 group-hover:border-brand-accent group-hover:bg-brand-accent group-hover:text-white">
+                        0{i + 1}
+                      </div>
+                      <div className="pt-1">
+                        <h4 className="text-xl font-black text-slate-900 mb-2 uppercase tracking-tight">{item.t}</h4>
+                        <p className="text-slate-500 font-medium leading-relaxed">{item.d}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-                    <div className="absolute bottom-6 left-6 right-6 bg-slate-950/90 backdrop-blur-xl p-6 rounded-2xl border border-white/10 text-white z-20 shadow-2xl">
-                      <p className="text-[10px] font-black text-brand-accent uppercase tracking-widest mb-2">Cobertura Técnica</p>
-                      <p className="text-lg font-black leading-tight">Grande SP & Interior.</p>
+              {/* Map Column (Framed style) */}
+              <div className="lg:col-span-6 reveal active relative h-[500px] md:h-[750px] w-full">
+                <div className="absolute inset-0 rounded-[4rem] overflow-hidden shadow-3xl shadow-slate-300/50 border-[16px] border-white ring-1 ring-slate-200/60 group h-full bg-slate-100">
+                  <iframe
+                    title="Geolocalização"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117025.21557007722!2d-46.72759902325372!3d-23.56681023214845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d344a1e93%3A0xc3f58e1762c4c82c!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+                    className="absolute inset-0 w-full h-full grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out z-10"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                  ></iframe>
+
+                  {/* Overlay Badge (White/Green theme) */}
+                  <div className="absolute bottom-10 left-10 md:left-auto md:right-10 bg-white shadow-2xl p-8 rounded-3xl border border-slate-100 text-slate-900 z-20 md:max-w-xs">
+                    <p className="text-[10px] font-black text-brand-accent uppercase tracking-widest mb-4">Logística Duno</p>
+                    <p className="text-xl font-black mb-6 leading-tight">Cobertura total em toda Grande SP & Interior.</p>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
+                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Time Próprio Certificado</span>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
