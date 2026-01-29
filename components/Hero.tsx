@@ -12,9 +12,9 @@ const Hero: React.FC = () => {
 
           <div className="lg:col-span-12 reveal active text-center flex flex-col items-center">
             <div className="flex items-center justify-center gap-2 md:gap-4 mb-8 overflow-hidden">
-              <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+              <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
               <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Vidraçaria Técnica Especializada</span>
-              <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+              <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
             </div>
 
             <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-8 tracking-tight text-center">

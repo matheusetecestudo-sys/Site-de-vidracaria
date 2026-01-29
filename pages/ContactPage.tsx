@@ -54,9 +54,9 @@ const ContactPage: React.FC = () => {
 
               <div className="relative z-10 text-center flex flex-col items-center">
                 <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
-                  <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                  <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                   <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Unidade São Paulo</span>
-                  <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                  <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                 </div>
                 <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.05] tracking-tight uppercase">
                   Sede <br className="hidden md:block" />

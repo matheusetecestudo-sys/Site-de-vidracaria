@@ -18,9 +18,9 @@ const Trust: React.FC = () => {
           <div className="relative z-10 grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
             <div className="lg:col-span-12 text-center flex flex-col items-center">
               <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
-                <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                 <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Credibilidade Técnica</span>
-                <span className="w-8 h-[2px] bg-brand-accent rounded-full"></span>
+                <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
               </div>
               <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-10 leading-[1] tracking-tight">
                 O Padrão <br /> <span className="text-slate-400 font-medium italic">de Excelência.</span>
