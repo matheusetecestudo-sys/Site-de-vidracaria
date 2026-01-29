@@ -11,7 +11,7 @@ const ContactPage: React.FC = () => {
       <main className="pt-24 md:pt-32">
 
         {/* --- HERO SECTION --- */}
-        <section className="relative pt-12 pb-16 md:pt-24 md:pb-32 bg-slate-50 overflow-hidden">
+        <section className="relative pt-8 pb-12 md:pt-24 md:pb-32 bg-slate-50 overflow-hidden">
           <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[120%] bg-white skew-x-[-12deg] z-0 pointer-events-none hidden md:block" />
 
           <div className="container-precision relative z-10">
@@ -47,9 +47,9 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* --- CONTACT CHANNELS BLOCK --- */}
-        <section className="py-12 bg-white">
+        <section className="py-8 md:py-12 bg-white">
           <div className="container-precision">
-            <div className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-20 overflow-hidden relative reveal active shadow-3xl">
+            <div className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-20 overflow-hidden relative reveal active shadow-3xl">
               <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
               <div className="relative z-10 text-center flex flex-col items-center">
@@ -78,7 +78,7 @@ const ContactPage: React.FC = () => {
                     </div>
                     <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">Horário Operacional</p>
                     <p className="text-xl md:text-2xl font-black !text-white tracking-tight">09:00 - 18:00</p>
-                    <p className="text-sm font-black text-white uppercase tracking-widest mt-2">Segunda a Sábado</p>
+                    <p className="text-sm font-black text-white uppercase tracking-widest mt-2">Segunda a Sexta</p>
                   </div>
 
                   <div className="flex flex-col items-center text-center group md:col-span-2 lg:col-span-1">
@@ -95,7 +95,7 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* --- PREPARATION BLOCK --- */}
-        <section id="preparacao" className="py-20 md:py-32 bg-white overflow-hidden border-t border-slate-50">
+        <section id="preparacao" className="py-12 md:py-32 bg-white overflow-hidden border-t border-slate-50">
           <div className="container-precision">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
 
@@ -160,9 +160,9 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* --- BRAND PROMISE BLOCK --- */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-10 md:py-24 bg-white">
           <div className="container-precision">
-            <div className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-10 md:p-24 overflow-hidden relative reveal active shadow-2xl">
+            <div className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-24 overflow-hidden relative reveal active shadow-2xl">
               <div className="absolute top-0 left-0 w-[40%] h-full bg-brand-accent/5 skew-x-[15deg] pointer-events-none" />
 
               <div className="relative z-10 text-center flex flex-col items-center">
