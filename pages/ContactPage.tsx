@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
 
               <h1 className="text-4xl md:text-8xl lg:text-[100px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter !text-brand-accent">
                 Solicite seu <br />
-                <span className="text-slate-400 font-medium italic">Orçamento Technical.</span>
+                <span className="text-slate-400 font-medium italic">Orçamento Técnico.</span>
               </h1>
 
               <p className="text-xl md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-2xl mx-auto mb-12">
@@ -94,8 +94,8 @@ const ContactPage: React.FC = () => {
                     <div
                       key={i}
                       className={`group p-8 rounded-[2rem] border transition-all duration-500 ${method.primary
-                          ? 'bg-brand-accent/5 border-brand-accent/20 hover:bg-brand-accent/10'
-                          : 'bg-white border-slate-100 hover:border-brand-accent/30 hover:shadow-xl'
+                        ? 'bg-brand-accent/5 border-brand-accent/20 hover:bg-brand-accent/10'
+                        : 'bg-white border-slate-100 hover:border-brand-accent/30 hover:shadow-xl'
                         }`}
                     >
                       <div className="flex items-start gap-6">
@@ -124,13 +124,20 @@ const ContactPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-slate-950 p-10 rounded-[2.5rem] text-white relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none" />
-                <h3 className="text-xs font-black text-brand-accent uppercase tracking-[0.3em] mb-4">Sede Técnica</h3>
-                <p className="text-xl font-black mb-6 leading-tight">{CLIENT_CONFIG.address}</p>
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
-                  <div className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
-                  Atendimento em domicílio & Showroom
+              <div className="bg-slate-950 p-10 md:p-12 rounded-[2.5rem] text-white relative overflow-hidden shadow-2xl border border-white/5">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-brand-accent/10 rounded-full blur-[80px] pointer-events-none" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-8 h-[1px] bg-brand-accent"></div>
+                    <h3 className="text-[10px] font-black text-brand-accent uppercase tracking-[0.4em]">Unidade Corporativa</h3>
+                  </div>
+                  <p className="text-2xl font-black mb-8 leading-tight tracking-tight">{CLIENT_CONFIG.address}</p>
+                  <div className="flex flex-col gap-4">
+                    <div className="flex items-center gap-3 text-slate-400">
+                      <svg className="w-5 h-5 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                      <span className="text-sm font-medium">Atendimento em domicílio & Showroom</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -183,13 +190,13 @@ const ContactPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Brand Promise */}
-        <section className="bg-slate-50 py-20 border-t border-slate-200/60">
+        <section className="bg-slate-50 py-24 border-t border-slate-200/60">
           <div className="container-precision text-center">
-            <p className="text-sm font-bold text-slate-400 uppercase tracking-[0.5em] mb-6">Equipe Duno Precision</p>
-            <h3 className="text-2xl md:text-3xl font-black text-slate-900 italic max-w-2xl mx-auto leading-tight">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.5em] mb-8">Equipe Duno Precision</p>
+            <h3 className="text-2xl md:text-4xl font-black text-slate-900 max-w-3xl mx-auto leading-[1.2] tracking-tight">
               "Não instalamos apenas vidros. Garantimos a paz de espírito estrutural que seu imóvel merece."
             </h3>
+            <div className="w-12 h-1 bg-brand-accent mx-auto mt-10 rounded-full opacity-30"></div>
           </div>
         </section>
       </main>
