@@ -6,7 +6,7 @@ export const CLIENT_CONFIG = {
   phoneDisplay: "(11) 99287-6219",
   email: "contato@duno.com.br",
   address: "Atendimento em domicílio e Showroom",
-  openingHours: "Seg-Sex: 08:00 às 18:00 | Sáb: 08:00 às 13:00",
+  openingHours: "Segunda a Sexta: 09:00 às 18:00",
   message: "Olá! Gostaria de pedir um orçamento pelo WhatsApp."
 };
 
