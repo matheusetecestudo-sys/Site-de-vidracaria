@@ -121,18 +121,36 @@ const ContactPage: React.FC = () => {
 
         {/* --- MAP SECTION --- */}
         <section className="pb-32 container-precision reveal active">
-          <div className="relative rounded-[4rem] overflow-hidden shadow-3xl shadow-slate-200/50 border-[16px] border-white ring-1 ring-slate-200/60 group h-[500px] md:h-[700px]">
+          <div className="relative rounded-[4rem] overflow-hidden shadow-3xl shadow-slate-200/50 border-[16px] border-white ring-1 ring-slate-200/60 group h-[500px] md:h-[700px] bg-slate-100">
+
+            {/* Fail-safe Background / Skeleton */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
+              <div className="w-16 h-16 border-4 border-slate-200 border-t-brand-accent rounded-full animate-spin mb-6"></div>
+              <p className="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Carregando Mapa Técnico...</p>
+              <a
+                href="https://maps.app.goo.gl/uXvXh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-white shadow-xl rounded-xl text-[10px] font-black text-brand-accent uppercase tracking-widest hover:bg-brand-accent hover:text-white transition-all z-20"
+              >
+                Abrir diretamente no Google Maps
+              </a>
+            </div>
+
             <iframe
               title="Sede Estratégica"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117025.21557007722!2d-46.72759902325372!3d-23.56681023214845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597d344a1e93%3A0xc3f58e1762c4c82c!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
-              className="w-full h-full grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 ease-in-out"
+              className="absolute inset-0 w-full h-full grayscale opacity-0 group-hover:grayscale-0 transition-all duration-1000 ease-in-out z-10"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
+              onLoad={(e) => (e.currentTarget.style.opacity = "0.7")}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
             ></iframe>
 
             {/* Geographic Overlay */}
-            <div className="absolute top-10 left-10 hidden md:block max-w-xs">
+            <div className="absolute top-10 left-10 hidden md:block max-w-xs z-20">
               <div className="bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white">
                 <h4 className="text-[10px] font-black text-brand-accent uppercase tracking-widest mb-4">Logística de Instalação</h4>
                 <p className="text-slate-900 font-black text-lg mb-4 leading-tight">Cobertura total em toda Grande SP & Interior.</p>
