@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => {
+  // Forced restart trigger
   const env = loadEnv(mode, '.', '');
   return {
     server: {
