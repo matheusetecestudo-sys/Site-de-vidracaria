@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
                 <span className="w-10 h-[2px] bg-brand-accent"></span>
               </div>
 
-              <h1 className="text-4xl md:text-7xl lg:text-[100px] font-black !text-brand-accent leading-[1] md:leading-[0.85] mb-10 tracking-tight">
+              <h1 className="text-4xl md:text-7xl lg:text-[100px] font-black !text-brand-secondary leading-[1] md:leading-[0.85] mb-8 tracking-tight">
                 Canais de <br className="hidden md:block" />
                 <span className="text-slate-400 font-medium italic whitespace-nowrap">Comunicação.</span>
               </h1>
@@ -49,7 +49,7 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* --- CONTACT CHANNELS BLOCK --- */}
-        <section className="py-16 bg-white">
+        <section className="py-12 bg-white">
           <div className="container-precision">
             <div className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-20 overflow-hidden relative reveal active shadow-3xl">
               <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
@@ -79,7 +79,7 @@ const ContactPage: React.FC = () => {
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">Horário Operacional</p>
-                    <p className="text-lg md:text-2xl font-black !text-white tracking-tight">Segunda a Sábado</p>
+                    <p className="text-xl md:text-2xl font-black !text-white tracking-tight">Segunda a Sábado</p>
                     <p className="text-[10px] font-medium text-slate-500 mt-2">Das 08:00 às 18:00h</p>
                   </div>
 
@@ -105,11 +105,7 @@ const ContactPage: React.FC = () => {
               <div className="lg:col-span-6 reveal active flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="space-y-8 w-full">
                   <div className="space-y-6">
-                    <div className="flex items-center justify-center lg:justify-start gap-4">
-                      <span className="w-12 h-[2px] bg-brand-accent"></span>
-                      <span className="text-[11px] font-black text-brand-accent uppercase tracking-[0.4em]">Logística Própria</span>
-                    </div>
-                    <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black text-brand-accent leading-[0.9] tracking-tighter">
+                    <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-secondary leading-[0.9] tracking-tighter">
                       O que ter <br className="hidden md:block" />
                       <span className="text-slate-400 font-medium italic">em mãos?</span>
                     </h2>
@@ -151,11 +147,11 @@ const ContactPage: React.FC = () => {
                   ></iframe>
 
                   <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-auto md:right-10 bg-white/95 backdrop-blur shadow-2xl p-6 md:p-8 rounded-2xl md:rounded-3xl border border-slate-100 text-slate-900 z-20 md:max-w-xs transition-transform duration-500 group-hover:translate-y--2">
-                    <p className="text-[10px] font-black text-brand-accent uppercase tracking-widest mb-4">Logística Duno</p>
+                    <p className="text-[10px] font-black text-brand-accent uppercase tracking-widest mb-4">Unidade Técnica</p>
                     <p className="text-lg md:text-xl font-black mb-6 leading-tight">Cobertura total em toda Grande SP & Interior.</p>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
-                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Time Próprio Certificado</span>
+                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Atendimento Especializado</span>
                     </div>
                   </div>
                 </div>
