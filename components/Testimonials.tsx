@@ -31,7 +31,7 @@ const Testimonials: React.FC = () => {
                 ))}
               </div>
 
-              <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-grow">
+              <p className="text-slate-900 font-medium leading-relaxed mb-8 flex-grow">
                 "{t.text}"
               </p>
 

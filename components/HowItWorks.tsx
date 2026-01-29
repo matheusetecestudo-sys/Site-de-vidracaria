@@ -41,7 +41,7 @@ const HowItWorks: React.FC = () => {
                     <h2 className="text-3xl md:text-5xl font-black !text-brand-accent mb-6 tracking-tight">
                         Orçamento em <span className="text-slate-400 font-medium italic">3 passos simples.</span>
                     </h2>
-                    <p className="text-slate-500 font-medium max-w-lg mx-auto">Praticidade e rapidez para você tirar o seu projeto do papel hoje mesmo.</p>
+                    <p className="text-slate-900 font-medium max-w-lg mx-auto">Praticidade e rapidez para você tirar o seu projeto do papel hoje mesmo.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative">
@@ -57,7 +57,7 @@ const HowItWorks: React.FC = () => {
                                 </span>
                             </div>
                             <h3 className="text-xl font-black !text-brand-accent mb-4 tracking-tight">{step.title}</h3>
-                            <p className="!text-slate-500 font-medium leading-relaxed text-sm">
+                            <p className="!text-slate-900 font-medium leading-relaxed text-sm">
                                 {step.description}
                             </p>
                         </div>

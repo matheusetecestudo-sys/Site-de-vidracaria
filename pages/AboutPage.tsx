@@ -45,7 +45,7 @@ const AboutPage: React.FC = () => {
               <h2 className="text-3xl md:text-7xl font-black !text-brand-accent tracking-tight leading-tight mb-10">
                 Precisão técnica que <br /> <span className="text-slate-400 font-medium">gera confiança real.</span>
               </h2>
-              <div className="space-y-10 text-xl md:text-2xl !text-slate-400 font-medium leading-relaxed max-w-3xl mx-auto text-center">
+              <div className="space-y-10 text-xl md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-3xl mx-auto text-center">
                 <p>
                   Duno nasceu da necessidade de um mercado que pedia mais que apenas instalação; pedia inteligência técnica aplicada ao vidro e compromisso absoluto com o resultado final.
                 </p>
@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
                 <div key={i} className="flex flex-col items-center text-center group p-8 bg-slate-50 rounded-3xl transition-all hover:bg-white hover:shadow-2xl border border-transparent hover:border-slate-100 italic">
                   <div className="!text-brand-accent font-black text-4xl mb-6 opacity-30 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
                   <h3 className="text-2xl md:text-3xl font-black !text-brand-accent mb-6 leading-tight">{v.t}</h3>
-                  <p className="!text-slate-500 font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
+                  <p className="!text-slate-900 font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
                 </div>
               ))}
             </div>
@@ -73,7 +73,7 @@ const AboutPage: React.FC = () => {
             <h2 className="text-4xl md:text-8xl font-black !text-brand-accent mb-12 tracking-tighter leading-tight">
               Pronto para elevar o <br className="hidden md:block" /> <span className="!text-slate-400 font-medium">nível do seu projeto?</span>
             </h2>
-            <p className="text-xl md:text-3xl !text-slate-400 font-medium mb-16 max-w-3xl mx-auto opacity-80">
+            <p className="text-xl md:text-3xl !text-slate-900 font-medium mb-16 max-w-3xl mx-auto opacity-80">
               Escolha uma empresa que trata cada milímetro do seu projeto com a técnica e o respeito que ele exige.
             </p>
             <div className="flex justify-center">

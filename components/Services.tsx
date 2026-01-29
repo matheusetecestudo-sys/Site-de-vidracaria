@@ -17,13 +17,13 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
               Serviços <br />
               <span className="text-slate-400 font-medium italic">Mais Procurados.</span>
             </h2>
-            <p className="!text-slate-400 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
+            <p className="!text-slate-900 font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
               Confira as soluções com maior demanda e excelência técnica garantida para seu ambiente.
             </p>
             <div className="flex justify-center">
               <button
                 onClick={() => onNavigate?.('servicos')}
-                className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
+                className="group flex items-center gap-4 py-4 px-2 border-b-2 border-slate-100 text-[11px] font-bold text-slate-900 hover:text-brand-accent hover:border-brand-accent transition-all duration-300"
               >
                 Ver catálogo completo
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
@@ -59,7 +59,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                     <h3 className="text-2xl md:text-3xl font-black !text-brand-accent leading-none">{service.title}</h3>
                   </div>
 
-                  <p className="!text-slate-600 text-lg font-medium leading-relaxed mb-10 flex-grow">
+                  <p className="!text-slate-900 text-lg font-medium leading-relaxed mb-10 flex-grow">
                     {service.description}
                   </p>
 

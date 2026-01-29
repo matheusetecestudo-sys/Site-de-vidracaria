@@ -45,7 +45,7 @@ const Differentiators: React.FC = () => {
                         Por que escolher <br />
                         <span className="text-slate-400 font-medium italic">a nossa engenharia?</span>
                     </h2>
-                    <p className="text-lg md:text-xl !text-slate-500 font-medium leading-relaxed max-w-xl mx-auto">
+                    <p className="text-lg md:text-xl !text-slate-900 font-medium leading-relaxed max-w-xl mx-auto">
                         Combinamos a precisão técnica da ABNT com um atendimento focado na sua paz de espírito.
                     </p>
                 </header>
@@ -61,7 +61,7 @@ const Differentiators: React.FC = () => {
                                 {d.icon}
                             </div>
                             <h3 className="text-xl font-bold !text-brand-accent mb-4 tracking-tight">{d.title}</h3>
-                            <p className="!text-slate-500 font-medium leading-relaxed text-sm md:text-base">
+                            <p className="!text-slate-900 font-medium leading-relaxed text-sm md:text-base">
                                 {d.description}
                             </p>
                         </div>

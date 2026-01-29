@@ -21,7 +21,7 @@ const ContactPage: React.FC = () => {
                 Vamos projetar <br />
                 <span className="!text-slate-400 font-medium">Sua ideia.</span>
               </h1>
-              <p className="text-xl !text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
+              <p className="text-xl !text-slate-900 font-medium leading-relaxed max-w-xl mx-auto">
                 Escolha o canal mais rápido para falar com nossos especialistas técnicos.
               </p>
             </div>
@@ -76,7 +76,7 @@ const ContactPage: React.FC = () => {
             <div className="lg:col-span-12 reveal active">
               <div className="bg-slate-50 rounded-3xl p-8 md:p-16 border border-slate-100 shadow-sm text-center flex flex-col items-center">
                 <h3 className="text-2xl font-black !text-brand-accent mb-8 tracking-tight leading-none text-center">Prepare seu Orçamento.</h3>
-                <p className="!text-slate-400 font-medium leading-relaxed mb-10 text-center mx-auto">
+                <p className="!text-slate-900 font-medium leading-relaxed mb-10 text-center mx-auto">
                   Dica: Para um retorno técnico mais preciso, tenha em mãos:
                 </p>
 
@@ -91,14 +91,14 @@ const ContactPage: React.FC = () => {
                       <div className="w-10 h-10 rounded-full bg-brand-accent/10 flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all shadow-sm">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" /></svg>
                       </div>
-                      <span className="!text-slate-500 font-bold leading-tight">{item}</span>
+                      <span className="!text-slate-900 font-bold leading-tight">{item}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="mt-12 p-6 bg-brand-accent/5 rounded-3xl border border-brand-accent/10 max-w-xl mx-auto">
                   <p className="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-3">Dúvida Técnica?</p>
-                  <p className="text-sm font-medium !text-slate-500 leading-relaxed">Nossos orçamentistas são técnicos experientes. Não cobramos pela consultoria inicial.</p>
+                  <p className="text-sm font-medium !text-slate-900 leading-relaxed">Nossos orçamentistas são técnicos experientes. Não cobramos pela consultoria inicial.</p>
                 </div>
               </div>
             </div>

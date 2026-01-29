@@ -21,7 +21,7 @@ const ServicesPage: React.FC = () => {
                 Soluções para <br />
                 <span className="!text-slate-400 font-medium">Cada Detalhe.</span>
               </h1>
-              <p className="text-xl !text-slate-400 font-medium leading-relaxed max-w-xl mx-auto">
+              <p className="text-xl !text-slate-900 font-medium leading-relaxed max-w-xl mx-auto">
                 Vidraçaria técnica com foco em segurança, durabilidade e acabamento premium para projetos residenciais e comerciais.
               </p>
             </div>
@@ -49,7 +49,7 @@ const ServicesPage: React.FC = () => {
 
                 <div className="p-10 flex flex-col flex-grow items-center text-center">
                   <h3 className="text-2xl font-black !text-brand-accent mb-6 leading-tight">{service.title}</h3>
-                  <p className="!text-slate-600 font-medium leading-relaxed mb-10 flex-grow text-base">
+                  <p className="!text-slate-900 font-medium leading-relaxed mb-10 flex-grow text-base">
                     {service.description}
                   </p>
                   <a

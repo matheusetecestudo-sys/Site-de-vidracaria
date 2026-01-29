@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
               <span className="text-slate-400 font-medium italic whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl !text-slate-400 font-medium leading-relaxed max-w-2xl mb-16 mx-auto text-center">
+            <p className="text-lg md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-2xl mb-16 mx-auto text-center">
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="leading-tight text-center">
                   <p className="text-base md:text-xl font-black text-slate-900 leading-none">4.500+</p>
-                  <p className="text-[9px] md:text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none mt-1">Clientes Satisfeitos</p>
+                  <p className="text-[9px] md:text-[10px] font-bold text-slate-900 uppercase tracking-widest leading-none mt-1">Clientes Satisfeitos</p>
                 </div>
               </div>
             </div>
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
               ].map((item, i) => (
                 <div key={i} className="space-y-3 text-center">
                   <p className="text-2xl md:text-3xl font-black text-slate-900 leading-none tracking-tighter">{item.v}</p>
-                  <p className="text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-none">{item.l}</p>
+                  <p className="text-[10px] font-bold text-slate-900 uppercase tracking-widest leading-none">{item.l}</p>
                 </div>
               ))}
             </div>

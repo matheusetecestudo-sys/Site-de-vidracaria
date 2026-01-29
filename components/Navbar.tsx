@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             </div>
             <div className="flex flex-col items-start leading-tight">
               <span className="text-sm md:text-base font-black tracking-tighter text-slate-900 uppercase">Duno</span>
-              <span className="text-[8px] md:text-[9px] font-bold text-slate-400 uppercase tracking-widest">Vidraçaria Técnica</span>
+              <span className="text-[8px] md:text-[9px] font-bold text-slate-900 uppercase tracking-widest">Vidraçaria Técnica</span>
             </div>
           </button>
 
@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-500 hover:text-brand-accent'
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-900 hover:text-brand-accent'
                   }`}
               >
                 {item.label}
@@ -100,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
       < div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="h-full flex flex-col pt-32 pb-12 px-10 items-center justify-center">
-          <p className="text-[10px] font-black tracking-[0.4em] text-slate-500 uppercase mb-8 text-center">Navegação</p>
+          <p className="text-[10px] font-black tracking-[0.4em] text-slate-900 uppercase mb-8 text-center">Navegação</p>
 
           <div className="flex flex-col gap-4 w-full">
             {navItems.map((item, idx) => (
