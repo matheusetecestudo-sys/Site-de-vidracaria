@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=128&h=128&auto=format&fit=crop&fm=webp"
                   ].map((url, i) => (
                     <div key={i} className="w-12 h-12 md:w-14 md:h-14 rounded-full border-[6px] border-white bg-slate-100 flex items-center justify-center overflow-hidden shadow-sm relative z-[30]">
-                      <img src={url} alt={`Cliente ${i + 1}`} className="w-full h-full object-cover" decoding="async" />
+                      <img src={url} alt={`Cliente ${i + 1}`} className="w-full h-full object-cover" decoding="async" loading="eager" fetchpriority="high" />
                     </div>
                   ))}
                 </div>

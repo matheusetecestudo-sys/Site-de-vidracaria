@@ -146,7 +146,7 @@ export const TESTIMONIALS = [
     name: "Marcos R.",
     text: "Trocaram o vidro da janela no mesmo dia. Atendimento rápido e preço justo.",
     role: "Troca de Vidro",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&h=256&auto=format&fit=crop",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&h=256&auto=format&fit=crop&fm=webp",
     stars: 5,
     date: "há 2 dias"
   },
@@ -154,7 +154,7 @@ export const TESTIMONIALS = [
     name: "Clara S.",
     text: "O box ficou perfeito e a vedação impecável. A equipe foi muito limpa na instalação.",
     role: "Box de Banheiro",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=256&h=256&auto=format&fit=crop",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=256&h=256&auto=format&fit=crop&fm=webp",
     stars: 5,
     date: "há 1 semana"
   },
@@ -162,7 +162,7 @@ export const TESTIMONIALS = [
     name: "Roberto M.",
     text: "Instalaram os espelhos da academia com um alinhamento nota 10. Recomendo o time técnico.",
     role: "Espelhos sob medida",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&h=256&auto=format&fit=crop",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&h=256&auto=format&fit=crop&fm=webp",
     stars: 5,
     date: "há 2 semanas"
   }

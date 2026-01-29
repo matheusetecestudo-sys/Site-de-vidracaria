@@ -13,9 +13,9 @@ if (rootElement) {
   window.addEventListener('load', () => {
     const loader = document.getElementById('app-loader');
     if (loader) {
-      loader.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+      loader.style.transition = 'opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
       loader.style.opacity = '0';
-      setTimeout(() => loader.remove(), 800);
+      setTimeout(() => loader.remove(), 400);
     }
   });
 }

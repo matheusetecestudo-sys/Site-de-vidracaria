@@ -5,15 +5,16 @@ import Footer from './components/Footer.tsx';
 import WhatsAppButton from './components/WhatsAppButton.tsx';
 
 // Lazy loading for pages to improve initial load time (LCP)
-const Hero = lazy(() => import('./components/Hero.tsx'));
-const Services = lazy(() => import('./components/Services.tsx'));
+import Hero from './components/Hero.tsx';
+import Services from './components/Services.tsx';
+import HowItWorks from './components/HowItWorks.tsx';
+
 const Process = lazy(() => import('./components/Process.tsx'));
 const Gallery = lazy(() => import('./components/Gallery.tsx'));
 const Trust = lazy(() => import('./components/Trust.tsx'));
 const Testimonials = lazy(() => import('./components/Testimonials.tsx'));
 const FAQ = lazy(() => import('./components/FAQ.tsx'));
 const Differentiators = lazy(() => import('./components/Differentiators.tsx'));
-const HowItWorks = lazy(() => import('./components/HowItWorks.tsx'));
 const Partners = lazy(() => import('./components/Partners.tsx'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage.tsx'));
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'));
