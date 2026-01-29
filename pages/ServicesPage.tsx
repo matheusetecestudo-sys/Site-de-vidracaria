@@ -8,7 +8,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-20 pb-32">
+      <main className="pt-24 md:pt-32 pb-32">
         <header className="py-12 bg-slate-50 border-b border-slate-100 mb-12">
           <div className="container-precision">
             <div className="max-w-3xl reveal active mx-auto text-center">

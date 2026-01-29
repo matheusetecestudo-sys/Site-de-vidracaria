@@ -15,7 +15,7 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-16 md:pt-24">
+      <main className="pt-24 md:pt-32">
         {/* Header Section - No Images */}
         <header className="py-16 md:py-24 bg-slate-950 text-white overflow-hidden relative">
           <div className="absolute top-0 right-0 w-[50%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none hidden md:block" />
