@@ -69,7 +69,9 @@ const ContactPage: React.FC = () => {
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                     </div>
                     <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">E-mail Corporativo</p>
-                    <p className="text-lg md:text-2xl font-black !text-white tracking-tight break-all">{CLIENT_CONFIG.email}</p>
+                    <a href={`mailto:${CLIENT_CONFIG.email}`} className="text-lg md:text-2xl font-black !text-white tracking-tight break-all hover:text-brand-accent transition-colors">
+                      {CLIENT_CONFIG.email}
+                    </a>
                   </div>
 
                   <div className="flex flex-col items-center text-center group">
