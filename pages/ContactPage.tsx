@@ -78,9 +78,9 @@ const ContactPage: React.FC = () => {
                     <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
-                    <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">Horário Operacional</p>
+                    <p className="text-[9px] font-bold !text-slate-400 uppercase tracking-widest leading-tight mb-2">Horário Operacional (V3)</p>
                     <p className="text-xl md:text-2xl font-black !text-white tracking-tight">09:00 - 18:00</p>
-                    <p className="text-sm font-black uppercase tracking-widest mt-2 relative z-50" style={{ color: '#ffffff', opacity: 1 }}>Segunda a Sábado</p>
+                    <p className="text-sm font-black uppercase tracking-widest mt-2 relative z-50" style={{ color: '#ff00ff', opacity: 1 }}>Segunda a Sábado</p>
                   </div>
 
                   <div className="flex flex-col items-center text-center group md:col-span-2 lg:col-span-1">
