@@ -21,9 +21,10 @@ const ContactPage = lazy(() => import('./pages/ContactPage.tsx'));
 const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
 
 // Simple loading placeholder for Suspense
+// Minimal loading placeholder for lighter weight
 const SectionLoader = () => (
-  <div className="w-full h-16 flex items-center justify-center">
-    <div className="w-6 h-6 border-2 border-brand-accent/30 border-t-brand-accent rounded-full animate-spin"></div>
+  <div className="w-full h-10 flex items-center justify-center opacity-50">
+    <div className="w-4 h-4 border-2 border-brand-accent/20 border-t-brand-accent rounded-full animate-spin"></div>
   </div>
 );
 
@@ -84,7 +85,7 @@ function App() {
         {currentPage === 'contato' && <ContactPage />}
         {currentPage === 'sobre' && <AboutPage />}
         {currentPage === 'home' && (
-          <div className="flex flex-col">
+          <>
             <Hero />
             <Services onNavigate={navigate} />
             <HowItWorks />
@@ -95,7 +96,13 @@ function App() {
             <Trust />
             <Partners />
             <Testimonials />
-          </div>
+            {/* Invisibly preload major pages after home interaction */}
+            <div className="hidden">
+              <ServicesPage />
+              <ContactPage />
+              <AboutPage />
+            </div>
+          </>
         )}
       </Suspense>
     );
