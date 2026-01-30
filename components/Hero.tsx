@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
               {[
                 { v: "20+", l: "Anos de Mercado" },
                 { v: "48h", l: "Prazo Recorde" },
-                { v: "SP/REG", l: "Atendimento Full" },
+                { v: "SP/REG", l: "Cobertura Total" },
                 { v: "100%", l: "Precisão Técnica" }
               ].map((item, i) => (
                 <div key={i} className="space-y-3 text-center">

@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
                 <span className="text-slate-400 font-medium italic">sem segredos.</span>
               </h1>
               <p className="text-xl md:text-3xl !text-slate-200 font-medium leading-relaxed opacity-90 max-w-2xl mx-auto">
-                Mais que uma vidraçaria, somos especialistas em transformar ambientes with transparência, segurança estrutural e design de alto padrão.
+                Mais que uma vidraçaria, somos especialistas em transformar ambientes com transparência, segurança estrutural e design de alto padrão.
               </p>
             </div>
           </div>
