@@ -23,14 +23,40 @@ const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
 // Simple loading placeholder for Suspense
 // Minimal loading placeholder for lighter weight
 const SectionLoader = () => (
-  <div className="w-full h-10 flex items-center justify-center opacity-50">
-    <div className="w-4 h-4 border-2 border-brand-accent/20 border-t-brand-accent rounded-full animate-spin"></div>
+  <div className="w-full min-h-[60vh] flex items-center justify-center opacity-0 animate-fade-in fill-mode-forwards" style={{ animationDelay: '200ms' }}>
+    <div className="w-8 h-8 border-[3px] border-brand-accent/20 border-t-brand-accent rounded-full animate-spin"></div>
   </div>
 );
 
-function App() {
+const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavigating, setIsNavigating] = useState(false);
+
+  // Prefetch other pages when browser is idle to ensure instant navigation
+  useEffect(() => {
+    const prefetchPages = async () => {
+      try {
+        // Wait for Home to settle
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
+        // Background prefetch
+        import('./pages/ServicesPage.tsx');
+        import('./pages/ContactPage.tsx');
+        import('./pages/AboutPage.tsx');
+      } catch (e) {
+        console.warn('Prefetching inhibited');
+      }
+    };
+
+    if (currentPage === 'home') {
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => prefetchPages());
+      } else {
+        prefetchPages();
+      }
+    }
+  }, [currentPage]);
 
   const initObserver = useCallback(() => {
     const observer = new IntersectionObserver((entries) => {
