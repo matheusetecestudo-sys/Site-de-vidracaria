@@ -8,11 +8,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
 
         <div className="grid lg:grid-cols-12 gap-8 mb-10 md:mb-10 md:mb-16 reveal active items-center text-center">
           <div className="lg:col-span-12">
-            <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
-              <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
-              <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Os mais requisitados</span>
-              <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
-            </div>
+
             <h2 className="text-4xl md:text-6xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
               Serviços <br />
               <span className="text-slate-400 font-medium italic">Mais Procurados.</span>
