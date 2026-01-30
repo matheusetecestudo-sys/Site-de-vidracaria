@@ -6,7 +6,7 @@ const Testimonials: React.FC = () => {
     <section id="depoimentos" className="py-10 md:py-12 bg-white relative font-inter border-t border-slate-50">
       <div className="container-precision">
 
-        <header className="mb-16 reveal active max-w-2xl mx-auto text-center">
+        <header className="mb-10 md:mb-10 md:mb-16 reveal active max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
             <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
             <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Opinião de quem contratou</span>

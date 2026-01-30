@@ -15,9 +15,9 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-24 md:pt-32">
+      <main className="pt-20 md:pt-32">
         {/* Header Section - No Images */}
-        <header className="py-16 md:py-24 bg-slate-950 text-white overflow-hidden relative">
+        <header className="py-10 md:py-24 bg-slate-950 text-white overflow-hidden relative">
           <div className="absolute top-0 right-0 w-[50%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none hidden md:block" />
 
           <div className="container-precision relative z-10">
@@ -39,9 +39,9 @@ const AboutPage: React.FC = () => {
         </header>
 
         {/* Story Section - No Images */}
-        <section className="py-16 md:py-24 container-precision">
+        <section className="py-10 md:py-24 container-precision">
           <div className="max-w-4xl mx-auto reveal active">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 md:mb-16">
               <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
                 <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                 <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Nossa Trajetória</span>
@@ -73,12 +73,12 @@ const AboutPage: React.FC = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-slate-50">
+        <section className="py-10 md:py-24 bg-slate-50">
           <div className="container-precision text-center reveal active mx-auto">
             <h2 className="text-4xl md:text-8xl font-black !text-brand-accent mb-12 tracking-tighter leading-tight">
               Pronto para elevar o <br className="hidden md:block" /> <span className="!text-slate-400 font-medium">nível do seu projeto?</span>
             </h2>
-            <p className="text-xl md:text-3xl !text-slate-900 font-medium mb-16 max-w-3xl mx-auto opacity-80">
+            <p className="text-xl md:text-3xl !text-slate-900 font-medium mb-10 md:mb-16 max-w-3xl mx-auto opacity-80">
               Escolha uma empresa que trata cada milímetro do seu projeto com a técnica e o respeito que ele exige.
             </p>
             <div className="flex justify-center">

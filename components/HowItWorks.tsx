@@ -35,9 +35,9 @@ const HowItWorks: React.FC = () => {
     ];
 
     return (
-        <section className="py-20 bg-white relative overflow-hidden border-t border-slate-50">
+        <section className="py-12 bg-white relative overflow-hidden border-t border-slate-50">
             <div className="container-precision">
-                <div className="text-center mb-16 reveal active">
+                <div className="text-center mb-10 md:mb-10 md:mb-16 reveal active">
                     <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
                         <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                         <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Passo a Passo</span>
@@ -49,7 +49,7 @@ const HowItWorks: React.FC = () => {
                     <p className="text-slate-900 font-medium max-w-lg mx-auto">Praticidade e rapidez para você tirar o seu projeto do papel hoje mesmo.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 relative">
                     {/* Linha conectora no desktop */}
                     <div className="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-slate-100 -translate-y-1/2 z-0" />
 

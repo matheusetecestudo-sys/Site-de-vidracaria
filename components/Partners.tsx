@@ -11,7 +11,7 @@ const Partners: React.FC = () => {
     ];
 
     return (
-        <section className="py-20 bg-slate-950 overflow-hidden relative border-t border-white/5">
+        <section className="py-12 bg-slate-950 overflow-hidden relative border-t border-white/5">
             {/* Glow decorativo de fundo */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-brand-accent/5 blur-[120px] pointer-events-none" />
 

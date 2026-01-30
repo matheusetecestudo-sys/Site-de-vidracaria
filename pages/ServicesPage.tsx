@@ -8,7 +8,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter">
-      <main className="pt-24 md:pt-32 pb-32">
+      <main className="pt-20 md:pt-32 pb-32">
         <header className="py-12 bg-slate-50 border-b border-slate-100 mb-12">
           <div className="container-precision">
             <div className="max-w-3xl reveal active mx-auto text-center">
@@ -72,7 +72,7 @@ const ServicesPage: React.FC = () => {
             <div className="bg-slate-950 rounded-3xl p-6 md:p-16 overflow-hidden relative shadow-2xl">
               <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
-              <div className="relative z-10 grid lg:grid-cols-12 gap-16 items-center">
+              <div className="relative z-10 grid lg:grid-cols-12 gap-8 md:gap-16 items-center">
                 <div className="lg:col-span-12 flex flex-col items-center text-center">
                   <div className="flex items-center justify-center gap-2 md:gap-4 mb-12">
                     <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>

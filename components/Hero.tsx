@@ -3,12 +3,12 @@ import { getWhatsAppLink, WHATSAPP_LINK, CTA_TEXT } from '../constants';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-32 pb-10 md:pt-40 md:pb-24 bg-slate-50 overflow-hidden">
+    <section className="relative pt-16 pb-8 md:pt-40 md:pb-24 bg-slate-50 overflow-hidden">
       {/* Elementos Decorativos de Fundo */}
       <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[120%] bg-white skew-x-[-12deg] z-0 pointer-events-none hidden md:block" />
 
       <div className="container-precision relative z-10">
-        <div className="grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
+        <div className="grid lg:grid-cols-12 gap-4 md:gap-16 md:gap-24 items-center">
 
           <div className="lg:col-span-12 reveal active text-center flex flex-col items-center">
             <div className="flex items-center justify-center gap-2 md:gap-4 mb-8 overflow-hidden">
@@ -17,12 +17,12 @@ const Hero: React.FC = () => {
               <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
             </div>
 
-            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-8 tracking-tight text-center">
+            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-6 md:mb-8 tracking-tight text-center">
               A Engenharia do <br className="hidden md:block" />
               <span className="text-slate-400 font-medium italic whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-2xl mb-16 mx-auto text-center">
+            <p className="text-lg md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-2xl mb-10 md:mb-10 md:mb-16 mx-auto text-center">
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                     "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=128&h=128&auto=format&fit=crop&fm=webp"
                   ].map((url, i) => (
                     <div key={i} className="w-12 h-12 md:w-14 md:h-14 rounded-full border-[6px] border-white bg-slate-100 flex items-center justify-center overflow-hidden shadow-sm relative z-[30]">
-                      <img src={url} alt={`Cliente ${i + 1}`} className="w-full h-full object-cover" decoding="async" loading="eager" fetchpriority="high" />
+                      <img src={url} alt={`Cliente ${i + 1}`} className="w-full h-full object-cover" decoding="async" loading="eager" fetchPriority="high" />
                     </div>
                   ))}
                 </div>

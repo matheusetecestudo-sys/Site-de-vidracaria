@@ -27,7 +27,7 @@ const Process: React.FC = () => {
   return (
     <section className="py-12 md:py-16 bg-slate-950 relative overflow-hidden">
       <div className="container-precision relative z-10">
-        <header className="mb-16 reveal active text-center">
+        <header className="mb-10 md:mb-10 md:mb-16 reveal active text-center">
           <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
             <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
             <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Metodologia Duno</span>
@@ -42,7 +42,7 @@ const Process: React.FC = () => {
           </p>
         </header>
 
-        <div className="grid md:grid-cols-3 gap-10 lg:gap-16 items-baseline">
+        <div className="grid md:grid-cols-3 gap-10 lg:gap-4 md:gap-16 items-baseline">
           {steps.map((step, index) => (
             <div key={index} className="reveal active group flex flex-col items-center text-center">
               <div className="flex flex-col items-center gap-6 mb-10 w-full">

@@ -33,9 +33,9 @@ const Differentiators: React.FC = () => {
     ];
 
     return (
-        <section className="py-20 md:py-32 bg-slate-50 relative overflow-hidden">
+        <section className="py-12 md:py-20 bg-slate-50 relative overflow-hidden">
             <div className="container-precision text-center">
-                <header className="mb-20 reveal active max-w-2xl mx-auto">
+                <header className="mb-6 md:mb-20 reveal active max-w-2xl mx-auto">
                     <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
                         <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
                         <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Diferencial Duno</span>

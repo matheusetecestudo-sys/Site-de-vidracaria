@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-slate-950 text-slate-300 pt-12 pb-32 md:pb-12 border-t border-white/5 font-inter">
       <div className="container-precision">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-16 mb-6 md:mb-20 text-center">
 
           {/* Coluna 1: Marca & Bio */}
           <div className="space-y-8 flex flex-col items-center">

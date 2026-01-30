@@ -27,10 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
-  scroll-margin-top: 80px;
-}
-
 body {
   font-family: 'Inter', sans-serif;
   background-color: white;
@@ -39,6 +35,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.625;
   overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+}
+
+section {
+  scroll-margin-top: 80px;
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 500px;
 }
 
 .container-precision {

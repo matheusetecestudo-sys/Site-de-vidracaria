@@ -6,7 +6,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
     <section id="servicos" className="py-10 pb-16 md:py-12 bg-white relative overflow-hidden">
       <div className="container-precision">
 
-        <div className="grid lg:grid-cols-12 gap-8 mb-16 reveal active items-center text-center">
+        <div className="grid lg:grid-cols-12 gap-8 mb-10 md:mb-10 md:mb-16 reveal active items-center text-center">
           <div className="lg:col-span-12">
             <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
               <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>

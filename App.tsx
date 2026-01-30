@@ -22,7 +22,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
 
 // Simple loading placeholder for Suspense
 const SectionLoader = () => (
-  <div className="w-full h-32 flex items-center justify-center">
+  <div className="w-full h-16 flex items-center justify-center">
     <div className="w-6 h-6 border-2 border-brand-accent/30 border-t-brand-accent rounded-full animate-spin"></div>
   </div>
 );

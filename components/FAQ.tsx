@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex flex-col items-center justify-center p-6 md:p-10 text-center group relative"
+                className="w-full flex flex-col items-center justify-center p-4 md:p-10 text-center group relative"
               >
                 <span className={`text-lg md:text-xl font-bold transition-colors duration-300 ${openIndex === index ? 'text-brand-accent' : 'text-slate-900 group-hover:text-brand-accent'}`}>
                   {item.question}
@@ -39,7 +39,7 @@ const FAQ: React.FC = () => {
               </button>
 
               <div className={`transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}>
-                <div className="p-6 md:p-10 pt-0 text-slate-900 text-lg font-medium leading-relaxed border-t border-slate-50/50 text-center">
+                <div className="p-4 md:p-10 pt-0 text-slate-900 text-lg font-medium leading-relaxed border-t border-slate-50/50 text-center">
                   {item.answer}
                 </div>
               </div>

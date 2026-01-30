@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter overflow-x-hidden">
-      <main className="pt-24 md:pt-32">
+      <main className="pt-20 md:pt-32">
 
         {/* --- HERO SECTION --- */}
         <section className="relative pt-8 pb-12 md:pt-24 md:pb-32 bg-slate-50 overflow-hidden">
@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
                 <span className="text-slate-400 font-medium italic whitespace-nowrap">Comunicação.</span>
               </h1>
 
-              <p className="text-lg md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-3xl mb-16 mx-auto opacity-80">
+              <p className="text-lg md:text-2xl !text-slate-900 font-medium leading-relaxed max-w-3xl mb-10 md:mb-16 mx-auto opacity-80">
                 Fale diretamente com orçamentistas experientes. Projetos sob medida com acabamento padrão arquitetura de alto luxo.
               </p>
 
@@ -95,9 +95,9 @@ const ContactPage: React.FC = () => {
         </section>
 
         {/* --- PREPARATION BLOCK --- */}
-        <section id="preparacao" className="py-12 md:py-32 bg-white overflow-hidden border-t border-slate-50">
+        <section id="preparacao" className="py-12 md:py-20 bg-white overflow-hidden border-t border-slate-50">
           <div className="container-precision">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 lg:gap-24 items-center">
 
               {/* Info Column */}
               <div className="lg:col-span-6 reveal active flex flex-col items-center lg:items-start text-center lg:text-left">

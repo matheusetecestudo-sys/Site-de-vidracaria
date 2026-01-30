@@ -15,7 +15,7 @@ const Trust: React.FC = () => {
         <div className="bg-slate-950 rounded-3xl p-6 lg:p-16 overflow-hidden relative reveal active shadow-2xl">
           <div className="absolute top-0 right-0 w-[40%] h-full bg-brand-accent/5 skew-x-[-15deg] pointer-events-none" />
 
-          <div className="relative z-10 grid lg:grid-cols-12 gap-16 md:gap-24 items-center">
+          <div className="relative z-10 grid lg:grid-cols-12 gap-4 md:gap-16 md:gap-24 items-center">
             <div className="lg:col-span-12 text-center flex flex-col items-center">
               <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
                 <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
