@@ -103,6 +103,11 @@ const ContactPage: React.FC = () => {
               <div className="lg:col-span-6 reveal active flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="space-y-8 w-full">
                   <div className="space-y-6">
+                    <div className="flex items-center justify-center lg:justify-start gap-2 md:gap-4 mb-8">
+                      <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+                      <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Agilidade no Orçamento</span>
+                      <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+                    </div>
                     <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-accent leading-[0.9] tracking-tighter">
                       O que ter <br className="hidden md:block" />
                       <span className="text-slate-400 font-medium italic">em mãos?</span>

@@ -17,8 +17,12 @@ const Partners: React.FC = () => {
 
             <div className="container-precision relative z-10">
                 <div className="text-center mb-12 reveal active">
-                    <p className="text-[10px] font-black text-brand-accent uppercase tracking-[0.4em] mb-3">Qualidade Certificada</p>
-                    <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">Utilizamos as <span className="text-brand-accent italic opacity-90">marcas líderes</span> do mercado.</h3>
+                    <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
+                        <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+                        <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Qualidade Certificada</span>
+                        <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+                    </div>
+                    <h3 className="text-2xl md:text-4xl font-black text-white tracking-tight">Utilizamos as <span className="text-brand-accent italic opacity-90">marcas líderes</span> do mercado.</h3>
                 </div>
 
                 {/* Marquee/Slider de Marcas */}

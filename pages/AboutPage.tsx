@@ -42,6 +42,11 @@ const AboutPage: React.FC = () => {
         <section className="py-16 md:py-24 container-precision">
           <div className="max-w-4xl mx-auto reveal active">
             <div className="text-center mb-16">
+              <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
+                <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+                <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Nossa Trajetória</span>
+                <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
+              </div>
               <h2 className="text-3xl md:text-7xl font-black !text-brand-accent tracking-tight leading-tight mb-10">
                 Precisão técnica que <br /> <span className="text-slate-400 font-medium">gera confiança real.</span>
               </h2>
