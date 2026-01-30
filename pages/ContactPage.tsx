@@ -8,7 +8,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="bg-white min-h-screen font-inter overflow-x-hidden">
-      <main className="pt-20 md:pt-32">
+      <main className="pt-32 md:pt-32">
 
         {/* --- HERO SECTION --- */}
         <section className="relative pt-8 pb-12 md:pt-24 md:pb-32 bg-slate-50 overflow-hidden">
