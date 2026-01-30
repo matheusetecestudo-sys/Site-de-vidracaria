@@ -96,12 +96,6 @@ function App() {
             <Trust />
             <Partners />
             <Testimonials />
-            {/* Invisibly preload major pages after home interaction */}
-            <div className="hidden">
-              <ServicesPage />
-              <ContactPage />
-              <AboutPage />
-            </div>
           </>
         )}
       </Suspense>
