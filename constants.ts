@@ -4,7 +4,7 @@ export const CLIENT_CONFIG = {
   neighborhoods: "Atendimento rápido em toda a cidade",
   whatsapp: "5511992876219",
   phoneDisplay: "(11) 99287-6219",
-  email: "contato@duno.com.br",
+  email: "duno.contato@gmail.com",
   address: "Atendimento em domicílio e Showroom",
   openingHours: "Segunda a Sábado: 09:00 às 18:00",
   message: "Olá! Gostaria de pedir um orçamento pelo WhatsApp."
