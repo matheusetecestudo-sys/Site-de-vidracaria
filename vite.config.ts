@@ -14,18 +14,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react(), tailwindcss()],
     build: {
       minify: true,
-      rollupOptions: {
-        output: {
-          manualChunks(id) {
-            if (id.includes('node_modules')) {
-              if (id.includes('react')) return 'vendor-react';
-              if (id.includes('framer-motion')) return 'vendor-motion';
-              return 'vendor-others';
-            }
-          }
-        }
-      },
-      chunkSizeWarningLimit: 600,
+      chunkSizeWarningLimit: 1000,
     },
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
