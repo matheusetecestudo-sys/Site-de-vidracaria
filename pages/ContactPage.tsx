@@ -102,14 +102,9 @@ const ContactPage: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 lg:gap-24 items-center">
 
               {/* Info Column */}
-              <div className="lg:col-span-12 reveal active flex flex-col items-center text-center">
+              <div className="lg:col-span-6 reveal active flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="space-y-8 w-full">
                   <div className="space-y-6">
-                    <div className="flex items-center justify-center gap-2 md:gap-4 mb-8">
-                      <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
-                      <span className="text-[8px] md:text-[11px] font-black text-brand-accent uppercase tracking-[0.2em] md:tracking-[0.5em] whitespace-nowrap">Agilidade no Orçamento</span>
-                      <span className="w-12 h-[3px] bg-brand-accent rounded-full"></span>
-                    </div>
                     <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-accent leading-[0.9] tracking-tighter">
                       O que ter <br className="hidden md:block" />
                       <span className="text-slate-400 font-medium italic">em mãos?</span>
@@ -119,13 +114,13 @@ const ContactPage: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-10 pt-4 max-w-2xl mx-auto lg:mx-0">
+                  <div className="space-y-10 pt-4">
                     {[
                       { t: "Medidas Gerais", d: "Largura e altura aproximadas do vão desejado." },
                       { t: "Evidência Visual", d: "Fotos do local facilitam a análise estrutural rápida." },
                       { t: "Configuração", d: "Cor de perfis e ferragens (Inox, Preto, Prata)." }
                     ].map((item, i) => (
-                      <div key={i} className="flex flex-col sm:flex-row items-center gap-6 group text-center sm:text-left">
+                      <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start gap-6 group text-center sm:text-left">
                         <div className="w-14 h-14 rounded-2xl bg-white border-2 border-slate-100 flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-lg transition-all duration-500 group-hover:border-brand-accent group-hover:bg-brand-accent group-hover:text-white">
                           0{i + 1}
                         </div>
@@ -140,7 +135,7 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Map Column */}
-              <div className="lg:col-span-12 reveal active relative w-full mt-10">
+              <div className="lg:col-span-6 reveal active relative w-full">
                 <div className="relative rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-3xl shadow-slate-300/50 border-[10px] md:border-[16px] border-white ring-1 ring-slate-200/60 group h-[500px] md:h-[750px] w-full bg-slate-100">
                   <iframe
                     title="Geolocalização"
