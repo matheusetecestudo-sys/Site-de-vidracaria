@@ -39,8 +39,8 @@ const HowItWorks: React.FC = () => {
             <div className="container-precision">
                 <div className="text-center mb-10 md:mb-10 md:mb-16 reveal active">
 
-                    <h2 className="text-3xl md:text-5xl font-black !text-brand-accent mb-6 tracking-tight">
-                        Orçamento em <span className="text-brand-accent font-normal">3 passos simples.</span>
+                    <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight title-gold-premium">
+                        Orçamento em <span className="font-normal">3 passos simples.</span>
                     </h2>
                     <p className="text-brand-primary font-medium max-w-lg mx-auto">Praticidade e rapidez para você tirar o seu projeto do papel hoje mesmo.</p>
                 </div>

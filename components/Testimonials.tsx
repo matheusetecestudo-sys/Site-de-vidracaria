@@ -8,9 +8,9 @@ const Testimonials: React.FC = () => {
 
         <header className="mb-10 md:mb-10 md:mb-16 reveal active max-w-2xl mx-auto text-center">
 
-          <h2 className="text-3xl md:text-5xl font-black !text-brand-accent tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight title-gold-premium">
             Excelência aprovada por <br />
-            <span className="text-brand-accent font-normal">nossos clientes.</span>
+            <span className="font-normal">nossos clientes.</span>
           </h2>
         </header>
 

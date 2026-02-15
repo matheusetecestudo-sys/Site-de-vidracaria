@@ -9,9 +9,9 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
         <div className="grid lg:grid-cols-12 gap-8 mb-10 md:mb-10 md:mb-16 reveal active items-center text-center">
           <div className="lg:col-span-12">
 
-            <h2 className="text-4xl md:text-6xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-black leading-[1] mb-8 tracking-tight title-gold-premium">
               Serviços <br />
-              <span className="text-brand-accent font-normal">Mais Procurados.</span>
+              <span className="font-normal">Mais Procurados.</span>
             </h2>
             <p className="!text-brand-secondary font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
               Confira as soluções com maior demanda e excelência técnica garantida para seu ambiente.

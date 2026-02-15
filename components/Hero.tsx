@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
           <div className="lg:col-span-12 reveal active text-center flex flex-col items-center">
 
 
-            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-6 md:mb-8 tracking-tight text-center">
+            <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black leading-[1.1] md:leading-[0.85] mb-6 md:mb-8 tracking-tight text-center title-gold-premium">
               A Engenharia do <br className="hidden md:block" />
-              <span className="text-brand-accent font-normal whitespace-nowrap">Vidro Moderno.</span>
+              <span className="font-normal whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
             <p className="text-lg md:text-2xl text-black/80 font-medium leading-relaxed max-w-3xl mb-12 md:mb-20 mx-auto text-center px-4">
