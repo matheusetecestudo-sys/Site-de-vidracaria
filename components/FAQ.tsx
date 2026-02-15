@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
         <div className="text-center mb-12 reveal active">
           <h2 className="text-4xl md:text-5xl font-black !text-brand-accent mb-8 tracking-tight leading-[1.1]">
             Suporte e <br />
-            <span className="!text-brand-accent/60 font-medium">Esclarecimentos.</span>
+            <span className="text-brand-primary font-medium italic">Esclarecimentos.</span>
           </h2>
         </div>
 

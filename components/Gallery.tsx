@@ -11,7 +11,7 @@ const Gallery: React.FC = () => {
 
           <h2 className="text-4xl md:text-6xl font-black !text-brand-accent mb-8 tracking-tight leading-[1] text-center">
             Portfólio de <br />
-            <span className="!text-brand-primary/40 font-medium italic">Soluções Vidreiras.</span>
+            <span className="text-brand-primary font-medium italic">Soluções Vidreiras.</span>
           </h2>
         </div>
 

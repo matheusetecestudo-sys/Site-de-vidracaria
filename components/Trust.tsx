@@ -18,8 +18,8 @@ const Trust: React.FC = () => {
           <div className="relative z-10 grid lg:grid-cols-12 gap-4 md:gap-16 md:gap-24 items-center">
             <div className="lg:col-span-12 text-center flex flex-col items-center">
 
-              <h2 className="text-4xl md:text-7xl font-black !text-white mb-10 leading-[1] tracking-tight">
-                O Padrão <br /> <span className="text-brand-accent font-medium italic whitespace-nowrap">de Excelência.</span>
+              <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-10 leading-[1] tracking-tight">
+                O Padrão <br /> <span className="text-white font-medium italic whitespace-nowrap">de Excelência.</span>
               </h2>
               <p className="!text-brand-light font-medium text-lg md:text-xl mb-12 leading-relaxed max-w-lg mx-auto">
                 Projetos que exigem rigor técnico e acabamento de alto luxo. Unimos o preço direto de usina à precisão de engenharia.

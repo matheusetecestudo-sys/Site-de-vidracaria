@@ -31,7 +31,7 @@ const Process: React.FC = () => {
 
           <h2 className="text-4xl md:text-6xl font-black !text-brand-accent tracking-tight leading-[1] mb-8">
             Do Projeto à <br />
-            <span className="text-brand-accent font-medium italic">Entrega Final.</span>
+            <span className="text-white font-medium italic">Entrega Final.</span>
           </h2>
           <p className="!text-brand-light max-w-lg font-medium text-lg leading-relaxed mx-auto">
             Eficiência técnica para garantir que seu projeto seja executado sem erros e com acabamento impecável.
