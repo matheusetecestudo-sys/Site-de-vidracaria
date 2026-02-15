@@ -11,7 +11,7 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
 
             <h2 className="text-4xl md:text-6xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
               Serviços <br />
-              <span className="text-brand-primary font-medium italic">Mais Procurados.</span>
+              <span className="text-brand-accent font-normal">Mais Procurados.</span>
             </h2>
             <p className="!text-brand-secondary font-medium text-lg md:text-xl leading-relaxed max-w-xl mx-auto mb-8">
               Confira as soluções com maior demanda e excelência técnica garantida para seu ambiente.

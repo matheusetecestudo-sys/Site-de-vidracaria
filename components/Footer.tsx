@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="group flex flex-col items-center gap-1 focus:outline-none"
             >
               <img
-                src="/images/duno02.png"
+                src="/images/duno03.png"
                 alt="Duno Vidraçaria"
                 className="h-48 w-auto object-contain"
               />

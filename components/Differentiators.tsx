@@ -39,7 +39,7 @@ const Differentiators: React.FC = () => {
 
                     <h2 className="text-4xl md:text-6xl font-black !text-brand-accent mb-8 tracking-tight leading-tight">
                         Por que escolher <br />
-                        <span className="text-brand-primary font-medium italic">a nossa engenharia?</span>
+                        <span className="text-brand-accent font-normal">a nossa engenharia?</span>
                     </h2>
                     <p className="text-lg md:text-xl !text-brand-primary font-medium leading-relaxed max-w-xl mx-auto">
                         Combinamos a precisão técnica da ABNT com um atendimento focado na sua paz de espírito.

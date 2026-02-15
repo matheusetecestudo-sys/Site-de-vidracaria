@@ -10,7 +10,7 @@ const Testimonials: React.FC = () => {
 
           <h2 className="text-3xl md:text-5xl font-black !text-brand-accent tracking-tight leading-tight">
             Excelência aprovada por <br />
-            <span className="text-brand-primary font-medium italic">nossos clientes.</span>
+            <span className="text-brand-accent font-normal">nossos clientes.</span>
           </h2>
         </header>
 

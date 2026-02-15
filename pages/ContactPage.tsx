@@ -20,7 +20,7 @@ const ContactPage: React.FC = () => {
 
               <h1 className="text-4xl md:text-7xl lg:text-[100px] font-black !text-brand-accent leading-[1] md:leading-[0.85] mb-8 tracking-tight">
                 Canais de <br className="hidden md:block" />
-                <span className="text-brand-primary font-medium italic whitespace-nowrap">Comunicação.</span>
+                <span className="text-brand-accent font-normal whitespace-nowrap">Comunicação.</span>
               </h1>
 
               <p className="text-lg md:text-2xl !text-brand-primary font-medium leading-relaxed max-w-3xl mb-10 md:mb-16 mx-auto opacity-80">
