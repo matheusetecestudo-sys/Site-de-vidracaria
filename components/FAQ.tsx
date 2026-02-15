@@ -28,7 +28,7 @@ const FAQ: React.FC = () => {
                 <span className={`text-lg md:text-xl font-bold transition-colors duration-300 ${openIndex === index ? 'text-brand-accent' : 'text-brand-primary group-hover:text-brand-accent'}`}>
                   {item.question}
                 </span>
-                <div className={`mt-6 w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-brand-primary text-white rotate-180 shadow-lg' : 'bg-brand-light text-brand-accent/40'}`}>
+                <div className={`mt-6 w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-brand-accent text-black rotate-180 shadow-lg' : 'bg-brand-light text-brand-accent/40'}`}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
                 </div>
               </button>
