@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #059669;
-  --color-brand-secondary: #064e3b;
-  --color-brand-accent: #10b981;
+  --color-brand-primary: #1B3A5F;
+  --color-brand-secondary: #2C5F8D;
+  --color-brand-accent: #2DBFBD;
   --color-brand-whatsapp: #10b981;
-  --color-brand-light: #f0fdf4;
+  --color-brand-light: #E8F4F8;
 
   --color-neutral-main: #020617;
   --color-neutral-text: #334155;
@@ -14,11 +14,11 @@
 }
 
 :root {
-  --brand-primary: #10b981;
-  --brand-accent: #10b981;
+  --brand-primary: #1B3A5F;
+  --brand-accent: #2DBFBD;
   --brand-whatsapp: #10b981;
   --glass-bg: rgba(255, 255, 255, 0.8);
-  --glass-border: rgba(16, 185, 129, 0.1);
+  --glass-border: rgba(45, 191, 189, 0.1);
   --transition-main: 200ms cubic-bezier(0.16, 1, 0.3, 1);
   --space-unit: 8px;
 }
@@ -132,9 +132,9 @@ h3 {
   line-height: 1.15;
   letter-spacing: -0.025em;
   font-weight: 900;
-  color: #064e3b;
+  color: #1B3A5F;
   text-align: center;
-  /* brand-secondary */
+  /* brand-primary - azul navy do logo */
 }
 
 p {
@@ -151,12 +151,12 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #10b981;
+  background: #2DBFBD;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #059669;
+  background: #2C5F8D;
 }
 
 #app-loader {
