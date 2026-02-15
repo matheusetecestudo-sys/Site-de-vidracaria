@@ -31,7 +31,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background-color: white;
-  color: #001C44;
+  color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.625;
@@ -133,13 +133,13 @@ h3 {
   line-height: 1.15;
   letter-spacing: -0.025em;
   font-weight: 900;
-  color: #001C44;
+  color: #000000;
   text-align: center;
   /* brand-primary - Azul Marinho do logo */
 }
 
 p {
-  color: #003B75;
+  color: #1a1a1a;
   /* brand-secondary - Tom mais suave de azul do logo */
 }
 
@@ -152,12 +152,12 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #001C44;
+  background: #000000;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #001C44;
+  background: #D4AF37;
 }
 
 #app-loader {

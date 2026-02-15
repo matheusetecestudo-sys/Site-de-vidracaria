@@ -52,7 +52,7 @@ const ContactPage: React.FC = () => {
 
                 <h2 className="text-4xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.05] tracking-tight uppercase">
                   Sede <br className="hidden md:block" />
-                  <span className="text-brand-accent/60 font-medium italic lowercase">corporativa.</span>
+                  <span className="text-brand-accent font-normal">Corporativa.</span>
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 border-t border-white/5 pt-16 w-full items-start">
@@ -99,7 +99,7 @@ const ContactPage: React.FC = () => {
                   <div className="space-y-6">
                     <h2 className="text-4xl md:text-7xl lg:text-[85px] font-black !text-brand-accent leading-[0.9] tracking-tighter">
                       O que ter <br className="hidden md:block" />
-                      <span className="text-brand-secondary font-medium italic">em mãos?</span>
+                      <span className="text-brand-accent font-normal">em mãos?</span>
                     </h2>
                     <p className="text-xl md:text-2xl !text-brand-primary font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
                       Para um orçamento técnico imediato, forneça as seguintes informações:
@@ -164,7 +164,7 @@ const ContactPage: React.FC = () => {
 
                 <h2 className="text-3xl md:text-7xl font-black !text-brand-accent mb-12 leading-[1.1] tracking-tighter uppercase max-w-4xl">
                   Paz de Espírito <br className="hidden md:block" />
-                  <span className="text-brand-light/80 font-medium italic lowercase">estrutural.</span>
+                  <span className="text-brand-accent font-normal">Estrutural.</span>
                 </h2>
 
                 <p className="!text-brand-light font-medium text-lg md:text-2xl mb-12 leading-relaxed max-w-2xl mx-auto px-4">
@@ -181,7 +181,7 @@ const ContactPage: React.FC = () => {
                     { v: "Certificado", l: "Padrão NBR" }
                   ].map((stat, i) => (
                     <div key={i} className="flex flex-col items-center text-center">
-                      <div className="text-xl md:text-3xl font-black !text-white mb-1 tracking-tight italic">{stat.v}</div>
+                      <div className="text-xl md:text-3xl font-black !text-white mb-1 tracking-tight">{stat.v}</div>
                       <div className="text-[9px] font-bold !text-brand-light/40 uppercase tracking-widest leading-tight">{stat.l}</div>
                     </div>
                   ))}

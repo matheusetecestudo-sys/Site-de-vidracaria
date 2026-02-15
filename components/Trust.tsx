@@ -28,7 +28,7 @@ const Trust: React.FC = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 border-t border-white/5 pt-12 w-full">
                 {stats.map((stat, i) => (
                   <div key={i} className="flex flex-col items-center text-center">
-                    <div className="text-2xl md:text-3xl font-black !text-white mb-1 tracking-tight italic">{stat.value}</div>
+                    <div className="text-2xl md:text-3xl font-black !text-white mb-1 tracking-tight">{stat.value}</div>
                     <div className="text-[9px] font-bold !text-brand-light/70 uppercase tracking-widest leading-tight">{stat.label}</div>
                   </div>
                 ))}

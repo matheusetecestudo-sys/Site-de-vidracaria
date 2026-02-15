@@ -40,7 +40,7 @@ const AboutPage: React.FC = () => {
             <div className="text-center mb-10 md:mb-16">
 
               <h2 className="text-3xl md:text-7xl font-black !text-brand-accent tracking-tight leading-tight mb-10">
-                Precisão técnica que <br /> <span className="text-brand-accent font-medium">gera confiança real.</span>
+                Precisão técnica que <br /> <span className="text-brand-accent font-normal">gera confiança real.</span>
               </h2>
               <div className="space-y-10 text-xl md:text-2xl !text-brand-primary font-medium leading-relaxed max-w-3xl mx-auto text-center">
                 <p>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
         <section className="py-10 md:py-24 bg-brand-light">
           <div className="container-precision text-center reveal active mx-auto">
             <h2 className="text-4xl md:text-8xl font-black !text-brand-accent mb-12 tracking-tighter leading-tight">
-              Pronto para elevar o <br className="hidden md:block" /> <span className="!text-brand-accent font-medium">nível do seu projeto?</span>
+              Pronto para elevar o <br className="hidden md:block" /> <span className="!text-brand-accent font-normal">nível do seu projeto?</span>
             </h2>
             <p className="text-xl md:text-3xl !text-brand-primary font-medium mb-10 md:mb-16 max-w-3xl mx-auto opacity-80">
               Escolha uma empresa que trata cada milímetro do seu projeto com a técnica e o respeito que ele exige.
