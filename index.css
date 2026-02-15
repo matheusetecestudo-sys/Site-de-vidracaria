@@ -136,11 +136,9 @@ section {
   transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 24px !important;
-  gap: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 800;
   overflow: hidden;
 }
