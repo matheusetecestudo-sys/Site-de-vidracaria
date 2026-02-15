@@ -12,28 +12,28 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-brand-primary text-white pt-12 pb-32 md:pb-12 border-t border-white/5 font-inter">
       <div className="container-precision">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-16 mb-6 md:mb-20 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12 md:mb-20 text-center lg:text-left items-start">
 
           {/* Coluna 1: Marca & Bio */}
-          <div className="space-y-8 flex flex-col items-center">
+          <div className="space-y-8 flex flex-col items-center lg:items-start">
             <button
               onClick={() => onNavigate?.('home')}
-              className="group flex flex-col items-center gap-1 focus:outline-none"
+              className="group flex flex-col items-center lg:items-start gap-1 focus:outline-none w-full"
             >
               <img
                 src="/images/duno03.png"
                 alt="Duno Vidraçaria"
-                className="h-[350px] md:h-[450px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                className="w-full max-w-[320px] md:max-w-[400px] lg:max-w-none h-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </button>
-            <p className="text-base leading-relaxed max-w-xs !text-brand-light/80 mx-auto font-medium">
+            <p className="text-base leading-relaxed max-w-xs !text-brand-light/80 mx-auto lg:mx-0 font-medium">
               Especialistas em engenharia vidreira de alto desempenho. Precisão técnica em box, espelhos e projetos sob medida em {CLIENT_CONFIG.city}.
             </p>
           </div>
 
           {/* Coluna 2: Serviços Principais */}
-          <div className="space-y-8 flex flex-col items-center">
-            <h4 className="!text-white font-bold text-sm tracking-tight">Nossas especialidades</h4>
+          <div className="space-y-8 flex flex-col items-center lg:items-start">
+            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Nossas especialidades</h4>
             <ul className="space-y-4">
               {mainServices.map((s) => (
                 <li key={s.id}>
@@ -50,8 +50,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Coluna 3: Institucional */}
-          <div className="space-y-8 flex flex-col items-center">
-            <h4 className="!text-white font-bold text-sm tracking-tight">Empresa</h4>
+          <div className="space-y-8 flex flex-col items-center lg:items-start">
+            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Empresa</h4>
             <ul className="space-y-4">
               <li><button onClick={() => onNavigate?.('sobre')} className="text-base hover:text-brand-accent transition-colors font-medium !text-white opacity-80 hover:opacity-100">Nossa história</button></li>
               <li><button onClick={() => onNavigate?.('servicos')} className="text-base hover:text-brand-accent transition-colors font-medium !text-white opacity-80 hover:opacity-100">Catálogo de serviços</button></li>
@@ -60,12 +60,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           </div>
 
           {/* Coluna 4: Contato Rápido */}
-          <div className="space-y-8 flex flex-col items-center">
-            <h4 className="!text-white font-bold text-sm tracking-tight">Atendimento comercial</h4>
-            <div className="space-y-6 flex flex-col items-center">
-              <div className="flex flex-col items-center">
+          <div className="space-y-8 flex flex-col items-center lg:items-start">
+            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Atendimento comercial</h4>
+            <div className="space-y-6 flex flex-col items-center lg:items-start">
+              <div className="flex flex-col items-center lg:items-start">
                 <span className="text-[10px] uppercase font-bold !text-white/40 mb-1 tracking-widest">Telefone</span>
-                <span className="!text-white font-black text-xl">{CLIENT_CONFIG.phoneDisplay}</span>
+                <span className="!text-white font-black text-xl md:text-2xl">{CLIENT_CONFIG.phoneDisplay}</span>
               </div>
               <div className="flex justify-center">
                 <a
