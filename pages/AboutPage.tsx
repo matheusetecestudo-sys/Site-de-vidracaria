@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
 
               <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter !text-brand-accent">
                 Engenharia <br />
-                <span className="text-white font-medium italic">sem segredos.</span>
+                <span className="text-brand-accent font-normal">sem segredos.</span>
               </h1>
               <p className="text-xl md:text-3xl !text-brand-light font-medium leading-relaxed opacity-90 max-w-2xl mx-auto">
                 Mais que uma vidraçaria, somos especialistas em transformar ambientes com transparência, segurança estrutural e design de alto padrão.

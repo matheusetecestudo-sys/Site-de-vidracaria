@@ -15,7 +15,7 @@ const ServicesPage: React.FC = () => {
 
               <h1 className="text-5xl md:text-7xl font-black !text-brand-accent leading-[1] mb-8 tracking-tight">
                 Soluções para <br />
-                <span className="text-brand-primary font-medium italic">Cada Detalhe.</span>
+                <span className="text-brand-accent font-normal">Cada Detalhe.</span>
               </h1>
               <p className="text-xl !text-brand-primary font-medium leading-relaxed max-w-xl mx-auto">
                 Vidraçaria técnica com foco em segurança, durabilidade e acabamento premium para projetos residenciais e comerciais.

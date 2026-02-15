@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
 
             <h1 className="text-3xl md:text-7xl lg:text-[92px] font-black !text-brand-accent leading-[1.1] md:leading-[0.85] mb-6 md:mb-8 tracking-tight text-center">
               A Engenharia do <br className="hidden md:block" />
-              <span className="text-brand-accent font-medium whitespace-nowrap">Vidro Moderno.</span>
+              <span className="text-brand-accent font-normal whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
             <p className="text-lg md:text-2xl !text-brand-secondary font-medium leading-relaxed max-w-2xl mb-10 md:mb-10 md:mb-16 mx-auto text-center">
