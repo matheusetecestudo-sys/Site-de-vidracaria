@@ -8,7 +8,6 @@ const Gallery: React.FC = () => {
     <section id="solucoes" className="py-8 pb-16 md:py-10 bg-white font-inter">
       <div className="container-precision">
         <div className="text-center mb-8 reveal active">
-
           <h2 className="text-4xl md:text-6xl font-black !text-brand-accent mb-8 tracking-tight leading-[1] text-center">
             Portfólio de <br />
             <span className="text-brand-accent font-normal">Soluções Vidreiras.</span>
@@ -50,23 +49,14 @@ const Gallery: React.FC = () => {
             href={getServiceWhatsAppLink("Outros Serviços")}
             target="_blank"
             rel="noopener noreferrer"
-            className="reveal active flex flex-col items-center justify-center aspect-square rounded-[2rem] md:rounded-[3rem] bg-gradient-to-br from-brand-accent to-[#C5A028] p-8 text-center group transition-all duration-500 shadow-xl relative overflow-hidden btn-interact border border-black/5"
+            className="reveal active flex flex-col items-center justify-center aspect-square rounded-[2rem] bg-brand-accent p-8 text-center group transition-all duration-500 shadow-2xl relative overflow-hidden btn-interact"
           >
-            {/* Glossy Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-            <div className="w-16 h-16 md:w-20 md:h-20 bg-black/10 rounded-full flex items-center justify-center text-black/80 mb-6 group-hover:bg-black group-hover:text-brand-accent transition-all duration-500 shadow-inner">
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 4v16m8-8H4" />
-              </svg>
+            <div className="w-14 h-14 bg-black/10 rounded-2xl flex items-center justify-center text-black mb-6 group-hover:scale-110 transition-transform duration-500">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 4v16m8-8H4" /></svg>
             </div>
-
-            <p className="text-black font-black text-xs md:text-sm uppercase tracking-[0.2em] leading-relaxed max-w-[180px]">
+            <p className="text-black font-bold text-[11px] uppercase tracking-[0.2em] leading-relaxed">
               Peça seu orçamento <br /> no WhatsApp
             </p>
-
-            {/* Subtle light effect */}
-            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-white/20 blur-3xl rounded-full" />
           </a>
         </div>
       </div>
