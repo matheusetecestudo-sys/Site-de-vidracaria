@@ -24,7 +24,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage.tsx'));
 // Minimal loading placeholder for lighter weight
 const SectionLoader = () => (
   <div className="w-full min-h-[60vh] flex items-center justify-center opacity-0 animate-fade-in fill-mode-forwards" style={{ animationDelay: '200ms' }}>
-    <div className="w-8 h-8 border-[3px] border-brand-accent/20 border-t-brand-accent rounded-full animate-spin"></div>
+    <div className="w-8 h-8 border-[3px] border-brand-primary/20 border-t-brand-primary rounded-full animate-spin"></div>
   </div>
 );
 
@@ -131,7 +131,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white antialiased overflow-x-hidden font-inter">
       {/* Barra de Progresso Superior */}
-      <div className={`fixed top-0 left-0 w-full h-[3px] bg-brand-accent z-[250] transition-transform duration-300 origin-left ${isNavigating ? 'scale-x-100' : 'scale-x-0 opacity-0'}`} />
+      <div className={`fixed top-0 left-0 w-full h-[3px] bg-brand-primary z-[250] transition-transform duration-300 origin-left ${isNavigating ? 'scale-x-100' : 'scale-x-0 opacity-0'}`} />
 
       <Navbar onNavigate={navigate} currentPage={currentPage} />
 

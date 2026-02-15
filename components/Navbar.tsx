@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             <img
               src="/images/duno01.png"
               alt="Duno Vidraçaria"
-              className="h-10 md:h-12 w-auto object-contain transition-all duration-500"
+              className="h-28 md:h-36 w-auto object-contain transition-all duration-500"
             />
           </button>
 
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-900 hover:text-brand-accent'
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-brand-primary hover:text-brand-accent'
                   }`}
               >
                 {item.label}
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden w-12 h-12 flex items-center justify-center bg-white rounded-2xl border border-slate-100 shadow-sm z-[110] relative focus:outline-none touch-manipulation"
+              className="md:hidden w-12 h-12 flex items-center justify-center bg-white rounded-2xl border border-brand-accent/20 shadow-sm z-[110] relative focus:outline-none touch-manipulation"
               aria-expanded={isMenuOpen}
               aria-label="Alternar menu"
             >
@@ -93,12 +93,12 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
       </header >
 
       {/* Mobile Menu Drawer - Full Screen UX */}
-      < div className={`fixed inset-0 bg-slate-950/20 backdrop-blur-sm z-[95] md:hidden transition-all duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsMenuOpen(false)} />
+      < div className={`fixed inset-0 bg-brand-primary/20 backdrop-blur-sm z-[95] md:hidden transition-all duration-500 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsMenuOpen(false)} />
 
       < div className={`fixed top-0 right-0 h-screen w-full sm:w-[400px] bg-white z-[100] md:hidden transition-transform duration-500 ease-in-out transform-gpu shadow-2xl ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}>
         <div className="h-full flex flex-col pt-32 pb-12 px-10 items-center justify-center">
-          <p className="text-[10px] font-black tracking-[0.4em] text-slate-900 uppercase mb-8 text-center">Navegação</p>
+          <p className="text-[10px] font-black tracking-[0.4em] text-brand-primary uppercase mb-8 text-center">Navegação</p>
 
           <div className="flex flex-col gap-4 w-full">
             {navItems.map((item, idx) => (
@@ -106,7 +106,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
                 key={item.id}
                 onClick={() => handleNav(item.id)}
                 className={`text-4xl font-black tracking-tighter text-center py-4 transition-all duration-500 touch-manipulation focus:outline-none ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-[50px] opacity-0'
-                  } ${currentPage === item.id ? 'text-brand-accent' : 'text-slate-900'}`}
+                  } ${currentPage === item.id ? 'text-brand-accent' : 'text-brand-primary'}`}
                 style={{ transitionDelay: `${idx * 75}ms` }}
               >
                 {item.label}
@@ -115,7 +115,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
           </div>
 
           <div className="mt-auto space-y-8 w-full flex flex-col items-center">
-            <div className={`w-full h-[1px] bg-slate-100 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
+            <div className={`w-full h-[1px] bg-brand-accent/10 transition-all duration-1000 ${isMenuOpen ? 'scale-x-100' : 'scale-x-0'}`} />
           </div>
         </div>
       </div >

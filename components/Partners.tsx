@@ -11,7 +11,7 @@ const Partners: React.FC = () => {
     ];
 
     return (
-        <section className="py-12 bg-slate-950 overflow-hidden relative border-t border-white/5">
+        <section className="py-12 bg-brand-primary overflow-hidden relative border-t border-brand-accent/10">
             {/* Glow decorativo de fundo */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-brand-accent/5 blur-[120px] pointer-events-none" />
 
@@ -24,8 +24,8 @@ const Partners: React.FC = () => {
                 {/* Marquee/Slider de Marcas */}
                 <div className="relative mt-16 group">
                     {/* Gradientes de desfoque nas laterais para efeito premium */}
-                    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
-                    <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-950 to-transparent z-20 pointer-events-none" />
+                    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-brand-primary to-transparent z-20 pointer-events-none" />
+                    <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-brand-primary to-transparent z-20 pointer-events-none" />
 
                     <div className="flex overflow-hidden select-none">
                         <div className="flex flex-nowrap gap-12 md:gap-24 items-center animate-scroll py-8">
