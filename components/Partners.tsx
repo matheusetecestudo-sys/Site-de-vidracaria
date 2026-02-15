@@ -18,7 +18,7 @@ const Partners: React.FC = () => {
             <div className="container-precision relative z-10">
                 <div className="text-center mb-12 reveal active">
 
-                    <h3 className="text-2xl md:text-4xl font-black text-white tracking-tight">Utilizamos as <span className="text-brand-accent italic">marcas líderes</span> do mercado.</h3>
+                    <h3 className="text-2xl md:text-4xl font-black !text-white tracking-tight">Utilizamos as <span className="text-brand-accent">marcas líderes</span> do mercado.</h3>
                 </div>
 
                 {/* Marquee/Slider de Marcas */}
@@ -31,7 +31,7 @@ const Partners: React.FC = () => {
                         <div className="flex flex-nowrap gap-12 md:gap-24 items-center animate-scroll py-8">
                             {[...brands, ...brands].map((brand, i) => (
                                 <div key={i} className="flex-shrink-0">
-                                    <span className="text-3xl md:text-6xl font-black text-white hover:text-brand-accent transition-all duration-500 cursor-default whitespace-nowrap tracking-tighter hover:scale-110 block transform translate-z-0 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_20px_rgba(59,130,246,0.6)]">
+                                    <span className="text-3xl md:text-6xl font-black !text-white hover:text-brand-accent transition-all duration-500 cursor-default whitespace-nowrap tracking-tighter hover:scale-110 block transform translate-z-0 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:drop-shadow-[0_0_20px_rgba(212,175,55,0.6)]">
                                         {brand}
                                     </span>
                                 </div>
