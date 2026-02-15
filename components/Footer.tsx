@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <img
                 src="/images/duno03.png"
                 alt="Duno Vidraçaria"
-                className="h-48 w-auto object-contain"
+                className="h-64 md:h-72 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </button>
             <p className="text-base leading-relaxed max-w-xs !text-brand-light/80 mx-auto font-medium">
