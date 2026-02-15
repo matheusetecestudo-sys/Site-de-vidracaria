@@ -46,7 +46,7 @@ const Process: React.FC = () => {
                   {step.num}
                 </span>
                 <div className="w-12 h-[2px] bg-brand-accent/30 group-hover:bg-brand-accent transition-all duration-500"></div>
-                <div className="text-white transform group-hover:scale-110 transition-transform bg-white/5 p-4 rounded-2xl">
+                <div className="text-white transform group-hover:scale-110 transition-transform bg-brand-secondary p-4 rounded-2xl">
                   {step.icon}
                 </div>
               </div>

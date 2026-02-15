@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
 
               <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter !text-brand-accent">
                 Engenharia <br />
-                <span className="text-brand-accent/60 font-medium italic">sem segredos.</span>
+                <span className="text-white font-medium italic">sem segredos.</span>
               </h1>
               <p className="text-xl md:text-3xl !text-brand-light font-medium leading-relaxed opacity-90 max-w-2xl mx-auto">
                 Mais que uma vidraçaria, somos especialistas em transformar ambientes com transparência, segurança estrutural e design de alto padrão.
@@ -56,8 +56,8 @@ const AboutPage: React.FC = () => {
               {values.map((v, i) => (
                 <div key={i} className="flex flex-col items-center text-center group p-8 bg-brand-light rounded-3xl transition-all hover:bg-white hover:shadow-2xl border border-transparent hover:border-brand-accent/20 italic">
                   <div className="!text-brand-accent font-black text-4xl mb-6 opacity-30 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
-                  <h3 className="text-2xl md:text-3xl font-black !text-brand-accent mb-6 leading-tight">{v.t}</h3>
-                  <p className="!text-brand-primary font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
+                  <h3 className="text-2xl md:text-3xl font-black !text-brand-primary mb-6 leading-tight">{v.t}</h3>
+                  <p className="!text-brand-secondary font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
                 </div>
               ))}
             </div>

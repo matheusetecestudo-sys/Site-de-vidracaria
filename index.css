@@ -2,10 +2,10 @@
 
 @theme {
   --color-brand-primary: #001C44;
-  --color-brand-secondary: #000000;
-  --color-brand-accent: #003B75;
+  --color-brand-secondary: #003B75;
+  --color-brand-accent: #00B5D3;
   --color-brand-whatsapp: #001C44;
-  --color-brand-light: #ffffff;
+  --color-brand-light: #F0F9FF;
 
   --color-neutral-main: #000000;
   --color-neutral-text: #1a1a1a;
@@ -15,10 +15,11 @@
 
 :root {
   --brand-primary: #001C44;
-  --brand-accent: #003B75;
-  --brand-whatsapp: #000000;
-  --glass-bg: rgba(255, 255, 255, 0.98);
-  --glass-border: rgba(0, 0, 0, 0.1);
+  --brand-secondary: #003B75;
+  --brand-accent: #00B5D3;
+  --brand-whatsapp: #001C44;
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(0, 181, 211, 0.2);
   --transition-main: 300ms cubic-bezier(0.16, 1, 0.3, 1);
   --space-unit: 8px;
 }

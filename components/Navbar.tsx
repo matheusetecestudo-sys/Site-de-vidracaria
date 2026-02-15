@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-brand-primary hover:text-brand-accent'
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-brand-primary hover:text-brand-secondary'
                   }`}
               >
                 {item.label}

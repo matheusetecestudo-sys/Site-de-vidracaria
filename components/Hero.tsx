@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
               <span className="text-brand-accent font-medium italic whitespace-nowrap">Vidro Moderno.</span>
             </h1>
 
-            <p className="text-lg md:text-2xl !text-brand-primary font-medium leading-relaxed max-w-2xl mb-10 md:mb-10 md:mb-16 mx-auto text-center">
+            <p className="text-lg md:text-2xl !text-brand-secondary font-medium leading-relaxed max-w-2xl mb-10 md:mb-10 md:mb-16 mx-auto text-center">
               Projetos sob medida em vidros e espelhos com instalação técnica imediata e acabamento padrão arquitetura de alto luxo.
             </p>
 
