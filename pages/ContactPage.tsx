@@ -57,7 +57,7 @@ const ContactPage: React.FC = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 border-t border-white/5 pt-16 w-full items-start">
                   <div className="flex flex-col items-center text-center group">
-                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:btn-gold-premium group-hover:text-black transition-all duration-500">
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                     </div>
                     <p className="text-[10px] font-bold !text-brand-light/40 uppercase tracking-[0.2em] leading-tight mb-3">E-mail Corporativo</p>
@@ -67,7 +67,7 @@ const ContactPage: React.FC = () => {
                   </div>
 
                   <div className="flex flex-col items-center text-center group">
-                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:btn-gold-premium group-hover:text-black transition-all duration-500">
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <p className="text-[10px] font-bold !text-brand-light/40 uppercase tracking-[0.2em] leading-tight mb-3">Horário Operacional</p>
@@ -76,7 +76,7 @@ const ContactPage: React.FC = () => {
                   </div>
 
                   <div className="flex flex-col items-center text-center group">
-                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:bg-brand-accent group-hover:text-white transition-all duration-500">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-brand-accent mb-6 group-hover:btn-gold-premium group-hover:text-black transition-all duration-500">
                       <svg className="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                     </div>
                     <p className="text-[10px] font-bold !text-brand-light/40 uppercase tracking-[0.2em] leading-tight mb-3">Localização</p>
@@ -113,7 +113,7 @@ const ContactPage: React.FC = () => {
                       { t: "Configuração", d: "Cor de perfis e ferragens (Inox, Preto, Prata)." }
                     ].map((item, i) => (
                       <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start gap-6 group text-center sm:text-left">
-                        <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-accent/10 flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-lg transition-all duration-500 group-hover:border-brand-accent group-hover:bg-brand-accent group-hover:text-white">
+                        <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-accent/10 flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-lg transition-all duration-500 group-hover:border-brand-accent group-hover:btn-gold-premium group-hover:text-black">
                           0{i + 1}
                         </div>
                         <div className="pt-2">

@@ -51,7 +51,7 @@ const HowItWorks: React.FC = () => {
 
                     {steps.map((step, i) => (
                         <div key={i} className="relative z-10 flex flex-col items-center text-center bg-white p-6 rounded-3xl group">
-                            <div className="w-20 h-20 bg-brand-accent text-white rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-brand-accent/20 group-hover:scale-110 transition-transform duration-500 relative">
+                            <div className="w-20 h-20 btn-gold-premium text-white rounded-2xl flex items-center justify-center mb-8 shadow-xl shadow-brand-accent/20 group-hover:scale-110 transition-transform duration-500 relative">
                                 {step.icon}
                                 <span className="absolute -top-3 -right-3 w-8 h-8 bg-brand-primary border-4 border-white text-white rounded-full text-[10px] font-black flex items-center justify-center">
                                     {step.number}

@@ -53,7 +53,7 @@ const Differentiators: React.FC = () => {
                             className="reveal active group flex flex-col items-center bg-white p-10 rounded-[2.5rem] border border-brand-accent/10 hover:border-brand-accent/20 hover:shadow-2xl transition-all duration-500"
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >
-                            <div className="w-20 h-20 bg-brand-accent/5 rounded-3xl flex items-center justify-center text-brand-accent mb-8 group-hover:scale-110 group-hover:bg-brand-accent group-hover:text-white transition-all duration-500 shadow-sm">
+                            <div className="w-20 h-20 bg-brand-accent/5 rounded-3xl flex items-center justify-center text-brand-accent mb-8 group-hover:scale-110 group-hover:btn-gold-premium group-hover:text-black transition-all duration-500 shadow-sm">
                                 {d.icon}
                             </div>
                             <h3 className="text-xl font-bold !text-brand-accent mb-4 tracking-tight">{d.title}</h3>
