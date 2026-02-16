@@ -33,9 +33,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-xl py-3 shadow-lg' : 'py-5 md:py-8 bg-white'
+      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl py-4 shadow-2xl' : 'py-4 md:py-8 bg-black/80 backdrop-blur-sm'
         }`}>
-        <div className="container-precision flex justify-between items-center gap-2 md:gap-4 h-14 md:h-16">
+        <div className="container-precision flex justify-between items-center h-12">
 
           <button
             onClick={() => window.location.href = '/'}
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             <img
               src="/images/duno03.png"
               alt="Duno Vidraçaria"
-              className="h-14 md:h-18 w-auto object-contain transition-all duration-500"
+              className="h-12 md:h-16 w-auto object-contain transition-all duration-500"
             />
           </button>
 
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-black hover:text-brand-accent'
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-white hover:text-brand-accent'
                   }`}
               >
                 {item.label}
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2 md:gap-4">
+          <div className="flex items-center gap-4">
             <a
               href={getWhatsAppLink("Navbar", "Orçamento Rápido")}
               target="_blank"
@@ -78,7 +78,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden w-12 h-12 flex items-center justify-center bg-white rounded-2xl border border-gray-100 shadow-xl z-[110] relative focus:outline-none touch-manipulation"
+              className="md:hidden w-12 h-12 flex items-center justify-center bg-black/50 backdrop-blur-md rounded-2xl border border-brand-accent/20 shadow-sm z-[110] relative focus:outline-none touch-manipulation"
               aria-expanded={isMenuOpen}
               aria-label="Alternar menu"
             >
