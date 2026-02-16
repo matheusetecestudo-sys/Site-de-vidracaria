@@ -42,7 +42,7 @@ const Process: React.FC = () => {
           {steps.map((step, index) => (
             <div key={index} className="reveal active group flex flex-col items-center text-center">
               <div className="flex flex-col items-center gap-6 mb-10 w-full">
-                <span className="text-6xl font-black bg-gradient-to-r from-[#D4AF37] via-[#F4E5A1] to-[#D4AF37] bg-clip-text text-transparent group-hover:scale-110 transition-all duration-500 italic leading-tight">
+                <span className="text-6xl font-black !text-brand-accent group-hover:scale-110 transition-all duration-500 italic leading-tight">
                   {step.num}
                 </span>
                 <div className="w-12 h-[2px] bg-brand-accent/30 group-hover:bg-brand-accent transition-all duration-500"></div>

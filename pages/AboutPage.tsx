@@ -23,7 +23,7 @@ const AboutPage: React.FC = () => {
           <div className="container-precision relative z-10">
             <div className="max-w-4xl mx-auto text-center reveal active">
 
-              <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter title-gold-premium">
+              <h1 className="text-4xl md:text-8xl lg:text-[110px] font-black leading-[0.95] md:leading-[0.85] mb-12 tracking-tighter !text-brand-accent">
                 Engenharia <br />
                 <span className="font-normal">sem segredos.</span>
               </h1>
@@ -39,7 +39,7 @@ const AboutPage: React.FC = () => {
           <div className="max-w-4xl mx-auto reveal active">
             <div className="text-center mb-10 md:mb-16">
 
-              <h2 className="text-3xl md:text-7xl font-black tracking-tight leading-tight mb-10 title-gold-premium">
+              <h2 className="text-3xl md:text-7xl font-black tracking-tight leading-tight mb-10 !text-brand-accent">
                 Precisão técnica que <br /> <span className="font-normal">gera confiança real.</span>
               </h2>
               <div className="space-y-10 text-xl md:text-2xl !text-brand-primary font-medium leading-relaxed max-w-3xl mx-auto text-center">
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
         {/* CTA Section */}
         <section className="py-10 md:py-24 bg-brand-light">
           <div className="container-precision text-center reveal active mx-auto">
-            <h2 className="text-4xl md:text-8xl font-black mb-12 tracking-tighter leading-tight title-gold-premium">
+            <h2 className="text-4xl md:text-8xl font-black mb-12 tracking-tighter leading-tight !text-brand-accent">
               Pronto para elevar o <br className="hidden md:block" /> <span className="font-normal">nível do seu projeto?</span>
             </h2>
             <p className="text-xl md:text-3xl !text-brand-primary font-medium mb-10 md:mb-16 max-w-3xl mx-auto opacity-80">
