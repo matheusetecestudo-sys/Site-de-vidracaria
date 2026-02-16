@@ -101,4 +101,3 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 };
 
 export default Footer;
-```
