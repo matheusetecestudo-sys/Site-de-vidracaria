@@ -33,39 +33,40 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl py-3 shadow-2xl' : 'py-4 md:py-6 bg-black/80 backdrop-blur-sm'
+      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl py-2 md:py-4 shadow-2xl' : 'py-4 md:py-8 bg-black/80 backdrop-blur-sm'
         }`}>
-        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-32 md:h-40">
+        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-20 md:h-24 relative">
 
-          {/* Logo - Visível em todos os dispositivos */}
+          {/* Logo - Esquerda */}
           <button
             onClick={() => window.location.href = '/'}
-            className="flex items-center focus:outline-none"
+            className="flex items-center focus:outline-none z-[110]"
             aria-label="Ir para a página inicial"
           >
             <img
               src="/images/duno03.png"
               alt="Duno Vidraçaria"
-              className="h-28 md:h-36 w-auto object-contain transition-all duration-500"
+              className="h-14 md:h-18 w-auto object-contain transition-all duration-500"
             />
           </button>
 
-          {/* Desktop Navigation & CTA - Oculto em telas menores que Desktop (lg) */}
-          <div className="hidden lg:flex items-center gap-8">
-            <nav className="flex items-center gap-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNav(item.id)}
-                  className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-white hover:text-brand-accent'
-                    }`}
-                >
-                  {item.label}
-                  <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[3px] bg-brand-accent rounded-full transition-all duration-300 ${currentPage === item.id ? 'w-full' : 'w-0 group-hover:w-1/2'}`} />
-                </button>
-              ))}
-            </nav>
+          {/* Navegação Desktop - Centralizada Absolutamente */}
+          <nav className="hidden lg:flex items-center justify-center absolute left-1/2 -translate-x-1/2 gap-8 z-[105]">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNav(item.id)}
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-white hover:text-brand-accent'
+                  }`}
+              >
+                {item.label}
+                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-[3px] bg-brand-accent rounded-full transition-all duration-300 ${currentPage === item.id ? 'w-full' : 'w-0 group-hover:w-1/2'}`} />
+              </button>
+            ))}
+          </nav>
 
+          {/* Botão Orçamento Desktop - Direita */}
+          <div className="hidden lg:flex items-center z-[110]">
             <a
               href={getWhatsAppLink("Navbar", "Orçamento Rápido")}
               target="_blank"
@@ -79,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             </a>
           </div>
 
-          {/* Mobile Menu Button - Apenas Mobile/Tablet (oculto em lg) */}
+          {/* Botão Menu - Apenas Mobile/Tablet */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden w-12 h-12 flex items-center justify-center bg-black/50 backdrop-blur-md rounded-2xl border border-brand-accent/20 shadow-sm z-[110] relative focus:outline-none touch-manipulation"
