@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
     <>
       <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl py-3 shadow-2xl' : 'py-4 md:py-6 bg-black/80 backdrop-blur-sm'
         }`}>
-        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-16 md:h-20">
+        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-32 md:h-40">
 
           {/* Logo - Visível em todos os dispositivos */}
           <button
@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             <img
               src="/images/duno03.png"
               alt="Duno Vidraçaria"
-              className="h-14 md:h-18 w-auto object-contain transition-all duration-500"
+              className="h-28 md:h-36 w-auto object-contain transition-all duration-500"
             />
           </button>
 
