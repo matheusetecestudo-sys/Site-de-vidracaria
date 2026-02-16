@@ -13,9 +13,9 @@ const WhatsAppButton: React.FC = () => {
     <div className={`fixed bottom-6 right-6 z-[100] transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
       }`}>
       <div className="flex flex-col items-center gap-3">
-        <div className="hidden md:block bg-white/95 backdrop-blur-md px-4 py-2 rounded-full shadow-2xl border border-brand-accent/20 animate-bounce transition-all">
-          <p className="text-[10px] font-black text-brand-primary tracking-tight leading-none uppercase">
-            Peça seu <span className="text-brand-accent">Orçamento</span>
+        <div className="hidden md:block btn-gold-premium px-4 py-2 rounded-full shadow-2xl animate-bounce transition-all border-none">
+          <p className="text-[10px] font-black text-black tracking-tight leading-none uppercase">
+            Peça seu Orçamento
           </p>
         </div>
 

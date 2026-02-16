@@ -44,15 +44,15 @@ const Services: React.FC<{ onNavigate?: (page: string) => void }> = ({ onNavigat
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-brand-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute top-8 left-8 bg-white/90 backdrop-blur-md px-5 py-2 rounded-full text-[10px] font-bold text-brand-primary uppercase tracking-widest shadow-sm">
+                  <div className="absolute top-8 left-8 btn-gold-premium px-5 py-2 rounded-full text-[10px] font-bold text-black uppercase tracking-widest shadow-sm">
                     {service.tag || 'Destaque'}
                   </div>
                 </div>
 
                 <div className="p-8 md:p-12 flex flex-col flex-grow items-center text-center">
                   <div className="flex flex-col items-center gap-4 mb-6">
-                    <span className="text-2xl font-black text-brand-accent group-hover:scale-110 transition-transform italic leading-none">0{index + 1}</span>
-                    <h3 className="text-2xl md:text-3xl font-black !text-brand-primary leading-none min-h-[3.5rem] flex items-center justify-center">{service.title}</h3>
+                    <span className="text-2xl font-black group-hover:scale-110 transition-transform italic leading-none title-gold-premium">0{index + 1}</span>
+                    <h3 className="text-2xl md:text-3xl font-black leading-none min-h-[3.5rem] flex items-center justify-center title-gold-premium">{service.title}</h3>
                   </div>
 
                   <p className="!text-brand-secondary text-base font-medium leading-relaxed mb-10 flex-grow min-h-[5rem] flex items-center">

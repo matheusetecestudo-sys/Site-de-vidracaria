@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Coluna 2: Serviços Principais */}
           <div className="space-y-8 flex flex-col items-center lg:items-start">
-            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Nossas especialidades</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2 title-gold-premium">Nossas especialidades</h4>
             <ul className="space-y-4">
               {mainServices.map((s) => (
                 <li key={s.id}>
@@ -51,7 +51,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Coluna 3: Institucional */}
           <div className="space-y-8 flex flex-col items-center lg:items-start">
-            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Empresa</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2 title-gold-premium">Empresa</h4>
             <ul className="space-y-4">
               <li><button onClick={() => onNavigate?.('sobre')} className="text-base hover:text-brand-accent transition-colors font-medium !text-white opacity-80 hover:opacity-100">Nossa história</button></li>
               <li><button onClick={() => onNavigate?.('servicos')} className="text-base hover:text-brand-accent transition-colors font-medium !text-white opacity-80 hover:opacity-100">Catálogo de serviços</button></li>
@@ -61,7 +61,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Coluna 4: Contato Rápido */}
           <div className="space-y-8 flex flex-col items-center lg:items-start">
-            <h4 className="!text-white font-black text-xs uppercase tracking-[0.2em] mb-2">Atendimento comercial</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-2 title-gold-premium">Atendimento comercial</h4>
             <div className="space-y-6 flex flex-col items-center lg:items-start">
               <div className="flex flex-col items-center lg:items-start">
                 <span className="text-[10px] uppercase font-bold !text-white/40 mb-1 tracking-widest">Telefone</span>
@@ -91,8 +91,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             © {currentYear} Duno — Engenharia de vidros em {CLIENT_CONFIG.city}. Todos os direitos reservados.
           </p>
           <div className="flex gap-8 opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all items-center justify-center">
-            <div className="text-[10px] font-black tracking-widest text-brand-accent">ABNT NBR</div>
-            <div className="text-[10px] font-black tracking-widest text-brand-accent">SEGURANÇA CERTIFICADA</div>
+            <div className="text-[10px] font-black tracking-widest title-gold-premium">ABNT NBR</div>
+            <div className="text-[10px] font-black tracking-widest title-gold-premium">SEGURANÇA CERTIFICADA</div>
           </div>
         </div>
       </div>
