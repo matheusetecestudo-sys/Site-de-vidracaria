@@ -140,7 +140,6 @@ section {
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  display: flex !important;
 }
 
 .btn-gold-premium:hover {
