@@ -55,7 +55,7 @@ const AboutPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 pt-16 border-t border-brand-accent/10">
               {values.map((v, i) => (
                 <div key={i} className="flex flex-col items-center text-center group p-8 bg-brand-light rounded-3xl transition-all hover:bg-white hover:shadow-2xl border border-transparent hover:border-brand-accent/20 italic">
-                  <div className="!text-brand-accent font-black text-4xl mb-6 opacity-30 group-hover:opacity-100 transition-opacity">0{i + 1}</div>
+                  <div className="font-black text-4xl mb-6 bg-gradient-to-r from-[#D4AF37] via-[#F4E5A1] to-[#D4AF37] bg-clip-text text-transparent italic">0{i + 1}</div>
                   <h3 className="text-2xl md:text-3xl font-black !text-brand-primary mb-6 leading-tight">{v.t}</h3>
                   <p className="!text-brand-secondary font-medium leading-relaxed text-base md:text-lg">{v.d}</p>
                 </div>
