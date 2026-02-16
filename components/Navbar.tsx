@@ -35,9 +35,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
     <>
       <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl py-2 md:py-4 shadow-2xl' : 'py-4 md:py-8 bg-black/80 backdrop-blur-sm'
         }`}>
-        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-20 md:h-24 relative">
+        <div className="container-precision flex justify-between items-center px-4 md:px-6 h-24 md:h-32 relative">
 
-          {/* Logo - Esquerda */}
+          {/* Logo - Esquerda (z-index alto) */}
           <button
             onClick={() => window.location.href = '/'}
             className="flex items-center focus:outline-none z-[110]"
@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             <img
               src="/images/duno03.png"
               alt="Duno Vidraçaria"
-              className="h-14 md:h-18 w-auto object-contain transition-all duration-500"
+              className="h-16 md:h-24 w-auto object-contain transition-all duration-500"
             />
           </button>
 
@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
               <button
                 key={item.id}
                 onClick={() => handleNav(item.id)}
-                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-white hover:text-brand-accent'
+                className={`text-[10px] lg:text-[11px] font-bold uppercase tracking-[0.3em] transition-all relative py-2 group focus:outline-none ${currentPage === item.id ? 'text-brand-accent' : 'text-white hover:text-white/80'
                   }`}
               >
                 {item.label}
