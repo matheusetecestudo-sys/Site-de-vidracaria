@@ -168,9 +168,12 @@ h3 {
   line-height: 1.15;
   letter-spacing: -0.025em;
   font-weight: 900;
-  color: #000000;
   text-align: center;
-  /* brand-primary - Azul Marinho do logo */
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent !important;
 }
 
 p {
