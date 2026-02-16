@@ -35,9 +35,9 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
     <>
       <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? 'bg-black/95 backdrop-blur-xl shadow-2xl' : 'bg-black/80 backdrop-blur-sm'
         }`}>
-        <div className="container-precision flex justify-between items-center px-4 md:px-0 h-20 md:h-28">
+        <div className="container-precision flex justify-between items-center px-4 md:px-0 h-28 md:h-36">
 
-          {/* Logo - Esquerda (Destaque Proporcional) */}
+          {/* Logo - Esquerda (Grande e com Presença) */}
           <button
             onClick={() => window.location.href = '/'}
             className="flex items-center focus:outline-none"
@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             <img
               src="/images/duno03.png"
               alt="Duno Vidraçaria"
-              className="h-14 md:h-20 w-auto object-contain transition-all duration-500"
+              className="h-20 md:h-28 w-auto object-contain transition-all duration-500"
             />
           </button>
 
