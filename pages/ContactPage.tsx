@@ -113,8 +113,8 @@ const ContactPage: React.FC = () => {
                       { t: "Configuração", d: "Cor de perfis e ferragens (Inox, Preto, Prata)." }
                     ].map((item, i) => (
                       <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start gap-6 group text-center sm:text-left">
-                        <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-accent/10 flex flex-shrink-0 items-center justify-center text-brand-accent font-black text-xl shadow-lg transition-all duration-500 group-hover:border-brand-accent group-hover:btn-gold-premium group-hover:text-black">
-                          0{i + 1}
+                        <div className="w-14 h-14 rounded-2xl bg-white border-2 border-brand-accent/5 flex flex-shrink-0 items-center justify-center shadow-lg transition-all duration-500 group-hover:border-brand-accent/30 group-hover:scale-110">
+                          <span className="font-black text-2xl title-gold-premium leading-none">0{i + 1}</span>
                         </div>
                         <div className="pt-2">
                           <h4 className="text-xl font-black text-brand-primary mb-2 uppercase tracking-tight leading-none">{item.t}</h4>
