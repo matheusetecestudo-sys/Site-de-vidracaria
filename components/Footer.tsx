@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="group flex flex-col items-center lg:items-start gap-1 focus:outline-none w-full"
             >
               <img
-                src="/images/duno04.png"
+                src="/images/duno03.png"
                 alt="Duno Vidraçaria"
                 className="w-full max-w-[320px] md:max-w-[400px] lg:max-w-none h-auto object-contain transition-transform duration-500 group-hover:scale-105"
               />

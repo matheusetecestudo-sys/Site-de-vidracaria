@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentPage }) => {
             aria-label="Ir para a página inicial"
           >
             <img
-              src="/images/duno04.png"
+              src="/images/duno03.png"
               alt="Duno Vidraçaria"
               className="h-28 md:h-36 w-auto object-contain transition-all duration-500"
             />
