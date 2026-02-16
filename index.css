@@ -155,7 +155,6 @@ section {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent !important;
-  display: block;
 }
 
 h1,
